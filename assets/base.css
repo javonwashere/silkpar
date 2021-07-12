@@ -1918,6 +1918,8 @@ details[open] > .header__icon--menu .icon-hamburger {
   margin-left: -1.2rem;
   grid-area: navigation;
   display: none;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .header--top-center .header__inline-menu,
@@ -1928,6 +1930,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 @media screen and (min-width: 990px) {
   .header__inline-menu {
     display: block;
+    display: flex;
   }
 
   .header--top-center .header__inline-menu {
