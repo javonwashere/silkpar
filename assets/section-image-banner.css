@@ -116,7 +116,7 @@
   position: relative;
   height: fit-content;
   align-items: center;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -147,6 +147,9 @@
 .banner__content .button {
   height: auto;
   margin-right: 2rem;
+  border-radius: 20px;
+  background-color: rgb(208, 226, 210);
+  color: black;
 }
 
 .banner__box > * + .banner__text {
@@ -180,7 +183,7 @@
 @media screen and (min-width: 750px) {
   .banner__box {
     padding: 4rem;
-    width: 54.8rem;
+    width: 77rem;
   }
 
   .banner__box > .banner__buttons:only-child .button {

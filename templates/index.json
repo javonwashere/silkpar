@@ -12,7 +12,7 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "BOOK A SERVICE    ⟶",
             "button_link_1": "shopify:\/\/collections",
             "button_style_secondary_1": false,
             "button_label_2": "",
