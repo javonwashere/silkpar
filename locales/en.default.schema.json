@@ -769,16 +769,16 @@
         },
         "color_scheme": {
           "options__1": {
-            "label": "taupe"
+            "label": "Taupe"
           },
           "options__2": {
-            "label": "bronze"
+            "label": "Bronze"
           },
           "options__3": {
-            "label": "white"
+            "label": "White"
           },
           "options__4": {
-            "label": "silver"
+            "label": "Silver"
           },
           "label": "Color scheme"
         },
