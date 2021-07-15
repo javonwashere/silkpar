@@ -2063,3 +2063,35 @@ ADDED VALUES
   background-color: rgb(208, 226, 210);
   color: black;
 }
+
+.color-scheme-taupe {
+  background-color: rgb(242, 233, 222);
+}
+
+.color-scheme-border-taupe {
+  border: 18px solid rgb(242, 233, 222);
+}
+
+.color-scheme-bronze {
+  background-color: rgb(116, 92, 62);
+}
+
+.color-scheme-border-bronze{
+  border: 18px solid rgb(116, 92, 62);
+}
+
+.color-scheme-white {
+  background-color: white
+}
+
+.color-scheme-border-white {
+  border: 18px solid white
+}
+
+.color-scheme-silver{
+  background-color: rgb(235, 240, 238);
+}
+
+.color-scheme-border-silver {
+  border: 18px solid rgb(235, 240, 248);
+}

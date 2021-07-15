@@ -28,7 +28,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/image-005.jpg",
         "desktop_text_box_position": "flex-end",
-        "color_scheme": "background-1",
+        "color_scheme": "grey",
         "stack_images_on_mobile": true,
         "adapt_height_first_image": false
       }
@@ -72,7 +72,7 @@
         "image": "shopify:\/\/shop_images\/image-014.jpg",
         "image_2": "shopify:\/\/shop_images\/image-006.jpg",
         "height": "adapt",
-        "color_scheme": "background-1",
+        "color_scheme": "taupe",
         "layout": "image_first"
       }
     },
