@@ -69,6 +69,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/image-014.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"
