@@ -9,7 +9,7 @@
 <noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
 
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
-
+<div class="color-scheme-{{ section.settings.color_scheme }}"></div>
 <div class="collection page-width{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}">
   <div class="{% if section.settings.show_view_all and section.settings.swipe_on_mobile %}title-wrapper-with-link{% endif %}{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %}">
     <h2 class="title{% if section.settings.title == blank %} title--no-heading{% endif %}">{{ section.settings.title | escape }}</h2>
@@ -72,6 +72,7 @@
     </div>
   {%- endif -%}
 </div>
+</div>
 
 {% schema %}
 {
@@ -79,6 +80,30 @@
   "tag": "section",
   "class": "spaced-section",
   "settings": [
+  {
+    "type": "select",
+    "id": "color_scheme",
+    "options": [
+      {
+        "value": "taupe",
+        "label": "t:sections.image-with-text.settings.color_scheme.options__1.label"
+      },
+      {
+        "value": "bronze",
+        "label": "t:sections.image-with-text.settings.color_scheme.options__2.label"
+      },
+      {
+        "value": "white",
+        "label": "t:sections.image-with-text.settings.color_scheme.options__3.label"
+      },
+      {
+        "value": "silver",
+        "label": "t:sections.image-with-text.settings.color_scheme.options__4.label"
+      }
+    ],
+    "default": "taupe",
+    "label": "t:sections.image-with-text.settings.color_scheme.label"
+  },
     {
       "type": "text",
       "id": "title",

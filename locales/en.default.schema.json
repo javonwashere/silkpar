@@ -468,6 +468,21 @@
     "featured-collection": {
       "name": "Featured collection",
       "settings": {
+        "color_scheme": {
+          "options__1": {
+            "label": "Taupe"
+          },
+          "options__2": {
+            "label": "Bronze"
+          },
+          "options__3": {
+            "label": "White"
+          },
+          "options__4": {
+            "label": "Silver"
+          },
+          "label": "Color scheme"
+        },
         "title": {
           "label": "Heading"
         },
