@@ -50,12 +50,6 @@
     "image_text": {
       "type": "image-with-text",
       "blocks": {
-        "smalltext": {
-          "type": "smalltext",
-          "settings": {
-            "smalltext": "About Silkpar"
-          }
-        },
         "heading": {
           "type": "heading",
           "settings": {
@@ -65,22 +59,28 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>At SilkPar Aesthetics we consider the practice of self-care to be extremely important and understand that it plays a significant role in how we perceive our self-image. At our spa, we form partnerships with our clients in order to find unique solutions to assist them in obtaining their desired skin goals. We recognize that the skin is the largest organ in the body and more often than not is a direct reflection of what may be going on internally. We thoroughly analyze the skin to uncover possible root causes to problem areas and address them with a holistic approach; combined with ethical result driven skincare and advanced treatments to ensure that each client gets the best results, and to maintain the overall health of the skin and the body. The body is more than capable of healing and correcting issues that may be present, but we also acknowledge that at times a little assistance is necessary to achieve certain skin goals. We strive to work in harmony with your body to create that balance both internally and externally to produce longer lasting results.<\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "BOOK A SERVICE    ⟶",            
+            "button_label": "Button label",
             "button_link": ""
+          }
+        },
+        "d4e68734-55fc-458d-a5b9-5d3a3847be0c": {
+          "type": "smalltext",
+          "settings": {
+            "smalltext": "about silkpar"
           }
         }
       },
       "block_order": [
-        "smalltext",
         "heading",
         "text",
-        "button"
+        "button",
+        "d4e68734-55fc-458d-a5b9-5d3a3847be0c"
       ],
       "settings": {
         "height": "adapt",
@@ -91,7 +91,7 @@
   },
   "order": [
     "image_banner",
-    "image_text",
-    "featured_products"
+    "featured_products",
+    "image_text"
   ]
 }
