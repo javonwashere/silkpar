@@ -723,6 +723,23 @@
           "label": "Enable sticky header",
           "info": "Header shows on the screen as customers scroll up."
         }
+      },
+      "blocks": {
+        "buttons": {
+          "name": "Buttons",
+          "settings": {
+            "button_label_1": {
+              "label": "Button Label",
+              "info": "Leave the label blank to hide the button."
+            },
+            "button_link_1": {
+              "label": "Button link"
+            },
+            "button_style_secondary_1": {
+              "label": "Use outline button style"
+            }
+          }
+        }
       }
     },
     "image-banner": {

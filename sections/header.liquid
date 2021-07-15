@@ -600,6 +600,31 @@
       "label": "t:sections.header.settings.enable_sticky_header.label",
       "info": "t:sections.header.settings.enable_sticky_header.info"
     }
-  ]
+  ],
+  "blocks": [{
+    "type": "buttons",
+    "name": "t:sections.header.blocks.buttons.name",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "text",
+        "id": "button_label_1",
+        "default": "Button label",
+        "label": "t:sections.header.blocks.buttons.settings.button_label_1.label",
+        "info": "t:sections.header.blocks.buttons.settings.button_label_1.info"
+      },
+      {
+        "type": "url",
+        "id": "button_link_1",
+        "label": "t:sections.header.blocks.buttons.settings.button_link_1.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "button_style_secondary_1",
+        "default": false,
+        "label": "t:sections.header.blocks.buttons.settings.button_style_secondary_1.label"
+      }
+    ]
+  }]
 }
 {% endschema %}
