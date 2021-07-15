@@ -824,6 +824,9 @@
         "image": {
           "label": "Image"
         },
+        "image_2": {
+          "label": "Overlapping Image"
+        },
         "height": {
           "options__1": {
             "label": "Adapt to image"

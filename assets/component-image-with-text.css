@@ -30,6 +30,9 @@
 .image-with-text__media {
   background-color: transparent;
   min-height: 100%;
+}
+
+.image-with-text__media img {
   border-radius: 10vw;
 }
 
