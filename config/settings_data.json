@@ -21,6 +21,19 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "2d49e517-03ef-469c-b808-e2812e586463": {
+            "type": "buttons",
+            "settings": {
+              "button_label_1": "Button label",
+              "button_link_1": "shopify:\/\/collections",
+              "button_style_secondary_1": false
+            }
+          }
+        },
+        "block_order": [
+          "2d49e517-03ef-469c-b808-e2812e586463"
+        ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/silkpar_300px.png",
           "logo_width": 100,
