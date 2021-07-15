@@ -25,7 +25,7 @@
           "2d49e517-03ef-469c-b808-e2812e586463": {
             "type": "buttons",
             "settings": {
-              "button_label_1": "Button label",
+              "button_label_1": "Book a service ⟶",
               "button_link_1": "shopify:\/\/collections",
               "button_style_secondary_1": false
             }
