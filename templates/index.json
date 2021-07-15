@@ -50,10 +50,16 @@
     "image_text": {
       "type": "image-with-text",
       "blocks": {
+        "d4e68734-55fc-458d-a5b9-5d3a3847be0c": {
+          "type": "smalltext",
+          "settings": {
+            "smalltext": "about silkpar"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text"
+            "heading": "Creating Balance to Achieve Results"
           }
         },
         "text": {
@@ -68,19 +74,13 @@
             "button_label": "Button label",
             "button_link": ""
           }
-        },
-        "d4e68734-55fc-458d-a5b9-5d3a3847be0c": {
-          "type": "smalltext",
-          "settings": {
-            "smalltext": "about silkpar"
-          }
         }
       },
       "block_order": [
+        "d4e68734-55fc-458d-a5b9-5d3a3847be0c",
         "heading",
         "text",
-        "button",
-        "d4e68734-55fc-458d-a5b9-5d3a3847be0c"
+        "button"
       ],
       "settings": {
         "height": "adapt",
