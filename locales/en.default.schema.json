@@ -874,6 +874,14 @@
             }
           }
         },
+        "smalltext": {
+          "name": "Small Text",
+          "settings": {
+            "smalltext": {
+              "label": "Small Text"
+            }
+          }
+        },
         "text": {
           "name": "Text",
           "settings": {

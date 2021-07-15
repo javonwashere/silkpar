@@ -29,9 +29,14 @@
       <div class="image-with-text__content image-with-text__content--{{ section.settings.height }}">
         {%- for block in section.blocks -%}
           {% case block.type %}
+          {%- when 'smalltext' -%}
+              <div class="image-with-text__text rte" {{ block.shopify_attributes }}>
+                {{ block.settings.smalltext | escape }}
+              </div>
             {%- when 'heading' -%}
               <h2 class="image-with-text__heading h1" {{ block.shopify_attributes }}>
                 {{ block.settings.heading | escape }}
+                {{ block.settings.smalltext | escape }}
               </h2>
             {%- when 'text' -%}
               <div class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
@@ -135,6 +140,19 @@
           "id": "heading",
           "default": "Image with text",
           "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+        }
+      ]
+    },
+    {
+      "type": "smalltext",
+      "name": "t:sections.image-with-text.blocks.smalltext.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "smalltext",
+          "default": "smalltext",
+          "label": "t:sections.image-with-text.blocks.smalltext.settings.smalltext.label"
         }
       ]
     },
