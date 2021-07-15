@@ -143,9 +143,17 @@
 }
 
 .first__image__child {
-  grid-area: 1 / 1 / 13 / 15;
+  grid-area: 1 / 1 / 13 / 14;
 }
 
 .second__image__child {
   grid-area: 3 / 4 / 11 / 16;
+}
+
+.color-scheme-background-1 {
+  background-color: rgb(242, 233, 222);
+}
+
+.color-scheme-border-background-1 {
+  border: 18px solid rgb(242, 233, 222);
 }

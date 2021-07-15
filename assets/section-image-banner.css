@@ -189,6 +189,14 @@
   .banner__box > .banner__buttons:only-child .button {
     margin-top: 0;
   }
+
+  .banner__heading {
+    color: white;
+  }
+  
+  .banner__box {
+    margin-bottom: 0;
+  }
 }
 
 .banner__heading > *,
@@ -198,4 +206,8 @@
 
 .banner__heading {
   margin-bottom: 0;
+}
+
+.banner__box {
+  margin-bottom: 5rem;
 }
