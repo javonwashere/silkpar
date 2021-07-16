@@ -55,7 +55,8 @@ slider-component {
 /* Scrollbar */
 
 .slider {
-  scrollbar-color: rgb(var(--color-foreground)) rgba(var(--color-foreground), 0.04);
+  scrollbar-color: rgb(var(--color-foreground))
+    rgba(var(--color-foreground), 0.04);
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -100,6 +101,11 @@ slider-component .slider-buttons {
 
 .slider-mobile-gutter .slider-buttons {
   right: 1.5rem;
+}
+
+.slider-mobile-gutter {
+  display: flex;
+  /* justify-content: space-between; */
 }
 
 .slider-counter {
@@ -184,4 +190,11 @@ slider-component .slider-buttons {
 
 .slider-button:focus-visible {
   z-index: 1;
+}
+
+.full-width-custom {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%;
 }
