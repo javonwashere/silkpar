@@ -192,9 +192,13 @@ slider-component .slider-buttons {
   z-index: 1;
 }
 
-.full-width-custom {
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 100%;
+
+.featured-flex-slider {
+  max-width: 100vw;
+  overflow: scroll;
 }
+
+.featured-flex-items {
+  flex-wrap: nowrap;
+}
+

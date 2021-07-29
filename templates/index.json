@@ -80,7 +80,8 @@
       "type": "featured-collection",
       "settings": {
         "color_scheme": "bronze",
-        "title": "Featured products",
+        "title": "Correct from Within",
+        "smalltext": "Featured Products",
         "collection": "test-collection",
         "products_to_show": 6,
         "show_view_all": true,
