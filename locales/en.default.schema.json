@@ -486,6 +486,9 @@
         "title": {
           "label": "Heading"
         },
+        "smalltext": {
+          "label": "Small Text"
+        },
         "collection": {
           "label": "Collection"
         },

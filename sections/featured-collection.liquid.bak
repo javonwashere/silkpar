@@ -10,8 +10,14 @@
 
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 <div class="color-scheme-{{ section.settings.color_scheme }}">
-<div class="collection featured-flex-slider page-width{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}">
-  
+<div class="collection page-width{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}">
+  <div class="{% if section.settings.show_view_all and section.settings.swipe_on_mobile %}title-wrapper-with-link{% endif %}{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %}">
+    <h2 class="title{% if section.settings.title == blank %} title--no-heading{% endif %}">{{ section.settings.title | escape }}</h2>
+
+    {%- if section.settings.show_view_all and section.settings.swipe_on_mobile -%}
+      <a href="{{ section.settings.collection.url }}" class="link underlined-link large-up-hide">{{ 'sections.featured_collection.view_all' | t }}</a>
+    {%- endif -%}
+  </div>
 
   {%- liquid
     assign products_to_display = section.settings.collection.all_products_count
@@ -22,31 +28,7 @@
   %}
 
   <slider-component class="slider-mobile-gutter">
-    
-    <ul class="grid featured-flex-items grid--2-col{% if products_to_display == 4 or section.settings.collection == blank %} grid--2-col-tablet grid--4-col-desktop{% else %} grid--3-col-tablet{% endif %}{% if products_to_display > 5 %} grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider slider--tablet grid--peek{% endif %}{% if section.settings.show_view_all == false or section.settings.collection.products.size < section.settings.products_to_show %} negative-margin{% endif %}{% if section.settings.show_view_all and section.settings.collection.products.size > section.settings.products_to_show %} negative-margin--small{% endif %}" role="list">
-      <li class="grid__item{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider__slide{% endif %}">
-        <div class="{% if section.settings.show_view_all and section.settings.swipe_on_mobile %}title-wrapper-with-link{% endif %}{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %}">
-          <div class="image-with-text__text rte" {{ block.shopify_attributes }}>
-            <!-- {{ block.settings.smalltext | escape }} -->
-            {{ section.settings.smalltext | escape }}
-          </div>
-          <h2 class=" image-with-text__heading h1 title{% if section.settings.title == blank %} title--no-heading{% endif %}">{{ section.settings.title | escape }}</h2>
-      
-          {%- if section.settings.show_view_all and section.settings.swipe_on_mobile -%}
-            <a href="{{ section.settings.collection.url }}" class="link underlined-link large-up-hide">{{ 'sections.featured_collection.view_all' | t }}</a>
-          {%- endif -%}
-        </div>
-        {%- if section.settings.show_view_all and section.settings.collection.all_products_count > section.settings.products_to_show -%}
-        <div style="display: flex;" class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
-          <a href="{{ section.settings.collection.url }}"
-            class="button"
-            aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}"
-          >
-        {{ 'sections.featured_collection.view_all' | t }}
-          </a>
-        </div>
-  {%- endif -%}
-      </li>
+    <ul class="grid grid--2-col{% if products_to_display == 4 or section.settings.collection == blank %} grid--2-col-tablet grid--4-col-desktop{% else %} grid--3-col-tablet{% endif %}{% if products_to_display > 5 %} grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider slider--tablet grid--peek{% endif %}{% if section.settings.show_view_all == false or section.settings.collection.products.size < section.settings.products_to_show %} negative-margin{% endif %}{% if section.settings.show_view_all and section.settings.collection.products.size > section.settings.products_to_show %} negative-margin--small{% endif %}" role="list">
       {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
         <li class="grid__item{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider__slide{% endif %}">
           {% render 'product-card',
@@ -78,6 +60,17 @@
       </div>
     {%- endif -%}
   </slider-component>
+
+  {%- if section.settings.show_view_all and section.settings.collection.all_products_count > section.settings.products_to_show -%}
+    <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
+      <a href="{{ section.settings.collection.url }}"
+        class="button"
+        aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}"
+      >
+        {{ 'sections.featured_collection.view_all' | t }}
+      </a>
+    </div>
+  {%- endif -%}
 </div>
 </div>
 
@@ -116,12 +109,6 @@
       "id": "title",
       "default": "Featured collection",
       "label": "t:sections.featured-collection.settings.title.label"
-    },
-    {
-      "type": "text",
-      "id": "smalltext",
-      "default": "Featured collection",
-      "label": "t:sections.featured-collection.settings.smalltext.label"
     },
     {
       "type": "collection",

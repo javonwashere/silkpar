@@ -80,12 +80,13 @@
       "type": "featured-collection",
       "settings": {
         "color_scheme": "bronze",
-        "title": "Featured products",
-        "collection": "",
-        "products_to_show": 4,
+        "title": "Correct from Within",
+        "smalltext": "Featured Products",
+        "collection": "test-collection",
+        "products_to_show": 6,
         "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
         "show_secondary_image": false,
         "add_image_padding": false,
         "show_vendor": false

@@ -185,3 +185,13 @@ slider-component .slider-buttons {
 .slider-button:focus-visible {
   z-index: 1;
 }
+
+
+.featured-flex-slider {
+  max-width: 100vw;
+  overflow: scroll;
+}
+
+.featured-flex-items {
+  flex-wrap: nowrap;
+}
