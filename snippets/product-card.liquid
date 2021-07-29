@@ -82,7 +82,7 @@
       </div>
     </div>
 
-    <div class="card-information">
+    <div style="margin-top: 3rem; border-top: 1px solid white;" class="card-information">
       <div class="card-information__wrapper">
         {%- if show_vendor -%}
           <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
@@ -90,6 +90,9 @@
         {%- endif -%}
 
         {%- if product_card_product.featured_media -%}
+        <span class="card-information__text h6">
+          {{ product_card_product.type | escape }}
+        </span>
           <span class="card-information__text h5">
             {{ product_card_product.title | escape }}
           </span>
