@@ -8,18 +8,74 @@
 <noscript>{{ 'component-badge.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
 <script>
-  let circle = document.getElementById('circle');
-  const onMouseMove = (e) =>{
-    circle.style.left = e.pageX + 'px';
-    circle.style.top = e.pageY + 'px';
+  window.onload = () => {
+    // (()=> {
+    let cursor = document.createElement("div");
+    cursor.id = "cursor";
+    cursor.innerHTML = "<div>DRAG</div>"
+    document.body.appendChild(cursor);
+    
+    console.log(cursor);
+    let makeElementFollowCursor = (el, posX = 0, posY = 0) => {
+      const onMouseMove = (e) =>{
+        let vals = ["slider-component", "ul", "li", "img", "div.card-wrapper"];
+        for (const val of vals){
+          if(e.target.matches(vals)){
+            el.style.left = e.pageX + 'px';
+            el.style.top = e.pageY + 'px';
+            console.log("EVENT", e)
+            el.style.visibility = "visible"
+          }
+        }
+      }
+      document.addEventListener('mousemove', onMouseMove);
+    }
+    makeElementFollowCursor(cursor)
+
+    let triangleDiv = document.createElement("div");
+    document.body.appendChild(triangleDiv);
+    triangleDiv.id = "triangle";
+    makeElementFollowCursor(triangleDiv)
+
+    // })();
+    const loadSlider = () => {
+      const slider = document.querySelector('.featured-flex-slider');
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+
+      slider.addEventListener("mousedown", e => {
+        slider.style.cursor = "grabbing";
+        isDown = true;
+        slider.classList.add("active");
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+      slider.addEventListener("mouseleave", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("mouseup", () => {
+        slider.style.cursor = "grab";
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("mousemove", e => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = x - startX;
+        slider.scrollLeft = scrollLeft - walk;
+      });
+    }
+    loadSlider();
   }
-document.addEventListener('mousemove', onMouseMove);
 </script>
 
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 <div class="color-scheme-{{ section.settings.color_scheme }}">
+
 <div class="collection featured-flex-slider page-width{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}">
-  <div id="cursor"></div>
   {%- liquid
     assign products_to_display = section.settings.collection.all_products_count
 
@@ -27,6 +83,7 @@ document.addEventListener('mousemove', onMouseMove);
       assign products_to_display = section.settings.products_to_show
     endif
   %}
+  
   <slider-component class="slider-mobile-gutter">
     <ul class="grid featured-flex-items grid--2-col{% if products_to_display == 4 or section.settings.collection == blank %} grid--2-col-tablet grid--4-col-desktop{% else %} grid--3-col-tablet{% endif %}{% if products_to_display > 5 %} grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider slider--tablet grid--peek{% endif %}{% if section.settings.show_view_all == false or section.settings.collection.products.size < section.settings.products_to_show %} negative-margin{% endif %}{% if section.settings.show_view_all and section.settings.collection.products.size > section.settings.products_to_show %} negative-margin--small{% endif %}" role="list">
       <li class="grid__item{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider__slide{% endif %}">
