@@ -12,6 +12,8 @@
 .newsletter__wrapper {
   padding-right: 4rem;
   padding-left: 4rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 750px) {
@@ -50,10 +52,7 @@
 
 .newsletter__button {
   width: fit-content;
-  background: url("./arrow.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+
   box-shadow: none;
   opacity: 0.4;
   width: 50%;
@@ -73,4 +72,36 @@
     flex-shrink: 0;
     margin: 0 0 0 1rem;
   }
+}
+
+.custom-search-input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 10px 100px 10px 20px; 
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.custom-search-botton {
+  position: absolute;
+  background: url("./arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 3px; 
+  top: 3px;
+  bottom: 3px;
+  border: 0;
+  color: #fff;
+  outline: none;
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 100px;
+  z-index: 2;
+}
+
+.custom-search-botton:focus {
+  box-shadow: none !important;
 }

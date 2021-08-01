@@ -1446,6 +1446,9 @@
     "newsletter": {
       "name": "Email signup",
       "settings": {
+        "image": {
+          "label": "Image"
+        },
         "color_scheme": {
           "options__1": {
             "label": "Taupe"
