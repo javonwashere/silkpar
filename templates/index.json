@@ -161,8 +161,9 @@
         "1627799823dfd95cdd-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/image-014.jpg",
         "color_scheme": "taupe",
-        "full_width": true
+        "full_width": false
       }
     }
   },
