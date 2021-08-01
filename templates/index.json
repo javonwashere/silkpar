@@ -92,6 +92,48 @@
         "show_vendor": false
       }
     },
+    "16277998371758dfce": {
+      "type": "image-with-text",
+      "blocks": {
+        "86bc63fd-e112-4285-8e59-4f050b105997": {
+          "type": "smalltext",
+          "settings": {
+            "smalltext": "services"
+          }
+        },
+        "16277998371758dfce-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Self-care on a Whole new Level"
+          }
+        },
+        "16277998371758dfce-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our treatment room is where relaxation meets results. There is no need to compromise one for the other. We understand that when it comes to achieving results, properly treating skin cannot be done under a “one size fits all” approach; so all of our facials are customized for each individual according to what their skin may need at the time of appointment. We also apply this same philosophy when it comes to our waxing services. Hair texture and sensitivity levels differ from person to person, so at SilkPar we use more than one wax to achieve the best results for each respective client. We are dedicated to not only ensuring that the treatments and services we offer are results driven, but that the tone and standard for one’s self-care is set and then met.<\/p>"
+          }
+        },
+        "16277998371758dfce-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Book a service",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "86bc63fd-e112-4285-8e59-4f050b105997",
+        "16277998371758dfce-0",
+        "16277998371758dfce-1",
+        "16277998371758dfce-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image-004.jpg",
+        "height": "adapt",
+        "color_scheme": "white",
+        "layout": "image_first"
+      }
+    },
     "1627799823dfd95cdd": {
       "type": "newsletter",
       "blocks": {
@@ -128,6 +170,7 @@
     "image_banner",
     "image_text",
     "featured_products",
+    "16277998371758dfce",
     "1627799823dfd95cdd"
   ]
 }
