@@ -1447,22 +1447,19 @@
       "name": "Email signup",
       "settings": {
         "color_scheme": {
-          "label": "Color scheme",
           "options__1": {
-            "label": "Accent 1"
+            "label": "Taupe"
           },
           "options__2": {
-            "label": "Accent 2"
+            "label": "Bronze"
           },
           "options__3": {
-            "label": "Background 1"
+            "label": "White"
           },
           "options__4": {
-            "label": "Background 2"
+            "label": "Silver"
           },
-          "options__5": {
-            "label": "Inverse"
-          }
+          "label": "Color scheme"
         },
         "full_width": {
           "label": "Make section full width"

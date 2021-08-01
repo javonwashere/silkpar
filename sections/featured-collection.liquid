@@ -18,7 +18,7 @@
     console.log(cursor);
     let makeElementFollowCursor = (el, posX = 0, posY = 0) => {
       const onMouseMove = (e) =>{
-        let vals = ["slider-component", "ul", "li", "img", "div.card-wrapper"];
+        let vals = ["slider-component", "ul.grid", "li.grid__item", ".img-animation", "div.card-wrapper"];
         for (const val of vals){
           if(e.target.matches(vals)){
             el.style.left = e.pageX + 'px';
@@ -54,7 +54,10 @@
       slider.addEventListener("mouseleave", () => {
         isDown = false;
         slider.classList.remove("active");
+        document.querySelector("#cursor").style.visibility = "hidden";
+        document.querySelector("#triangle").style.visibility = "hidden";
       });
+      
       slider.addEventListener("mouseup", () => {
         slider.style.cursor = "grab";
         isDown = false;
@@ -95,7 +98,8 @@
           <h2 class=" image-with-text__heading h1 title{% if section.settings.title == blank %} title--no-heading{% endif %}">{{ section.settings.title | escape }}</h2>
       
           {%- if section.settings.show_view_all and section.settings.swipe_on_mobile -%}
-            <a href="{{ section.settings.collection.url }}" class="link underlined-link large-up-hide">{{ 'sections.featured_collection.view_all' | t }}</a>
+            
+          <a href="{{ section.settings.collection.url }}" class="link underlined-link large-up-hide button">{{ 'sections.featured_collection.view_all' | t }}</a>
           {%- endif -%}
         </div>
         {%- if section.settings.show_view_all and section.settings.collection.all_products_count > section.settings.products_to_show -%}

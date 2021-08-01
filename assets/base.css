@@ -190,25 +190,6 @@ html.no-js .no-js-hidden {
   margin-top: 5rem;
 }
 
-.spaced-section {
-  margin-top: -5rem;
-  margin-bottom: -5rem;
-  padding-bottom: 5rem;
-}
-
-.spaced-section > div {
-  padding: 2.5rem 0rem;
-  margin: 2.5rem 0rem;
-}
-
-.spaced-section:last-child {
-  margin-bottom: 5rem;
-}
-
-.spaced-section--full-width + .spaced-section--full-width > div {
-  padding: 5rem 0rem;
-}
-
 .spaced-section--full-width:first-child {
   margin-top: 0;
 }
@@ -881,9 +862,9 @@ summary::-webkit-details-marker {
 }
 
 @media screen and (min-width: 990px) {
-  .grid--quarter-max.grid--4-col-desktop .grid__item {
+  /* .grid--quarter-max.grid--4-col-desktop .grid__item {
     max-width: 25%;
-  }
+  } */
 }
 
 .grid--1-col .grid__item {
@@ -924,9 +905,9 @@ summary::-webkit-details-marker {
 }
 
 @media screen and (min-width: 990px) {
-  .grid--4-col-desktop .grid__item {
+  /* .grid--4-col-desktop .grid__item {
     width: calc(25% - 1rem * 3 / 4);
-  }
+  } */
 
   .grid--3-col-desktop .grid__item {
     width: calc(33.33% - 1rem * 2 / 3);
@@ -2066,6 +2047,7 @@ ADDED VALUES
   border-radius: 20px;
   background-color: rgb(208, 226, 210);
   color: black;
+  text-transform: uppercase;
 }
 
 .color-scheme-taupe {

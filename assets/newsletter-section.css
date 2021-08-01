@@ -49,8 +49,23 @@
 }
 
 .newsletter__button {
-  margin-top: 3rem;
   width: fit-content;
+  background: url("./arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: none;
+  opacity: 0.4;
+  width: 50%;
+}
+
+.newsletter-form__field-wrapper div input  {
+  box-shadow: none;
+  padding: 3rem;
+}
+
+.newsletter__wrapper form {
+  border-bottom: solid 1px;
 }
 
 @media screen and (min-width: 750px) {

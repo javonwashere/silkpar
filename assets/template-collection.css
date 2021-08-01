@@ -1,5 +1,7 @@
 .collection {
   position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 @media screen and (max-width: 749px) {
@@ -264,7 +266,7 @@
 }
 
 .facets__item label,
-.facets__item input[type='checkbox'] {
+.facets__item input[type="checkbox"] {
   cursor: pointer;
 }
 
@@ -277,7 +279,7 @@
   word-break: break-word;
 }
 
-.facet-checkbox input[type='checkbox'] {
+.facet-checkbox input[type="checkbox"] {
   position: absolute;
   opacity: 1;
   width: 1.6rem;
@@ -303,7 +305,7 @@
   top: 1.4rem;
 }
 
-.facet-checkbox > input[type='checkbox']:checked ~ .icon-checkmark {
+.facet-checkbox > input[type="checkbox"]:checked ~ .icon-checkmark {
   visibility: visible;
 }
 
@@ -352,7 +354,7 @@ button.facets__button {
 .active-facets__button {
   padding: 1.1rem 0.2rem;
   text-decoration: none;
-  margin-left: 0.5rem
+  margin-left: 0.5rem;
 }
 
 span.active-facets__button-inner {
@@ -399,7 +401,8 @@ a.active-facets__button:focus {
 a.active-facets__button:focus-visible .active-facets__button-inner,
 a.active-facets__button:focus .active-facets__button-inner {
   box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.2),
-    0 0 0 0.2rem rgb(var(--color-background)), 0 0 0 0.4rem rgb(var(--color-foreground));
+    0 0 0 0.2rem rgb(var(--color-background)),
+    0 0 0 0.4rem rgb(var(--color-foreground));
   outline: none;
 }
 
@@ -455,7 +458,7 @@ a.active-facets__button:focus .active-facets__button-inner {
 }
 
 .count-bubble--dot::before {
-  content: '';
+  content: "";
   width: 0.2rem;
   height: 0.2rem;
   display: block;
@@ -723,7 +726,7 @@ input.mobile-facets__checkbox {
   visibility: hidden;
 }
 
-.mobile-facets__label > input[type='checkbox']:checked ~ .icon-checkmark {
+.mobile-facets__label > input[type="checkbox"]:checked ~ .icon-checkmark {
   visibility: visible;
 }
 
