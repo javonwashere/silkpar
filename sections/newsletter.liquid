@@ -57,49 +57,49 @@
         {%- endcase -%}
       {%- endfor -%}
       </div>
-      <div class="grid__item">
-          <div class="image-with-text__media media--hover-effect image-with-text__media--{{ section.settings.height }} {% if section.settings.image_2 != blank %}first__image__child{% endif %} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-            {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
-          >
-            {%- if section.settings.image != blank -%}
-              <img srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
-                {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
-                {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | img_url: '535x' }} 535w,{%- endif -%}
-                {%- if section.settings.image.width >= 720 -%}{{ section.settings.image | img_url: '720x' }} 720w,{%- endif -%}
-                {%- if section.settings.image.width >= 940 -%}{{ section.settings.image | img_url: '940x' }} 940w,{%- endif -%}
-                {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | img_url: '1070x' }} 1070w{%- endif -%}"
-                src="{{ section.settings.image | img_url: '533x' }}"
-                sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                alt="{{ section.settings.image.alt | escape }}"
-                loading="lazy"
-                width="{{ section.settings.image.width }}"
-                height="{{ section.settings.image.height }}"
-              >
-            {%- else -%}
-              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-            {%- endif -%}
-          </div>
-          {%- if section.settings.image_2 != blank -%}
-          <div class="color-scheme-border-{{ section.settings.color_scheme }} overlap_image image-with-text__media media--hover-effect image-with-text__media--{{ section.settings.height }} {% if section.settings.image_2 != blank %}second__image__child{% endif %} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-            {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
-          >
-              <img srcset="{%- if section.settings.image_2.width >= 165 -%}{{ section.settings.image_2 | img_url: '165x' }} 165w,{%- endif -%}
-                {%- if section.settings.image_2.width >= 360 -%}{{ section.settings.image_2 | img_url: '360x' }} 360w,{%- endif -%}
-                {%- if section.settings.image_2.width >= 535 -%}{{ section.settings.image_2 | img_url: '535x' }} 535w,{%- endif -%}
-                {%- if section.settings.image_2.width >= 720 -%}{{ section.settings.image_2 | img_url: '720x' }} 720w,{%- endif -%}
-                {%- if section.settings.image_2.width >= 940 -%}{{ section.settings.image_2 | img_url: '940x' }} 940w,{%- endif -%}
-                {%- if section.settings.image_2.width >= 1070 -%}{{ section.settings.image_2 | img_url: '1070x' }} 1070w{%- endif -%}"
-                src="{{ section.settings.image_2 | img_url: '533x' }}"
-                sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                alt="{{ section.settings.image_2.alt | escape }}"
-                loading="lazy"
-                width="{{ section.settings.image_2.width }}"
-                height="{{ section.settings.image_2.height }}"
-              >
-          </div>
+      <div class="newsletter__image">
+        <div class="image-with-text__media media--hover-effect image-with-text__media--{{ section.settings.height }} {% if section.settings.image_2 != blank %}first__image__child{% endif %} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+          {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
+        >
+          {%- if section.settings.image != blank -%}
+            <img srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
+              {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
+              {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | img_url: '535x' }} 535w,{%- endif -%}
+              {%- if section.settings.image.width >= 720 -%}{{ section.settings.image | img_url: '720x' }} 720w,{%- endif -%}
+              {%- if section.settings.image.width >= 940 -%}{{ section.settings.image | img_url: '940x' }} 940w,{%- endif -%}
+              {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | img_url: '1070x' }} 1070w{%- endif -%}"
+              src="{{ section.settings.image | img_url: '533x' }}"
+              sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+              alt="{{ section.settings.image.alt | escape }}"
+              loading="lazy"
+              width="{{ section.settings.image.width }}"
+              height="{{ section.settings.image.height }}"
+            >
           {%- else -%}
-              {{ }}
-            {%- endif -%}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+        {%- if section.settings.image_2 != blank -%}
+        <div class="color-scheme-border-{{ section.settings.color_scheme }} overlap_image image-with-text__media media--hover-effect image-with-text__media--{{ section.settings.height }} {% if section.settings.image_2 != blank %}second__image__child{% endif %} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+          {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
+        >
+            <img srcset="{%- if section.settings.image_2.width >= 165 -%}{{ section.settings.image_2 | img_url: '165x' }} 165w,{%- endif -%}
+              {%- if section.settings.image_2.width >= 360 -%}{{ section.settings.image_2 | img_url: '360x' }} 360w,{%- endif -%}
+              {%- if section.settings.image_2.width >= 535 -%}{{ section.settings.image_2 | img_url: '535x' }} 535w,{%- endif -%}
+              {%- if section.settings.image_2.width >= 720 -%}{{ section.settings.image_2 | img_url: '720x' }} 720w,{%- endif -%}
+              {%- if section.settings.image_2.width >= 940 -%}{{ section.settings.image_2 | img_url: '940x' }} 940w,{%- endif -%}
+              {%- if section.settings.image_2.width >= 1070 -%}{{ section.settings.image_2 | img_url: '1070x' }} 1070w{%- endif -%}"
+              src="{{ section.settings.image_2 | img_url: '533x' }}"
+              sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+              alt="{{ section.settings.image_2.alt | escape }}"
+              loading="lazy"
+              width="{{ section.settings.image_2.width }}"
+              height="{{ section.settings.image_2.height }}"
+            >
+        </div>
+        {%- else -%}
+            {{ }}
+          {%- endif -%}
       </div>
     </div>
   </div>
