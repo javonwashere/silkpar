@@ -43,7 +43,11 @@
       let isDown = false;
       let startX;
       let scrollLeft;
-
+      const images = document.querySelectorAll('.full-unstyled-link');
+      console.log("ALL IMAGES", images);
+      const toggleImgClicks = (imgs, val) => {
+        imgs.forEach(e => e.style.pointerEvents = val);
+      }
       slider.addEventListener("mousedown", e => {
         slider.style.cursor = "grabbing";
         isDown = true;
@@ -53,6 +57,7 @@
       });
       slider.addEventListener("mouseleave", () => {
         isDown = false;
+        e.preventDefault();
         slider.classList.remove("active");
         document.querySelector("#cursor").style.visibility = "hidden";
         document.querySelector("#triangle").style.visibility = "hidden";
@@ -62,8 +67,10 @@
         slider.style.cursor = "grab";
         isDown = false;
         slider.classList.remove("active");
+        toggleImgClicks(images, "auto");
       });
       slider.addEventListener("mousemove", e => {
+        // toggleImgClicks(images, "none");
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - slider.offsetLeft;
