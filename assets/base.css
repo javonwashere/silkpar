@@ -319,9 +319,9 @@ p {
 
 @font-face {
   font-family: "Proxima Nova Rg";
-  src: url("fonts/ProximaNova-Bold.woff2") format("woff2"),
-    url("fonts/ProximaNova-Bold.woff") format("woff"),
-    url("fonts/ProximaNova-Bold.ttf") format("truetype");
+  src: url("ProximaNova-Bold.woff2") format("woff2"),
+    url("ProximaNova-Bold.woff") format("woff"),
+    url("ProximaNova-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -329,9 +329,9 @@ p {
 
 @font-face {
   font-family: "Optician Sans";
-  src: url("fonts/OpticianSans-Regular.woff2") format("woff2"),
-    url("fonts/OpticianSans-Regular.woff") format("woff"),
-    url("fonts/OpticianSans-Regular.ttf") format("truetype");
+  src: url("OpticianSans-Regular.woff2") format("woff2"),
+    url("OpticianSans-Regular.woff") format("woff"),
+    url("OpticianSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -339,9 +339,9 @@ p {
 
 @font-face {
   font-family: "Proxima Nova Rg";
-  src: url("fonts/ProximaNova-Regular.woff2") format("woff2"),
-    url("fonts/ProximaNova-Regular.woff") format("woff"),
-    url("fonts/ProximaNova-Regular.ttf") format("truetype");
+  src: url("ProximaNova-Regular.woff2") format("woff2"),
+    url("ProximaNova-Regular.woff") format("woff"),
+    url("ProximaNova-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -349,9 +349,9 @@ p {
 
 @font-face {
   font-family: "Myriad Pro";
-  src: url("fonts/MyriadPro-Regular.woff2") format("woff2"),
-    url("fonts/MyriadPro-Regular.woff") format("woff"),
-    url("fonts/MyriadPro-Regular.ttf") format("truetype");
+  src: url("MyriadPro-Regular.woff2") format("woff2"),
+    url("MyriadPro-Regular.woff") format("woff"),
+    url("MyriadPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -359,9 +359,9 @@ p {
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("fonts/ProximaNova-Semibold.woff2") format("woff2"),
-    url("fonts/ProximaNova-Semibold.woff") format("woff"),
-    url("fonts/ProximaNova-Semibold.ttf") format("truetype");
+  src: url("ProximaNova-Semibold.woff2") format("woff2"),
+    url("ProximaNova-Semibold.woff") format("woff"),
+    url("ProximaNova-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -369,39 +369,39 @@ p {
 
 @font-face {
   font-family: "kessler-displayitalic";
-  src: url("fonts/kesslerdisplayweb-italic.eot?#iefix")
+  src: url("kesslerdisplayweb-italic.eot?#iefix")
       format("embedded-opentype"),
-    url("fonts/kesslerdisplayweb-italic.woff") format("woff");
+    url("kesslerdisplayweb-italic.woff") format("woff");
 }
 @font-face {
   font-family: "kessler-displayregular";
-  src: url("fonts/kesslerdisplayweb-regular.eot?#iefix")
+  src: url("kesslerdisplayweb-regular.eot?#iefix")
       format("embedded-opentype"),
-    url("fonts/kesslerdisplayweb-regular.woff") format("woff");
+    url("kesslerdisplayweb-regular.woff") format("woff");
 }
 @font-face {
   font-family: "kessler-superdisplayitalic";
-  src: url("fonts/kesslersuperdisplayweb-italic.eot?#iefix")
+  src: url("kesslersuperdisplayweb-italic.eot?#iefix")
       format("embedded-opentype"),
-    url("fonts/kesslersuperdisplayweb-italic.woff") format("woff");
+    url("kesslersuperdisplayweb-italic.woff") format("woff");
 }
 @font-face {
   font-family: "kessler-superdisplayregular";
-  src: url("fonts/kesslersuperdisplayweb-regular.eot?#iefix")
+  src: url("kesslersuperdisplayweb-regular.eot?#iefix")
       format("embedded-opentype"),
-    url("fonts/kesslersuperdisplayweb-regular.woff") format("woff");
+    url("kesslersuperdisplayweb-regular.woff") format("woff");
 }
 @font-face {
   font-family: "kessler-textitalic";
-  src: url("fonts/kesslertextweb-italic.eot?#iefix")
+  src: url("kesslertextweb-italic.eot?#iefix")
       format("embedded-opentype"),
-    url("fonts/kesslertextweb-italic.woff") format("woff");
+    url("kesslertextweb-italic.woff") format("woff");
 }
 @font-face {
   font-family: "kessler-textregular";
-  src: url("fonts/kesslertextweb-regular.eot?#iefix")
+  src: url("kesslertextweb-regular.eot?#iefix")
       format("embedded-opentype"),
-    url("fonts/kesslertextweb-regular.woff") format("woff");
+    url("kesslertextweb-regular.woff") format("woff");
 }
 
 .h0 {
