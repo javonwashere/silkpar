@@ -48,7 +48,7 @@
         {%- for block in section.blocks -%}
           {% case block.type %}
           {%- when 'smalltext' -%}
-              <div class="image-with-text__text rte" {{ block.shopify_attributes }}>
+              <div class="image-with-text__text rte small__text" {{ block.shopify_attributes }}>
                 {{ block.settings.smalltext | escape }}
               </div>
             {%- when 'heading' -%}

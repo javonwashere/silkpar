@@ -104,7 +104,7 @@ slider-component .slider-buttons {
 }
 
 .slider-mobile-gutter {
-  display: flex;
+  /* display: flex; */
   /* justify-content: space-between; */
 }
 

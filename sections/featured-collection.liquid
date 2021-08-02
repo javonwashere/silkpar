@@ -23,14 +23,16 @@
           if(e.target.matches(vals)){
             el.style.left = e.pageX + 'px';
             el.style.top = e.pageY + 'px';
-            console.log("EVENT", e)
             el.style.visibility = "visible"
           }
         }
       }
       document.addEventListener('mousemove', onMouseMove);
+      document.addEventListener('touchstart', onMouseMove);
+      document.addEventListener('touchmove', onMouseMove);
+      document.addEventListener('touchend', onMouseMove);
     }
-    makeElementFollowCursor(cursor)
+    makeElementFollowCursor(cursor, 'mousemove')
 
     let triangleDiv = document.createElement("div");
     document.body.appendChild(triangleDiv);
@@ -49,6 +51,8 @@
         imgs.forEach(e => e.style.pointerEvents = val);
       }
       slider.addEventListener("mousedown", e => {
+        console.log("yo", e)
+        toggleImgClicks(images, "auto");
         slider.style.cursor = "grabbing";
         isDown = true;
         slider.classList.add("active");
@@ -67,10 +71,9 @@
         slider.style.cursor = "grab";
         isDown = false;
         slider.classList.remove("active");
-        toggleImgClicks(images, "auto");
       });
       slider.addEventListener("mousemove", e => {
-        // toggleImgClicks(images, "none");
+        toggleImgClicks(images, "none");
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - slider.offsetLeft;
