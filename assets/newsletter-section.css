@@ -121,6 +121,6 @@
   box-shadow: none;
 }
 
-.custom-search-botton:hover{
-  box-shadow: none;
+button.button.newsletter__button.custom-search-botton {
+  box-shadow: none; 
 }
