@@ -147,9 +147,14 @@
 .banner__content .button {
   height: auto;
   margin-right: 2rem;
-  border-radius: 20px;
+  letter-spacing: 0.2rem;
+  border-radius: 25px;
   background-color: rgb(208, 226, 210);
   color: black;
+}
+
+.button span {
+  padding-left: 1rem;
 }
 
 .banner__box > * + .banner__text {

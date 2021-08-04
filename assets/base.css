@@ -310,11 +310,25 @@ p {
   font-family: "Proxima Nova Rg";
 }
 
-.image-with-text__text.rte:first-of-type {
+.banner__heading.h1 {
+  font-size: 6rem;
+}
+
+.image-with-text__text.rte:first-of-type, .card-information__text.h6{
   font-family: "Proxima Nova Rg";
   /* font-weight: bold; */
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+}
+
+.card-information__text.h5.title-price-bar > div:first-of-type {
+  font-family: "kessler-displayregular";
+  text-transform: capitalize;
+  font-size: 2.7rem;
+}
+
+.card-information__text.h5.title-price-bar > div:nth-child(2) {
+  font-size: 1.7rem;
 }
 
 @font-face {
@@ -422,7 +436,7 @@ h1,
 @media only screen and (min-width: 750px) {
   h1,
   .h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 }
 
@@ -1167,7 +1181,7 @@ deferred-media {
   align-items: center;
   box-sizing: border-box;
   font: inherit;
-  padding: 0.9rem 3rem 1.1rem;
+  padding: 0.9rem 1rem 1.1rem;
   text-decoration: none;
   border: 0;
   border-radius: 0;
@@ -2141,15 +2155,16 @@ details-disclosure > details {
 
 /*
 
-ADDED VALUES
+CUSTOM CSS VALUES
 
 */
 
 .button {
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: rgb(208, 226, 210);
   color: black;
   text-transform: uppercase;
+  font-family: "Proxima Nova Rg"
 }
 
 .color-scheme-taupe {
@@ -2186,4 +2201,10 @@ ADDED VALUES
 
 .color-scheme-border-silver {
   border: 18px solid rgb(235, 240, 238);
+}
+
+.img__button__arrow {
+  height: 1.5rem;
+  margin-left: 2rem;
+  padding-right: 1rem;
 }

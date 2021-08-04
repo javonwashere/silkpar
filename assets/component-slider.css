@@ -223,6 +223,7 @@ slider-component .slider-buttons {
 
 #triangle {
   position: absolute;
+  visibility: hidden;
   pointer-events: none;
   user-select: none;
   display: inline-block;

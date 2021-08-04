@@ -144,4 +144,24 @@
     <script src="{{ 'slider.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'variants.js' | asset_url }}" defer="defer"></script>
   </body>
+  <script async>
+    let allButtons = document.querySelectorAll('a.button.button--primary')
+    
+    let newButton = document.createElement('a');
+    newButton.classList.add('button', 'button--primary');
+
+    allButtons.forEach(button => {
+      let arrow = document.createElement("img");
+      arrow.src = "../assets/arrow-button.png";
+      arrow.classList.add('img__button__arrow')
+      let buttonValue = `<span>${button.innerText}</span>${arrow.outerHTML}`;
+      button.innerHTML = buttonValue;
+
+    //   let buttonText = button.innerHTML
+    //   // let buttonText = document.createElement("div").innerHTML = button.innerHTML;
+    //   // console.log(arrow);
+    //   // button.innerHTML = buttonText + arrow.outerHTML;
+    })
+  </script>
 </html>
+
