@@ -1614,6 +1614,98 @@
       "presets": {
         "name": "Rich text"
       }
+    },
+    "two-image-columns": {
+      "name": "Two Image Columns",
+      "settings": {
+        "image": {
+          "label": "Image One"
+        },
+        "image_2": {
+          "label": "Image Two"
+        },
+        "image_height": {
+          "label": "Image(s) Height"
+        },
+        "height": {
+          "options__1": {
+            "label": "Adapt to image"
+          },
+          "options__2": {
+            "label": "Small"
+          },
+          "options__3": {
+            "label": "Large"
+          },
+          "label": "Image ratio"
+        },
+        "color_scheme": {
+          "options__1": {
+            "label": "Taupe"
+          },
+          "options__2": {
+            "label": "Bronze"
+          },
+          "options__3": {
+            "label": "White"
+          },
+          "options__4": {
+            "label": "Silver"
+          },
+          "label": "Color scheme"
+        },
+        "layout": {
+          "options__1": {
+            "label": "Image One first"
+          },
+          "options__2": {
+            "label": "Image Two first"
+          },
+          "label": "Desktop layout",
+          "info": "Image first is the default mobile layout."
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Heading",
+          "settings": {
+            "heading": {
+              "label": "Heading"
+            }
+          }
+        },
+        "smalltext": {
+          "name": "Small Text",
+          "settings": {
+            "smalltext": {
+              "label": "Small Text"
+            }
+          }
+        },
+        "text": {
+          "name": "Text",
+          "settings": {
+            "text": {
+              "label": "Description"
+            }
+          }
+        },
+        "button": {
+          "name": "Button",
+          "settings": {
+            "button_label": {
+              "label": "Button label",
+              "info": "Leave the label blank to hide the button."
+            },
+            "button_link": {
+              "label": "Button link"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Two Image Columns"
+      }
     }
   }
 }

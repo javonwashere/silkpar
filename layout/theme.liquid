@@ -144,7 +144,7 @@
     <script src="{{ 'slider.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'variants.js' | asset_url }}" defer="defer"></script>
   </body>
-  <script async>
+  <script defer>
     let allButtons = document.querySelectorAll('a.button.button--primary')
     
     let newButton = document.createElement('a');
@@ -152,10 +152,10 @@
 
     allButtons.forEach(button => {
       let arrow = document.createElement("img");
-      arrow.src = "../assets/arrow-button.png";
       arrow.classList.add('img__button__arrow')
       let buttonValue = `<span>${button.innerText}</span>${arrow.outerHTML}`;
       button.innerHTML = buttonValue;
+      arrow.src = "../assets/arrow-button.png";
 
     //   let buttonText = button.innerHTML
     //   // let buttonText = document.createElement("div").innerHTML = button.innerHTML;
