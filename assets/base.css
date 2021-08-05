@@ -302,7 +302,9 @@ h5,
   line-height: 1.3;
 }
 
-h1, h2, .h1 {
+h1,
+h2,
+.h1 {
   font-family: "kessler-displayregular";
 }
 
@@ -314,7 +316,8 @@ p {
   font-size: 6rem;
 }
 
-.image-with-text__text.rte:first-of-type, .card-information__text.h6{
+.image-with-text__text.rte:first-of-type,
+.card-information__text.h6 {
   font-family: "Proxima Nova Rg";
   /* font-weight: bold; */
   text-transform: uppercase;
@@ -383,14 +386,12 @@ p {
 
 @font-face {
   font-family: "kessler-displayitalic";
-  src: url("kesslerdisplayweb-italic.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("kesslerdisplayweb-italic.eot?#iefix") format("embedded-opentype"),
     url("kesslerdisplayweb-italic.woff") format("woff");
 }
 @font-face {
   font-family: "kessler-displayregular";
-  src: url("kesslerdisplayweb-regular.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("kesslerdisplayweb-regular.eot?#iefix") format("embedded-opentype"),
     url("kesslerdisplayweb-regular.woff") format("woff");
 }
 @font-face {
@@ -407,14 +408,12 @@ p {
 }
 @font-face {
   font-family: "kessler-textitalic";
-  src: url("kesslertextweb-italic.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("kesslertextweb-italic.eot?#iefix") format("embedded-opentype"),
     url("kesslertextweb-italic.woff") format("woff");
 }
 @font-face {
   font-family: "kessler-textregular";
-  src: url("kesslertextweb-regular.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("kesslertextweb-regular.eot?#iefix") format("embedded-opentype"),
     url("kesslertextweb-regular.woff") format("woff");
 }
 
@@ -2164,7 +2163,7 @@ CUSTOM CSS VALUES
   background-color: rgb(208, 226, 210);
   color: black;
   text-transform: uppercase;
-  font-family: "Proxima Nova Rg"
+  font-family: "Proxima Nova Rg";
 }
 
 .color-scheme-taupe {
@@ -2207,4 +2206,10 @@ CUSTOM CSS VALUES
   height: 1.5rem;
   margin-left: 2rem;
   padding-right: 1rem;
+  background: url(./arrow-button.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 40px;
+  display: block !important;
 }

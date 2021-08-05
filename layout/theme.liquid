@@ -151,11 +151,10 @@
     newButton.classList.add('button', 'button--primary');
 
     allButtons.forEach(button => {
-      let arrow = document.createElement("img");
+      let arrow = document.createElement("div");
       arrow.classList.add('img__button__arrow')
       let buttonValue = `<span>${button.innerText}</span>${arrow.outerHTML}`;
       button.innerHTML = buttonValue;
-      arrow.src = "../assets/arrow-button.png";
 
     //   let buttonText = button.innerHTML
     //   // let buttonText = document.createElement("div").innerHTML = button.innerHTML;
