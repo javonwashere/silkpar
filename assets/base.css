@@ -2168,6 +2168,7 @@ CUSTOM CSS VALUES
 
 .color-scheme-taupe {
   background-color: rgb(242, 233, 222);
+  border-bottom-color: rgb(242, 233, 222);
 }
 
 .color-scheme-border-taupe {
@@ -2176,6 +2177,7 @@ CUSTOM CSS VALUES
 
 .color-scheme-bronze {
   background-color: rgb(116, 92, 62);
+  border-bottom-color: rgb(116, 92, 62);
 }
 
 .color-scheme-border-bronze {
@@ -2188,6 +2190,7 @@ CUSTOM CSS VALUES
 
 .color-scheme-white {
   background-color: white;
+  border-bottom-color: white;
 }
 
 .color-scheme-border-white {
@@ -2196,6 +2199,7 @@ CUSTOM CSS VALUES
 
 .color-scheme-silver {
   background-color: rgb(235, 240, 238);
+  border-bottom-color: rgb(235, 240, 238);
 }
 
 .color-scheme-border-silver {
@@ -2212,4 +2216,11 @@ CUSTOM CSS VALUES
   background-position: center center;
   width: 40px;
   display: block !important;
+}
+
+main > *:last-child > div {
+  border-bottom-style: solid;
+  border-bottom-width: 50px;
+  border-radius: 0 0 6rem 6rem;
+  margin-bottom: -50px;
 }
