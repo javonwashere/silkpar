@@ -24,10 +24,10 @@
         "16302334117aef374b-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
+            "button_label_1": "BOOK A SERVICE",
+            "button_link_1": "https:\/\/google.com",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -42,7 +42,7 @@
         "image": "shopify:\/\/shop_images\/image-017-reverse.jpg",
         "image_2": "shopify:\/\/shop_images\/image-006.jpg",
         "desktop_text_box_position": "center",
-        "color_scheme": "taupe",
+        "color_scheme": "white",
         "overlap_second_image": true,
         "stack_images_on_mobile": true,
         "adapt_height_first_image": false
