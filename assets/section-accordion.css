@@ -10,12 +10,17 @@
   .accordion.no-heading.background-secondary {
     padding-top: 5rem;
   }
+  .accordion.background-primary.no-heading {
+    margin-top: -6rem;
+  }
+
 }
 
 @media screen and (min-width: 750px) {
   .accordion.no-heading:not(.background-secondary) {
     padding-top: 6rem;
   }
+
 }
 
 .accordion.background-secondary .title-wrapper-with-link {
