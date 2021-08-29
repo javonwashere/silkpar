@@ -83,12 +83,12 @@
           "type": "column",
           "settings": {
             "title": "Light Wave LED Therapy",
-            "subtitle": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button": "",
-            "subtitle_2": "Column",
-            "text_2": "",
-            "button_2": "",
+            "subtitle": "LED Light Therapy Program",
+            "text": "<p>LIGHTWAVE'S patented Red, Infrared & Blue Light therapy can dramatically revitalize your skin without any downtime or discomfort. This innovative aesthetic treatment helps counteract years of sun damage, environmental damage, aging, acne and acne scarring. LIGHTWAVE provides noticeable results, often in a few sessions.<\/p>",
+            "button": "https:\/\/google.com",
+            "subtitle_2": "Topical Light Infusion Program",
+            "text_2": "<p>Get the results you want, and take your skin to the next level. Topical Light Infusion is proprietary technology combining LED light therapy and powerful topicals that dramatically diminishes the fine lines and wrinkles, discoloration and inflammation while improving the overall appearance of the skin. Choose from Wrinkle Repair, Collagen Renewal, Brightening Treatment, Blemish and oil control treatment, Resveratrol Illuminating Complex Booster Mask, Plumping Hydration Boosting Gel Mask, Pro Power C, Ceramide Boosting Mask, and the Retinol Treatment. This treatment will include a deep cleansing of the skin, and exfoliation.<\/p>",
+            "button_2": "https:\/\/google.com",
             "subtitle_3": "Column",
             "text_3": "",
             "button_3": ""
@@ -170,7 +170,7 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
       }
