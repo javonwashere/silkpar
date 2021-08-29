@@ -2223,7 +2223,6 @@ CUSTOM CSS VALUES
   pointer-events: none;
   bottom: 0;
   z-index: 3;
-  width: 100%;
   opacity: 0.7;
 }
 
@@ -2233,9 +2232,10 @@ CUSTOM CSS VALUES
 }
 
 .silkpar--s-image {
-  height: 380px;
   background: url(./silkpar-s.png);
+  background-size: contain;
   background-repeat: no-repeat;
+  height: 380px;
 }
 
 .card-information__text {
