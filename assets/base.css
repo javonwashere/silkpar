@@ -2234,6 +2234,8 @@ CUSTOM CSS VALUES
 
 .silkpar--s-image {
   height: 380px;
+  background: url(./silkpar-s.png);
+  background-repeat: no-repeat;
 }
 
 .card-information__text {
