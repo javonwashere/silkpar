@@ -73,6 +73,7 @@
 
       body {
         display: grid;
+        position: relative;
         grid-template-rows: auto auto 1fr auto;
         grid-template-columns: 100%;
         min-height: 100%;
@@ -143,6 +144,11 @@
 
     <script src="{{ 'slider.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'variants.js' | asset_url }}" defer="defer"></script>
+    <div class="silkpar--s-footer">
+      <div class="silkpar--s-wrapper">
+        <img class="silkpar--s-image" src="../assets/silkpar-s.png"/>
+      </div>
+    </div>
   </body>
   <script defer>
     let allButtons = document.querySelectorAll('a.button.button--primary')

@@ -305,11 +305,11 @@ h5,
 h1,
 h2,
 .h1 {
-  font-family: "kessler-displayregular";
+  font-family: 'kessler-displayregular';
 }
 
 p {
-  font-family: "Proxima Nova Rg";
+  font-family: 'Proxima Nova Rg';
 }
 
 .banner__heading.h1 {
@@ -318,14 +318,14 @@ p {
 
 .image-with-text__text.rte:first-of-type,
 .card-information__text.h6 {
-  font-family: "Proxima Nova Rg";
+  font-family: 'Proxima Nova Rg';
   /* font-weight: bold; */
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
 
 .card-information__text.h5.title-price-bar > div:first-of-type {
-  font-family: "kessler-displayregular";
+  font-family: 'kessler-displayregular';
   text-transform: capitalize;
   font-size: 2.7rem;
 }
@@ -335,86 +335,86 @@ p {
 }
 
 @font-face {
-  font-family: "Proxima Nova Rg";
-  src: url("ProximaNova-Bold.woff2") format("woff2"),
-    url("ProximaNova-Bold.woff") format("woff"),
-    url("ProximaNova-Bold.ttf") format("truetype");
+  font-family: 'Proxima Nova Rg';
+  src: url('ProximaNova-Bold.woff2') format('woff2'),
+    url('ProximaNova-Bold.woff') format('woff'),
+    url('ProximaNova-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Optician Sans";
-  src: url("OpticianSans-Regular.woff2") format("woff2"),
-    url("OpticianSans-Regular.woff") format("woff"),
-    url("OpticianSans-Regular.ttf") format("truetype");
+  font-family: 'Optician Sans';
+  src: url('OpticianSans-Regular.woff2') format('woff2'),
+    url('OpticianSans-Regular.woff') format('woff'),
+    url('OpticianSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Proxima Nova Rg";
-  src: url("ProximaNova-Regular.woff2") format("woff2"),
-    url("ProximaNova-Regular.woff") format("woff"),
-    url("ProximaNova-Regular.ttf") format("truetype");
+  font-family: 'Proxima Nova Rg';
+  src: url('ProximaNova-Regular.woff2') format('woff2'),
+    url('ProximaNova-Regular.woff') format('woff'),
+    url('ProximaNova-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Myriad Pro";
-  src: url("MyriadPro-Regular.woff2") format("woff2"),
-    url("MyriadPro-Regular.woff") format("woff"),
-    url("MyriadPro-Regular.ttf") format("truetype");
+  font-family: 'Myriad Pro';
+  src: url('MyriadPro-Regular.woff2') format('woff2'),
+    url('MyriadPro-Regular.woff') format('woff'),
+    url('MyriadPro-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "ProximaNova";
-  src: url("ProximaNova-Semibold.woff2") format("woff2"),
-    url("ProximaNova-Semibold.woff") format("woff"),
-    url("ProximaNova-Semibold.ttf") format("truetype");
+  font-family: 'ProximaNova';
+  src: url('ProximaNova-Semibold.woff2') format('woff2'),
+    url('ProximaNova-Semibold.woff') format('woff'),
+    url('ProximaNova-Semibold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "kessler-displayitalic";
-  src: url("kesslerdisplayweb-italic.eot?#iefix") format("embedded-opentype"),
-    url("kesslerdisplayweb-italic.woff") format("woff");
+  font-family: 'kessler-displayitalic';
+  src: url('kesslerdisplayweb-italic.eot?#iefix') format('embedded-opentype'),
+    url('kesslerdisplayweb-italic.woff') format('woff');
 }
 @font-face {
-  font-family: "kessler-displayregular";
-  src: url("kesslerdisplayweb-regular.eot?#iefix") format("embedded-opentype"),
-    url("kesslerdisplayweb-regular.woff") format("woff");
+  font-family: 'kessler-displayregular';
+  src: url('kesslerdisplayweb-regular.eot?#iefix') format('embedded-opentype'),
+    url('kesslerdisplayweb-regular.woff') format('woff');
 }
 @font-face {
-  font-family: "kessler-superdisplayitalic";
-  src: url("kesslersuperdisplayweb-italic.eot?#iefix")
-      format("embedded-opentype"),
-    url("kesslersuperdisplayweb-italic.woff") format("woff");
+  font-family: 'kessler-superdisplayitalic';
+  src: url('kesslersuperdisplayweb-italic.eot?#iefix')
+      format('embedded-opentype'),
+    url('kesslersuperdisplayweb-italic.woff') format('woff');
 }
 @font-face {
-  font-family: "kessler-superdisplayregular";
-  src: url("kesslersuperdisplayweb-regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("kesslersuperdisplayweb-regular.woff") format("woff");
+  font-family: 'kessler-superdisplayregular';
+  src: url('kesslersuperdisplayweb-regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('kesslersuperdisplayweb-regular.woff') format('woff');
 }
 @font-face {
-  font-family: "kessler-textitalic";
-  src: url("kesslertextweb-italic.eot?#iefix") format("embedded-opentype"),
-    url("kesslertextweb-italic.woff") format("woff");
+  font-family: 'kessler-textitalic';
+  src: url('kesslertextweb-italic.eot?#iefix') format('embedded-opentype'),
+    url('kesslertextweb-italic.woff') format('woff');
 }
 @font-face {
-  font-family: "kessler-textregular";
-  src: url("kesslertextweb-regular.eot?#iefix") format("embedded-opentype"),
-    url("kesslertextweb-regular.woff") format("woff");
+  font-family: 'kessler-textregular';
+  src: url('kesslertextweb-regular.eot?#iefix') format('embedded-opentype'),
+    url('kesslertextweb-regular.woff') format('woff');
 }
 
 .h0 {
@@ -648,7 +648,7 @@ h6:empty {
 }
 
 .circle-divider::after {
-  content: "\2022";
+  content: '\2022';
   margin: 0 1.3rem 0 1.5rem;
 }
 
@@ -759,7 +759,7 @@ summary::-webkit-details-marker {
   z-index: 2;
   display: block;
   cursor: default;
-  content: " ";
+  content: ' ';
   background: transparent;
 }
 
@@ -1237,10 +1237,10 @@ deferred-media {
 /* Button - other */
 
 .button:disabled,
-.button[aria-disabled="true"],
+.button[aria-disabled='true'],
 .button.disabled,
 .customer button:disabled,
-.customer button[aria-disabled="true"],
+.customer button[aria-disabled='true'],
 .customer button.disabled {
   cursor: not-allowed;
   opacity: 0.5;
@@ -1261,7 +1261,7 @@ deferred-media {
   border-left: 0.5rem solid rgb(var(--color-button-text));
   border-radius: 100%;
   box-sizing: content-box;
-  content: "";
+  content: '';
   display: block;
   height: 2rem;
   position: absolute;
@@ -1457,7 +1457,7 @@ deferred-media {
   resize: vertical;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   display: inline-block;
   width: auto;
   margin-right: 0.5rem;
@@ -1579,7 +1579,7 @@ input[type="checkbox"] {
   margin: 0;
 }
 
-.quantity__input[type="number"] {
+.quantity__input[type='number'] {
   -moz-appearance: textfield;
 }
 
@@ -1745,7 +1745,7 @@ input[type="checkbox"] {
 
 .header {
   display: grid;
-  grid-template-areas: "left-icon heading icons";
+  grid-template-areas: 'left-icon heading icons';
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   background-color: rgb(var(--color-background));
@@ -1765,21 +1765,21 @@ input[type="checkbox"] {
 
   .header--top-left {
     grid-template-areas:
-      "heading icons"
-      "navigation navigation";
+      'heading icons'
+      'navigation navigation';
     grid-template-columns: 1fr auto;
   }
 
   .header--middle-left {
-    grid-template-areas: "heading navigation icons";
+    grid-template-areas: 'heading navigation icons';
     grid-template-columns: auto 1fr auto;
     column-gap: 2rem;
   }
 
   .header--top-center {
     grid-template-areas:
-      "left-icon heading icons"
-      "navigation navigation navigation";
+      'left-icon heading icons'
+      'navigation navigation navigation';
   }
 
   .header--middle-left .header__inline-menu {
@@ -1791,7 +1791,7 @@ input[type="checkbox"] {
   }
 }
 
-.header *[tabindex="-1"]:focus {
+.header *[tabindex='-1']:focus {
   outline: none;
 }
 
@@ -2163,7 +2163,7 @@ CUSTOM CSS VALUES
   background-color: rgb(208, 226, 210);
   color: black;
   text-transform: uppercase;
-  font-family: "Proxima Nova Rg";
+  font-family: 'Proxima Nova Rg';
 }
 
 .color-scheme-taupe {
@@ -2218,9 +2218,21 @@ CUSTOM CSS VALUES
   display: block !important;
 }
 
-main > *:last-child > div {
-  border-bottom-style: solid;
-  border-bottom-width: 50px;
-  border-radius: 0 0 6rem 6rem;
-  margin-bottom: -50px;
+.silkpar--s-footer {
+  position: absolute;
+  pointer-events: none;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
 }
+
+.silkpar--s-wrapper {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.silkpar--s-image {
+  height: 380px;
+}
+
+

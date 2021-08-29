@@ -6,6 +6,44 @@
   border-top: none;
 }
 
+main > *:last-child > div {
+  border-bottom-style: solid;
+  border-bottom-width: 50px;
+  border-radius: 0 0 6rem 6rem;
+}
+
+main {
+  z-index: 2;
+  margin-bottom: -50px;
+}
+
+#shopify-section-footer {
+  margin-top: -50px;
+  padding-top: 100px;
+  background-color: rgb(40, 29, 20);
+  z-index: 1;
+}
+
+.footer--link,
+.footer-block__heading,
+.footer__copyright > *,
+.list-social__item > * {
+  color: rgb(242, 230, 215) !important;
+  text-transform: uppercase;
+}
+
+.footer--link {
+  font-family: 'Proxima Nova Rg';
+}
+
+.footer-block__heading {
+  font-family: 'Optician Sans';
+}
+
+a:link {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 749px) {
   .footer .grid {
     display: block;
@@ -26,8 +64,30 @@
 .footer__content-top {
   padding-bottom: 5rem;
   padding-top: 5rem;
-  display: block;
+  /* display: block; */
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.footer-block__heading {
+  text-align: center;
+  width: 50%;
+}
+
+.footer__blocks-wrapper.grid.grid--1-col.grid--2-col.grid--4-col-tablet {
+  width: 25%;
+}
+
+ul.footer-block__details-content.list-unstyled {
+  columns: 3;
+  text-align: left;
+}
+
+/* .footer-block--newsletter {
+  width: 25%;
+  align-items: flex-start;
+  margin-top: 0;
+} */
 
 @media screen and (min-width: 750px) {
   .footer__content-top {
@@ -143,6 +203,9 @@
   justify-content: center;
   align-items: flex-end;
   margin-top: 5rem;
+  width: 25%;
+  align-items: flex-start;
+  margin-top: 0;
 }
 
 .footer-block--newsletter:only-child {
@@ -433,20 +496,22 @@ footer details[open] summary ~ * {
 
 .footer-block__details-content {
   margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.footer-block__details-content li:first-child .link {
+/* .footer-block__details-content li:first-child .link {
   padding-top: 3rem;
-}
+} */
 
 @media screen and (min-width: 750px) {
   .footer-block__details-content {
     margin-bottom: 0;
   }
 
-  .footer-block__details-content li:first-child .link {
+  /* .footer-block__details-content li:first-child .link {
     padding-top: 0;
-  }
+  } */
 
   .footer-block__details-content > p,
   .footer-block__details-content > li {
@@ -492,6 +557,13 @@ footer details[open] summary ~ * {
     padding-bottom: 1rem;
     margin-top: 0.5rem;
   }
+  .footer__content-top .page-width {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-block__details-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -500,10 +572,10 @@ footer details[open] summary ~ * {
     font-size: 1.4rem;
   }
 
-  .footer-block__details-content > :first-child .list-menu__item--link {
+  /* .footer-block__details-content > :first-child .list-menu__item--link {
     padding-top: 0;
     margin-top: 0;
-  }
+  } */
 }
 
 @media screen and (max-width: 749px) {
@@ -537,6 +609,14 @@ footer details[open] summary ~ * {
   }
 }
 
+.footer-block--newsletter {
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer-block--newsletter > .footer-block__heading {
+  margin-bottom: 0;
+}
+
 .footer .disclosure__link {
   padding: 0.95rem 3.5rem 0.95rem 2rem;
   color: rgba(var(--color-foreground), 0.75);
@@ -548,4 +628,41 @@ footer details[open] summary ~ * {
 
 .footer .disclosure__link--active {
   text-decoration: underline;
+}
+
+.list-menu__item--link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 989px) {
+  .footer__content-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-block__details-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer-block--newsletter {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-block.grid__item.footer-block--menu.small-hide {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__blocks-wrapper.grid.grid--1-col.grid--2-col.grid--4-col-tablet, .footer-block--newsletter {
+    width: 100%;
+  }
+
+  ul.footer-block__details-content.list-unstyled > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__content-top {
+    padding-bottom: 1rem;
+    padding-top: 5rem;
 }
