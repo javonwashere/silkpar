@@ -1,8 +1,8 @@
-{{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
+{{ 'section-accordion.css' | asset_url | stylesheet_tag }}
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="accordion background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
       <h2 class="title">
@@ -13,7 +13,7 @@
       {%- endif -%}
     </div>
     <slider-component class="slider-mobile-gutter">
-      <ul class="multicolumn-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
+      <ul class="accordion-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
         id="Slider-{{ section.id }}"
         role="list"
       >
@@ -26,13 +26,13 @@
           endfor
         -%}
         {%- for block in section.blocks -%}
-          <li class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
-            <div class="multicolumn-card">
+          <li class="accordion-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
+            <div class="accordion accordion-card">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
                 {% endif %}
-                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
+                <div class="accordion-card__image-wrapper accordion-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} accordion-card-spacing{% endif %}">
                   <div class="media media--transparent media--{{ section.settings.image_ratio }}"
                     {% if section.settings.image_ratio == 'adapt' %}
                       style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
@@ -54,14 +54,22 @@
                   </div>
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info">
+              <div class="accordion__intro">
                 {%- if block.settings.title != blank -%}
                   <h3>{{ block.settings.title | escape }}</h3>
                 {%- endif -%}
+              </div>
+              <div class="accordion__content">
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
+                {%- if block.settings.text_2 != blank -%}
+                  <div class="rte">{{ block.settings.text }}</div>
+                {%- endif -%}
               </div>
+              {% comment %} <div class="accordion-card__info">
+                
+              </div> {% endcomment %}
             </div>
           </li>
         {%- endfor -%}
@@ -90,6 +98,7 @@
   </div>
 </div>
 
+
 {% schema %}
 {
   "name": "t:sections.accordion.name",
@@ -99,7 +108,7 @@
     {
       "type": "text",
       "id": "title",
-      "default": "Multicolumn",
+      "default": "accordion",
       "label": "t:sections.accordion.settings.title.label"
     },
     {
@@ -217,9 +226,39 @@
           "label": "t:sections.accordion.blocks.column.settings.title.label"
         },
         {
+          "type": "text",
+          "id": "subheading_1",
+          "default": "Column",
+          "label": "t:sections.accordion.blocks.column.settings.title.label"
+        },
+        {
           "type": "richtext",
           "id": "text",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "t:sections.accordion.blocks.column.settings.text.label"
+        },
+        {
+          "type": "text",
+          "id": "subheading_2",
+          "default": "Column",
+          "label": "t:sections.accordion.blocks.column.settings.title.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text_2",
+          "default": "",
+          "label": "t:sections.accordion.blocks.column.settings.text.label"
+        },
+        {
+          "type": "text",
+          "id": "subheading_3",
+          "default": "Column",
+          "label": "t:sections.accordion.blocks.column.settings.title.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text_3",
+          "default": "",
           "label": "t:sections.accordion.blocks.column.settings.text.label"
         }
       ]
