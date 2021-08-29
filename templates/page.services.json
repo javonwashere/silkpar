@@ -2,11 +2,183 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "16302334117aef374b": {
+      "type": "image-banner",
+      "blocks": {
+        "16302334117aef374b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "16302334117aef374b-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "16302334117aef374b-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16302334117aef374b-0",
+        "16302334117aef374b-1",
+        "16302334117aef374b-2"
+      ],
+      "settings": {
+        "desktop_text_box_position": "center",
+        "color_scheme": "taupe",
+        "overlap_second_image": true,
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
+      }
+    },
+    "1630233400908803fa": {
+      "type": "accordion",
+      "blocks": {
+        "1630233400908803fa-0": {
+          "type": "column",
+          "settings": {
+            "title": "Facials",
+            "subtitle": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button": "",
+            "subtitle_2": "Column",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "Column",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "1630233400908803fa-1": {
+          "type": "column",
+          "settings": {
+            "title": "Facials Enhancements",
+            "subtitle": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button": "",
+            "subtitle_2": "Column",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "Column",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "1630233400908803fa-2": {
+          "type": "column",
+          "settings": {
+            "title": "Light Wave LED Therapy",
+            "subtitle": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button": "",
+            "subtitle_2": "Column",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "Column",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "46dff88d-6758-4bca-b6a5-1129c38ff365": {
+          "type": "column",
+          "settings": {
+            "title": "Body Contouring",
+            "subtitle": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button": "",
+            "subtitle_2": "Column",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "Column",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "4c660697-aad9-4718-b08f-aa7345a7afd9": {
+          "type": "column",
+          "settings": {
+            "title": "Waxing",
+            "subtitle": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button": "",
+            "subtitle_2": "Column",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "Column",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "1c17aab7-90ff-4a08-ae07-15269e1b3ae9": {
+          "type": "column",
+          "settings": {
+            "title": "Waxing Enhancements",
+            "subtitle": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button": "",
+            "subtitle_2": "Column",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "Column",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "bd421f73-0c41-4b06-bb07-2e31439b29cf": {
+          "type": "column",
+          "settings": {
+            "title": "Extra, Extra, Read all About it",
+            "subtitle": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button": "",
+            "subtitle_2": "Column",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "Column",
+            "text_3": "",
+            "button_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "1630233400908803fa-0",
+        "1630233400908803fa-1",
+        "1630233400908803fa-2",
+        "46dff88d-6758-4bca-b6a5-1129c38ff365",
+        "4c660697-aad9-4718-b08f-aa7345a7afd9",
+        "1c17aab7-90ff-4a08-ae07-15269e1b3ae9",
+        "bd421f73-0c41-4b06-bb07-2e31439b29cf"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16302334117aef374b",
+    "1630233400908803fa"
   ]
 }

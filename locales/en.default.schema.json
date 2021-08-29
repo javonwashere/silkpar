@@ -257,7 +257,8 @@
             },
             "text_2": {
               "label": "Description Two"
-            },"text_3": {
+            },
+            "text_3": {
               "label": "Description Three"
             },
             "button": {
