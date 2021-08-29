@@ -2,120 +2,122 @@
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="accordion background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
-  <div class="page-width">
-    <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
-      <h2 class="title">
-        {{ section.settings.title | escape }}
-      </h2>
-      {%- if section.settings.button_label != blank and section.settings.swipe_on_mobile -%}
-        <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
-      {%- endif -%}
-    </div>
-    <slider-component class="slider-mobile-gutter">
-      <ul class="accordion-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
-        id="Slider-{{ section.id }}"
-        role="list"
-      >
-        {%- liquid
-          assign highest_ratio = 0
-          for block in section.blocks
-            if block.settings.image.aspect_ratio > highest_ratio
-              assign highest_ratio = block.settings.image.aspect_ratio
-            endif
-          endfor
-        -%}
-        {%- for block in section.blocks -%}
-          <li class="accordion-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
-            <div class="accordion accordion-card">
-              {%- if block.settings.image != blank -%}
-                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
-                  {% assign spaced_image = true %}
-                {% endif %}
-                <div class="accordion-card__image-wrapper accordion-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} accordion-card-spacing{% endif %}">
-                  <div class="media media--transparent media--{{ section.settings.image_ratio }}"
-                    {% if section.settings.image_ratio == 'adapt' %}
-                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                    {% endif %}>
-                    <img
-                      srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | img_url: '275x' }} 275w,{%- endif -%}
-                        {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
-                        {%- if block.settings.image.width >= 710 -%}{{ block.settings.image | img_url: '710x' }} 710w,{%- endif -%}
-                        {%- if block.settings.image.width >= 1420 -%}{{ block.settings.image | img_url: '1420x' }} 1420w,{%- endif -%}"
-                      src="{{ block.settings.image | img_url: '550x' }}"
-                      sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
-                        (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %},
-                        calc(100vw - 30px)"
-                      alt="{{ block.settings.title }}"
-                      height="{{ block.settings.image.height }}"
-                      width="{{ block.settings.image.width }}"
-                      loading="lazy"
-                    >
+<div class="color-scheme-{{ section.settings.color_scheme }}">
+  <div class="accordion background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
+    <div class="page-width">
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
+        <h2 class="title">
+          {{ section.settings.title | escape }}
+        </h2>
+        {%- if section.settings.button_label != blank and section.settings.swipe_on_mobile -%}
+          <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
+        {%- endif -%}
+      </div>
+      <slider-component class="slider-mobile-gutter">
+        <ul class="accordion-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
+          id="Slider-{{ section.id }}"
+          role="list"
+        >
+          {%- liquid
+            assign highest_ratio = 0
+            for block in section.blocks
+              if block.settings.image.aspect_ratio > highest_ratio
+                assign highest_ratio = block.settings.image.aspect_ratio
+              endif
+            endfor
+          -%}
+          {%- for block in section.blocks -%}
+            <li class="accordion-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
+              <div class="accordion accordion-card">
+                {%- if block.settings.image != blank -%}
+                  {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
+                    {% assign spaced_image = true %}
+                  {% endif %}
+                  <div class="accordion-card__image-wrapper accordion-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} accordion-card-spacing{% endif %}">
+                    <div class="media media--transparent media--{{ section.settings.image_ratio }}"
+                      {% if section.settings.image_ratio == 'adapt' %}
+                        style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
+                      {% endif %}>
+                      <img
+                        srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | img_url: '275x' }} 275w,{%- endif -%}
+                          {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
+                          {%- if block.settings.image.width >= 710 -%}{{ block.settings.image | img_url: '710x' }} 710w,{%- endif -%}
+                          {%- if block.settings.image.width >= 1420 -%}{{ block.settings.image | img_url: '1420x' }} 1420w,{%- endif -%}"
+                        src="{{ block.settings.image | img_url: '550x' }}"
+                        sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                          (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %},
+                          calc(100vw - 30px)"
+                        alt="{{ block.settings.title }}"
+                        height="{{ block.settings.image.height }}"
+                        width="{{ block.settings.image.width }}"
+                        loading="lazy"
+                      >
+                    </div>
                   </div>
+                {%- endif -%}
+                <div class="accordion__intro">
+                  {%- if block.settings.title != blank -%}
+                    <h3>{{ block.settings.title | escape }}</h3>
+                  {%- endif -%}
                 </div>
-              {%- endif -%}
-              <div class="accordion__intro">
-                {%- if block.settings.title != blank -%}
-                  <h3>{{ block.settings.title | escape }}</h3>
-                {%- endif -%}
+                <div class="accordion__content">
+                  <hr style="margin-top: 0; margin-bottom: 2rem;">
+                  {%- if block.settings.subtitle != blank -%}
+                    <h4>{{ block.settings.subtitle }}</h4>
+                  {%- endif -%}
+                  {%- if block.settings.text != blank -%}
+                    <div class="rte">{{ block.settings.text }}</div>
+                  {%- endif -%}
+                  {%- if block.settings.button != blank -%}
+                    <div class="banner__buttons" {{ block.shopify_attributes }}>
+                        <a{% if block.settings.button != blank %} href="{{ block.settings.button }}"{% endif %} class="button button--secondary"{% if block.settings.button == blank %} aria-disabled="true"{% endif %}>Book Service</a>
+                    </div>
+                  {%- endif-%}
+                  {%- if block.settings.subtitle_2 != blank -%}
+                    <hr style="margin-top: 2rem; margin-bottom: 2rem;">
+                    <h4>{{ block.settings.subtitle_2 }}</h4>
+                  {%- endif -%}
+                  {%- if block.settings.text_2 != blank -%}
+                    <div class="rte">{{ block.settings.text_2 }}</div>
+                  {%- endif -%}
+                  {%- if block.settings.button_2 != blank -%}
+                    <div class="banner__buttons" {{ block.shopify_attributes }}>
+                        <a{% if block.settings.button != blank %} href="{{ block.settings.button_2 }}"{% endif %} class="button button--secondary"{% if block.settings.button_2 == blank %} aria-disabled="true"{% endif %}>Book Service</a>
+                    </div>
+                  {%- endif-%}
+                  {%- if block.settings.subtitle_3 != blank -%}
+                    <hr style="margin-top: 2rem; margin-bottom: 2rem;">
+                    <h4>{{ block.settings.subtitle_3 }}</h4>
+                  {%- endif -%}
+                  {%- if block.settings.text_3 != blank -%}
+                    <div class="rte">{{ block.settings.text_3 }}</div>
+                  {%- endif -%}
+                </div>
               </div>
-              <div class="accordion__content">
-                <hr style="margin-top: 0; margin-bottom: 2rem;">
-                {%- if block.settings.subtitle != blank -%}
-                  <h4>{{ block.settings.subtitle }}</h4>
-                {%- endif -%}
-                {%- if block.settings.text != blank -%}
-                  <div class="rte">{{ block.settings.text }}</div>
-                {%- endif -%}
-                {%- if block.settings.button != blank -%}
-                  <div class="banner__buttons" {{ block.shopify_attributes }}>
-                      <a{% if block.settings.button != blank %} href="{{ block.settings.button }}"{% endif %} class="button button--secondary"{% if block.settings.button == blank %} aria-disabled="true"{% endif %}>Book Service</a>
-                  </div>
-                {%- endif-%}
-                {%- if block.settings.subtitle_2 != blank -%}
-                  <hr style="margin-top: 2rem; margin-bottom: 2rem;">
-                  <h4>{{ block.settings.subtitle_2 }}</h4>
-                {%- endif -%}
-                {%- if block.settings.text_2 != blank -%}
-                  <div class="rte">{{ block.settings.text_2 }}</div>
-                {%- endif -%}
-                {%- if block.settings.button_2 != blank -%}
-                  <div class="banner__buttons" {{ block.shopify_attributes }}>
-                      <a{% if block.settings.button != blank %} href="{{ block.settings.button_2 }}"{% endif %} class="button button--secondary"{% if block.settings.button_2 == blank %} aria-disabled="true"{% endif %}>Book Service</a>
-                  </div>
-                {%- endif-%}
-                {%- if block.settings.subtitle_3 != blank -%}
-                  <hr style="margin-top: 2rem; margin-bottom: 2rem;">
-                  <h4>{{ block.settings.subtitle_3 }}</h4>
-                {%- endif -%}
-                {%- if block.settings.text_3 != blank -%}
-                  <div class="rte">{{ block.settings.text_3 }}</div>
-                {%- endif -%}
-              </div>
-            </div>
-          </li>
-        {%- endfor -%}
-      </ul>
+            </li>
+          {%- endfor -%}
+        </ul>
 
-      {%- if section.settings.swipe_on_mobile -%}
-        <div class="slider-buttons no-js-hidden medium-hide{% if section.blocks.size < 2 %} small-hide{% endif %}">
-          <div class="slider-counter caption">
-            <span class="slider-counter--current">1</span>
-            <span aria-hidden="true"> / </span>
-            <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
-            <span class="slider-counter--total">{{ section.blocks.size }}</span>
+        {%- if section.settings.swipe_on_mobile -%}
+          <div class="slider-buttons no-js-hidden medium-hide{% if section.blocks.size < 2 %} small-hide{% endif %}">
+            <div class="slider-counter caption">
+              <span class="slider-counter--current">1</span>
+              <span aria-hidden="true"> / </span>
+              <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
+              <span class="slider-counter--total">{{ section.blocks.size }}</span>
+            </div>
+            <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
+            <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
           </div>
-          <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-          <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
-        </div>
-      {%- endif -%}
-    </slider-component>
-    <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
-      {%- if section.settings.button_label != blank -%}
-        <a class="button button--primary"{% if section.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
-          {{ section.settings.button_label | escape }}
-        </a>
-      {%- endif-%}
+        {%- endif -%}
+      </slider-component>
+      <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
+        {%- if section.settings.button_label != blank -%}
+          <a class="button button--primary"{% if section.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
+            {{ section.settings.button_label | escape }}
+          </a>
+        {%- endif-%}
+      </div>
     </div>
   </div>
 </div>
@@ -214,9 +216,33 @@
       "label": "t:sections.accordion.settings.background_style.label"
     },
     {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "taupe",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__1.label"
+        },
+        {
+          "value": "bronze",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__2.label"
+        },
+        {
+          "value": "white",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__3.label"
+        },
+        {
+          "value": "silver",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__4.label"
+        }
+      ],
+      "default": "taupe",
+      "label": "t:sections.image-with-text.settings.color_scheme.label"
+    },
+    {
       "type": "text",
       "id": "button_label",
-      "default": "",
+      "default": "Button label",
       "label": "t:sections.accordion.settings.button_label.label"
     },
     {
@@ -267,7 +293,7 @@
         {
           "type": "text",
           "id": "subtitle_2",
-          "default": "",
+          "default": "Subtitle 2",
           "label": "t:sections.accordion.blocks.column.settings.subtitle_2.label"
         },
         {
@@ -284,7 +310,7 @@
         {
           "type": "text",
           "id": "subtitle_3",
-          "default": "",
+          "default": "Subtitle 3",
           "label": "t:sections.accordion.blocks.column.settings.subtitle_3.label"
         },
         {
