@@ -38,6 +38,9 @@ main {
 
 .footer-block__heading {
   font-family: 'Optician Sans';
+  text-align: center;
+  display: flex;
+  justify-self: center;
 }
 
 a:link {
@@ -62,25 +65,24 @@ a:link {
 }
 
 .footer__content-top {
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
   padding-top: 5rem;
   /* display: block; */
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   flex-wrap: wrap;
 }
 
-.footer-block__heading {
-  text-align: center;
-  width: 50%;
-}
+
 
 .footer__blocks-wrapper.grid.grid--1-col.grid--2-col.grid--4-col-tablet {
-  width: 25%;
+  align-self: start;
 }
 
 ul.footer-block__details-content.list-unstyled {
   columns: 3;
   text-align: left;
+  width: 100%;
 }
 
 /* .footer-block--newsletter {
@@ -92,7 +94,7 @@ ul.footer-block__details-content.list-unstyled {
 @media screen and (min-width: 750px) {
   .footer__content-top {
     padding-top: 7rem;
-    padding-bottom: 7rem;
+    /* padding-bottom: 7rem; */
   }
 
   .footer__content-top .grid {
@@ -203,7 +205,6 @@ ul.footer-block__details-content.list-unstyled {
   justify-content: center;
   align-items: flex-end;
   margin-top: 5rem;
-  width: 25%;
   align-items: flex-start;
   margin-top: 0;
 }
@@ -231,7 +232,10 @@ ul.footer-block__details-content.list-unstyled {
 
 @media screen and (min-width: 990px) {
   .footer-block__heading {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
+  }
+  .footer__content-top {
+    grid-template-columns: 3fr 2fr 1fr;
   }
 }
 
@@ -269,7 +273,7 @@ ul.footer-block__details-content.list-unstyled {
 
   .footer-block__newsletter .newsletter-form__button.button {
     margin-top: 0;
-    margin-left: 1.4rem;
+    font-size: 1.4rem;
   }
 
   .footer-block__newsletter:not(:only-child) .footer__newsletter {
@@ -569,7 +573,8 @@ footer details[open] summary ~ * {
 @media screen and (min-width: 750px) {
   .footer-block__details-content .list-menu__item--link {
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 2rem;
+    line-height: 5rem;
   }
 
   /* .footer-block__details-content > :first-child .list-menu__item--link {
@@ -665,4 +670,5 @@ footer details[open] summary ~ * {
   .footer__content-top {
     padding-bottom: 1rem;
     padding-top: 5rem;
+  }
 }

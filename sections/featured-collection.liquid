@@ -12,7 +12,9 @@
     // (()=> {
     let cursor = document.createElement("div");
     cursor.id = "cursor";
-    cursor.innerHTML = "<div>DRAG</div>"
+    cursor.innerHTML = "<div>DRAG</div>";
+    cursor.style.pointerEvents = "none";
+
     document.body.appendChild(cursor);
     
     console.log(cursor);

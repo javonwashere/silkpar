@@ -2224,6 +2224,7 @@ CUSTOM CSS VALUES
   bottom: 0;
   z-index: 3;
   width: 100%;
+  opacity: 0.7;
 }
 
 .silkpar--s-wrapper {
@@ -2235,4 +2236,6 @@ CUSTOM CSS VALUES
   height: 380px;
 }
 
-
+.card-information__text {
+  text-decoration: none !important;
+}
