@@ -60,16 +60,38 @@
                 {%- endif -%}
               </div>
               <div class="accordion__content">
+                <hr style="margin-top: 0; margin-bottom: 2rem;">
+                {%- if block.settings.subtitle != blank -%}
+                  <h4>{{ block.settings.subtitle }}</h4>
+                {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
+                {%- if block.settings.button != blank -%}
+                  <div class="banner__buttons" {{ block.shopify_attributes }}>
+                      <a{% if block.settings.button != blank %} href="{{ block.settings.button }}"{% endif %} class="button button--secondary"{% if block.settings.button == blank %} aria-disabled="true"{% endif %}>Book Service</a>
+                  </div>
+                {%- endif-%}
+                {%- if block.settings.subtitle_2 != blank -%}
+                  <hr style="margin-top: 2rem; margin-bottom: 2rem;">
+                  <h4>{{ block.settings.subtitle_2 }}</h4>
+                {%- endif -%}
                 {%- if block.settings.text_2 != blank -%}
-                  <div class="rte">{{ block.settings.text }}</div>
+                  <div class="rte">{{ block.settings.text_2 }}</div>
+                {%- endif -%}
+                {%- if block.settings.button_2 != blank -%}
+                  <div class="banner__buttons" {{ block.shopify_attributes }}>
+                      <a{% if block.settings.button != blank %} href="{{ block.settings.button_2 }}"{% endif %} class="button button--secondary"{% if block.settings.button_2 == blank %} aria-disabled="true"{% endif %}>Book Service</a>
+                  </div>
+                {%- endif-%}
+                {%- if block.settings.subtitle_3 != blank -%}
+                  <hr style="margin-top: 2rem; margin-bottom: 2rem;">
+                  <h4>{{ block.settings.subtitle_3 }}</h4>
+                {%- endif -%}
+                {%- if block.settings.text_3 != blank -%}
+                  <div class="rte">{{ block.settings.text_3 }}</div>
                 {%- endif -%}
               </div>
-              {% comment %} <div class="accordion-card__info">
-                
-              </div> {% endcomment %}
             </div>
           </li>
         {%- endfor -%}
@@ -227,9 +249,9 @@
         },
         {
           "type": "text",
-          "id": "subheading_1",
+          "id": "subtitle",
           "default": "Column",
-          "label": "t:sections.accordion.blocks.column.settings.title.label"
+          "label": "t:sections.accordion.blocks.column.settings.subtitle.label"
         },
         {
           "type": "richtext",
@@ -238,28 +260,43 @@
           "label": "t:sections.accordion.blocks.column.settings.text.label"
         },
         {
+          "type": "url",
+          "id": "button",
+          "label": "t:sections.accordion.blocks.column.settings.button.label"
+        },
+        {
           "type": "text",
-          "id": "subheading_2",
+          "id": "subtitle_2",
           "default": "Column",
-          "label": "t:sections.accordion.blocks.column.settings.title.label"
+          "label": "t:sections.accordion.blocks.column.settings.subtitle_2.label"
         },
         {
           "type": "richtext",
           "id": "text_2",
           "default": "<p></p>",
-          "label": "t:sections.accordion.blocks.column.settings.text.label"
+          "label": "t:sections.accordion.blocks.column.settings.text_2.label"
+        },
+        {
+          "type": "url",
+          "id": "button_2",
+          "label": "t:sections.accordion.blocks.column.settings.button_2.label"
         },
         {
           "type": "text",
-          "id": "subheading_3",
+          "id": "subtitle_3",
           "default": "Column",
-          "label": "t:sections.accordion.blocks.column.settings.title.label"
+          "label": "t:sections.accordion.blocks.column.settings.subtitle_3.label"
         },
         {
           "type": "richtext",
           "id": "text_3",
           "default": "<p></p>",
-          "label": "t:sections.accordion.blocks.column.settings.text.label"
+          "label": "t:sections.accordion.blocks.column.settings.text_3.label"
+        },
+        {
+          "type": "url",
+          "id": "button_3",
+          "label": "t:sections.accordion.blocks.column.settings.button_3.label"
         }
       ]
     }

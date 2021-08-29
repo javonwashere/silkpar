@@ -243,8 +243,31 @@
             "title": {
               "label": "Heading"
             },
+            "subtitle": {
+              "label": "Subtitle One"
+            },
+            "subtitle_2": {
+              "label": "Subtitle Two"
+            },
+            "subtitle_3": {
+              "label": "Subtitle Three"
+            },
             "text": {
-              "label": "Description"
+              "label": "Description One"
+            },
+            "text_2": {
+              "label": "Description Two"
+            },"text_3": {
+              "label": "Description Three"
+            },
+            "button": {
+              "label": "Link One"
+            },
+            "button_2": {
+              "label": "Link Two"
+            },
+            "button_3": {
+              "label": "Link Three"
             }
           }
         }

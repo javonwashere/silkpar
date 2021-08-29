@@ -6,10 +6,16 @@
   border-top: none;
 }
 
-main > *:last-child > div {
+main > section:last-child > div {
   border-bottom-style: solid;
   border-bottom-width: 50px;
   border-radius: 0 0 6rem 6rem;
+}
+
+main > section:first-child > div {
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-radius: 0 0 0 0;
 }
 
 main {

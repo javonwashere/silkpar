@@ -45,13 +45,21 @@
 
 .accordion .button {
   margin-top: 1.5rem;
+  font-size: 1.2rem;
+  display: inline;
 }
 
 @media screen and (min-width: 750px) {
   .accordion .button {
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
   }
 }
+
+.accordion__content .banner__buttons {
+  margin: 2em 0;
+}
+
+
 
 .accordion-list {
   margin-bottom: 0;
@@ -226,8 +234,8 @@ li.accordion-list__item.grid__item {
 
 :valid .accordion-card {
   border-radius: 20px;
-  padding-bottom: 20px;
 }
+
 
 .accordion-list {
   display: grid;
@@ -259,10 +267,24 @@ li.accordion-list__item.grid__item {
   font-weight: 500;
   font-family: 'kessler-displayregular';
 }
-.accordion p {
+.accordion p, .accordion h4 {
+  line-height: 150%;
+}
 
+.accordion h4 {
+  font-family: 'Optician Sans';
 }
 .accordion__active .accordion__content {
   padding: 0 20px 20px;
   opacity: 1;
+}
+
+.accordion.accordion-card.accordion__active {
+  padding-bottom: 20px;
+}
+
+.accordion__content .banner__buttons .button--secondary {
+  background-color: white;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
 }
