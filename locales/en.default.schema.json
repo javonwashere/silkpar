@@ -794,6 +794,9 @@
         "stack_images_on_mobile": {
           "label": "Stack images on mobile"
         },
+        "overlap_second_image": {
+          "label": "Overlap second image"
+        },
         "adapt_height_first_image": {
           "label": "Adapt section height to first image size"
         }

@@ -35,7 +35,21 @@
   top: 0;
   width: 100%;
   position: relative;
+
+}
+
+.banner > .banner__media {
   border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.banner > .banner__media-half:first-child {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 0px;
+}
+
+.banner > .banner__media-half:nth-child(2) {
+  border-top-left-radius: 0px;
   border-top-right-radius: 100px;
 }
 
@@ -59,6 +73,16 @@
 
   .banner:not(.banner--adapt):not(.banner--stacked) > .banner__media {
     height: 39rem;
+  }
+
+  .banner > .banner__media-half:first-child {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+  }
+  
+  .banner > .banner__media-half:nth-child(2) {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
 }
 
