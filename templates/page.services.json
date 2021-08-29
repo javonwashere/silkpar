@@ -12,7 +12,7 @@
         "16302334117aef374b-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner"
+            "heading": "Where Relaxation Meets Results"
           }
         },
         "16302334117aef374b-1": {
@@ -39,6 +39,8 @@
         "16302334117aef374b-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/image-017-reverse.jpg",
+        "image_2": "shopify:\/\/shop_images\/image-006.jpg",
         "desktop_text_box_position": "center",
         "color_scheme": "taupe",
         "overlap_second_image": true,
