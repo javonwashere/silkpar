@@ -2224,6 +2224,7 @@ CUSTOM CSS VALUES
   bottom: 0;
   z-index: 3;
   opacity: 0.7;
+  width: 100%;
 }
 
 .silkpar--s-wrapper {
