@@ -33,6 +33,10 @@
   border-radius: 6rem;
 }
 
+.image-banner__media {
+  background-color: transparent;
+}
+
 .image-with-text__media--small {
   height: 19.4rem;
 }
@@ -174,6 +178,14 @@
     transform: scale(1.03);
   }
 
+  .image-banner__media.media--hover-effect > img {
+    transition: transform var(--duration-long) ease;
+  }
+
+  .image-banner__media:hover.media--hover-effect > img {
+    transform: scale(1.03);
+  }
+
   .card-wrapper:hover
     .media.media--hover-effect
     > img:first-child:not(:only-child) {
@@ -181,6 +193,12 @@
   }
 
   .image-with-text__media.media--hover-effect > img + img {
+    opacity: 1;
+    transition: transform var(--duration-long) ease;
+    transform: scale(1.03);
+  }
+
+  .image-banner__media.media--hover-effect > img + img {
     opacity: 1;
     transition: transform var(--duration-long) ease;
     transform: scale(1.03);

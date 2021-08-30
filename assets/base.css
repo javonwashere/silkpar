@@ -1105,8 +1105,7 @@ summary::-webkit-details-marker {
   background-color: rgba(var(--color-foreground), 0.1);
   position: relative;
   overflow: hidden;
-  min-height: 100%;
-}
+ }
 
 .media--transparent {
   background-color: transparent;

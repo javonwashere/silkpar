@@ -65,7 +65,7 @@
       {%- endfor -%}
     </div>
     {%- if section.settings.image_2 != blank -%}
-      <div style="position: relative;" class="color-scheme-border-{{ section.settings.color_scheme }} banner__media media{% if section.settings.image != blank %} banner__media-half{% endif %}">
+      <div style="position: relative;" class=" image-banner__media media--hover-effect color-scheme-border-{{ section.settings.color_scheme }} banner__media media{% if section.settings.image != blank %} banner__media-half{% endif %}">
         <img srcset="{%- if section.settings.image_2.width >= 375 -%}{{ section.settings.image_2 | img_url: '375x' }} 375w,{%- endif -%}
           {%- if section.settings.image_2.width >= 750 -%}{{ section.settings.image_2 | img_url: '750x' }} 750w,{%- endif -%}
           {%- if section.settings.image_2.width >= 1100 -%}{{ section.settings.image_2 | img_url: '1100x' }} 1100w,{%- endif -%}
