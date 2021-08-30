@@ -18,9 +18,15 @@ main > *:first-child > div {
   border-radius: 0 0 0 0;
 }
 
+main > *:nth-child(2)> div {
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+  border-radius: 0 0 0 0;
+}
+
 main {
   z-index: 2;
-  margin-bottom: -50px;
+  /* margin-bottom: -50px; */
 }
 
 #shopify-section-footer {
