@@ -2,18 +2,118 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     },
-    "form": {
-      "type": "contact-form",
+    "1630310422bbe1515d": {
+      "type": "image-with-text",
+      "blocks": {
+        "fd6c5235-239e-4a66-a0c8-f4cb54bf29f4": {
+          "type": "smalltext",
+          "settings": {
+            "smalltext": "about silkpar"
+          }
+        },
+        "1630310422bbe1515d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Creating Balance to Achieve Results"
+          }
+        },
+        "1630310422bbe1515d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We recognize that the skin is the largest organ in the body and more often than not is a direct reflection of what may be going on internally. At SilkPar, we thoroughly analyze the skin to uncover possible root causes to problem areas and address them with a holistic approach; combined with ethical result driven skincare and advanced treatments to ensure that each client gets the best results, and to maintain the overall health of the skin and the body. The body is more than capable of healing and correcting issues that may be present, but we also acknowledge that at times a little assistance is necessary to achieve certain skin goals. We strive to work in harmony with your body to create that balance both internally and externally to produce longer lasting results.<\/p>"
+          }
+        },
+        "1630310422bbe1515d-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "LEARN MORE",
+            "button_link": "#dawn"
+          }
+        }
+      },
+      "block_order": [
+        "fd6c5235-239e-4a66-a0c8-f4cb54bf29f4",
+        "1630310422bbe1515d-0",
+        "1630310422bbe1515d-1",
+        "1630310422bbe1515d-2"
+      ],
       "settings": {
-        "heading": ""
+        "image": "shopify:\/\/shop_images\/image-013.jpg",
+        "image_height": 80,
+        "color_scheme": "taupe",
+        "layout": "image_first"
+      }
+    },
+    "1630310519151c5ffc": {
+      "type": "image-with-text",
+      "blocks": {
+        "ab46596e-0925-4e9d-bfc4-d5bcd31194dc": {
+          "type": "smalltext",
+          "settings": {
+            "smalltext": "About the founder"
+          }
+        },
+        "1630310519151c5ffc-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dawn Parham: she believed she could, so she planned and she did."
+          }
+        },
+        "1630310519151c5ffc-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>I have been working in many different facets of the service industry for about 15 years now. I have always considered myself to be a “giver,” and I genuinely would find joy in having the opportunity to serve customers and clients to their fulfillment with the intent of making their days that much better. However, it was not until I hit my lows in life, battled with depression and thoughts of suicide, that I ultimately found my purpose. I was the girl that spent hours inside of beauty stores trying to correct the damages in my skin that I would receive from riding on the emotional rollercoaster that was my life. It was by the grace of God that one day I came across esthetics school; I knew it was where I belonged. I worked and managed to save for almost two years to eventually enroll myself into Jean Madeline Aveda Institute. Since then, I have been a licensed esthetician working in the field for 3 years now.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ab46596e-0925-4e9d-bfc4-d5bcd31194dc",
+        "1630310519151c5ffc-0",
+        "1630310519151c5ffc-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/page2image1674912.png",
+        "image_height": 80,
+        "color_scheme": "taupe",
+        "layout": "image_first"
+      }
+    },
+    "1630310735c1f4468b": {
+      "type": "image-with-text",
+      "blocks": {
+        "1d8cb9ff-63f1-4589-9d76-27d169e61077": {
+          "type": "smalltext",
+          "settings": {
+            "smalltext": ""
+          }
+        },
+        "1630310735c1f4468b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>I furthered my education at Atelier Esthetique Institute of Esthetics, and received certifications from other knowledgeable educators for the services that are offered at SilkPar. A lot of people assume that the beauty industry is vain and superficial. I actually look at it as the starting point to life. I want people to understand that whatever it is they are facing in life, that it's ok, that you can overcome it, and remind them to always be kind to themselves. We live in a world that at times can be harsh and even cruel, so being kind to ourselves even in the absence of kindness is something that I believe to be extremely important, and it starts with self-care. Even though getting a facial or a wax will not end some of the greater problems of the world, taking the time out to take care of oneself is the first step to putting an individual in the right state of being to eventually tackle those problems. Being able to see the differences in not only myself but also my clients is very rewarding. It's truly a pleasure being able to serve my beautiful clients and making an impactful difference in their lives. For those that are ready to see changes in their skin, I can't wait to see you!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1d8cb9ff-63f1-4589-9d76-27d169e61077",
+        "1630310735c1f4468b-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/page2image1674912.png",
+        "image_height": 80,
+        "color_scheme": "taupe",
+        "layout": "text_first"
       }
     }
   },
   "order": [
     "main",
-    "form"
+    "1630310422bbe1515d",
+    "1630310519151c5ffc",
+    "1630310735c1f4468b"
   ]
 }
