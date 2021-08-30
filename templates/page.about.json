@@ -78,7 +78,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/page2image1674912.png",
         "image_height": 80,
-        "color_scheme": "taupe",
+        "color_scheme": "silver",
         "layout": "image_first"
       }
     },
@@ -105,7 +105,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/page2image1674912.png",
         "image_height": 80,
-        "color_scheme": "taupe",
+        "color_scheme": "silver",
         "layout": "text_first"
       }
     },
