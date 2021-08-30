@@ -115,15 +115,15 @@
         "163031114928770e31-0": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "book a service",
             "button_link": ""
           }
         },
         "2eb421c8-ec08-4a95-97c8-d5110104e1db": {
           "type": "button",
           "settings": {
-            "button_label": "SHOP PROD",
-            "button_link": ""
+            "button_label": "shop products",
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
