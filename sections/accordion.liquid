@@ -3,7 +3,7 @@
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="color-scheme-{{ section.settings.color_scheme }}">
-  <div class="accordion background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
+  <div class="accordion accordion__padding background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
     <div class="page-width">
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
         <h2 class="title">

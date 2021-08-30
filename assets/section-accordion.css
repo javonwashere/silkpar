@@ -245,6 +245,10 @@ li.accordion-list__item.grid__item {
 .accordion {
   width: 100%;
 }
+.accordion__padding {
+  padding-bottom: 5rem;
+}
+
 .accordion__intro {
   position: relative;
   padding: 20px;
