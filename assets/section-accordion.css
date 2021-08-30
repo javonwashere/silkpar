@@ -13,14 +13,12 @@
   .accordion.background-primary.no-heading {
     margin-top: -6rem;
   }
-
 }
 
 @media screen and (min-width: 750px) {
   .accordion.no-heading:not(.background-secondary) {
     padding-top: 6rem;
   }
-
 }
 
 .accordion.background-secondary .title-wrapper-with-link {
@@ -63,8 +61,6 @@
 .accordion__content .banner__buttons {
   margin: 2em 0;
 }
-
-
 
 .accordion-list {
   margin-bottom: 0;
@@ -241,7 +237,6 @@ li.accordion-list__item.grid__item {
   border-radius: 20px;
 }
 
-
 .accordion-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -272,7 +267,8 @@ li.accordion-list__item.grid__item {
   font-weight: 500;
   font-family: 'kessler-displayregular';
 }
-.accordion p, .accordion h4 {
+.accordion p,
+.accordion h4 {
   line-height: 150%;
 }
 
@@ -292,4 +288,31 @@ li.accordion-list__item.grid__item {
   background-color: white;
   letter-spacing: 0.2rem;
   font-size: 1rem;
+}
+
+.accordion__intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion__toggler {
+  display: flex;
+}
+
+.plus__sign, .minus__sign {
+  border: 1px solid black;
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+  display: flex; /* or inline-flex */
+  align-items: center; 
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
 }

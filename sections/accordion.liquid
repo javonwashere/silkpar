@@ -58,6 +58,10 @@
                 <div class="accordion__intro">
                   {%- if block.settings.title != blank -%}
                     <h3>{{ block.settings.title | escape }}</h3>
+                    <div class="accordion__toggler">
+                      <div class="plus__sign">+</div>
+                      <div class="minus__sign hide">-</div>
+                    </div>
                   {%- endif -%}
                 </div>
                 <div class="accordion__content">
