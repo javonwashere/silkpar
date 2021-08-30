@@ -42,7 +42,7 @@
         "image": "shopify:\/\/shop_images\/image-017-reverse.jpg",
         "image_2": "shopify:\/\/shop_images\/image-006.jpg",
         "desktop_text_box_position": "center",
-        "color_scheme": "taupe",
+        "color_scheme": "white",
         "overlap_second_image": true,
         "stack_images_on_mobile": true,
         "adapt_height_first_image": false
@@ -172,7 +172,7 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
-        "color_scheme": "taupe",
+        "color_scheme": "white",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
