@@ -1,0 +1,16 @@
+.header-wrapper {
+    background: none;
+    border-bottom: none;
+}
+
+.header {
+    background: none;
+}
+
+
+
+@media screen and (max-width: 749px){
+    .banner--stacked {
+        padding-top: 0 !important;
+    }
+}

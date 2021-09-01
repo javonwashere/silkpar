@@ -174,15 +174,24 @@ html.no-js .no-js-hidden {
   }
 }
 
+.banner__buttons {
+  display: none;
+}
+
 @media screen and (min-width: 990px) {
   .page-width--narrow {
     max-width: 72.6rem;
     padding: 0;
   }
 
+
   .page-width-desktop {
     max-width: 120rem;
     padding: 0 5rem;
+  }
+
+  .banner__buttons {
+    display: block;
   }
 }
 
@@ -205,7 +214,7 @@ body,
 .color-accent-1,
 .color-accent-2 {
   color: rgba(var(--color-foreground), 0.75);
-  /* background-color: rgb(var(--color-background)); */
+  background-color: rgb(var(--color-background));
 }
 
 .background-secondary {
@@ -1105,7 +1114,7 @@ summary::-webkit-details-marker {
   background-color: rgba(var(--color-foreground), 0.1);
   position: relative;
   overflow: hidden;
-  min-height: 100%;
+  /* min-height: 100%; */
 }
 
 .media--transparent {
