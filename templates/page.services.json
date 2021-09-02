@@ -15,12 +15,6 @@
             "heading": "Where Relaxation Meets Results"
           }
         },
-        "16302334117aef374b-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
         "16302334117aef374b-2": {
           "type": "buttons",
           "settings": {
@@ -35,7 +29,6 @@
       },
       "block_order": [
         "16302334117aef374b-0",
-        "16302334117aef374b-1",
         "16302334117aef374b-2"
       ],
       "settings": {
