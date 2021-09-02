@@ -79,7 +79,7 @@
         "image": "shopify:\/\/shop_images\/page2image1674912.png",
         "image_height": 80,
         "color_scheme": "silver",
-        "layout": "image_first"
+        "layout": "text_first"
       }
     },
     "1630310735c1f4468b": {
@@ -106,7 +106,7 @@
         "image": "shopify:\/\/shop_images\/page2image1674912.png",
         "image_height": 80,
         "color_scheme": "silver",
-        "layout": "text_first"
+        "layout": "image_first"
       }
     },
     "163031114928770e31": {
