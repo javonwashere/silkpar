@@ -78,8 +78,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/page2image1674912.png",
         "image_height": 80,
-        "color_scheme": "silver",
-        "layout": "image_first"
+        "color_scheme": "white",
+        "layout": "text_first"
       }
     },
     "1630310735c1f4468b": {
@@ -105,8 +105,8 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/page2image1674912.png",
         "image_height": 80,
-        "color_scheme": "silver",
-        "layout": "text_first"
+        "color_scheme": "white",
+        "layout": "image_first"
       }
     },
     "163031114928770e31": {
