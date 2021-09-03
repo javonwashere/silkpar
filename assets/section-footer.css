@@ -47,6 +47,7 @@ main {
   text-align: center;
   display: flex;
   justify-self: center;
+  letter-spacing: 0.3rem;
 }
 
 a:link {

@@ -188,7 +188,8 @@
 .card-information__text.h6 {
    margin-block-start: 1em;
    margin-block-end: 0;
-
+   text-transform: uppercase;
+   letter-spacing: 0.3rem;
 }
 
 .card-information__wrapper {

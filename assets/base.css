@@ -149,6 +149,8 @@ html.no-js .no-js-hidden {
   display: none !important;
 }
 
+
+
 .page-width {
   max-width: 120rem;
   margin: 0 auto;
@@ -247,6 +249,7 @@ body,
   margin: 0;
   padding: 0;
   list-style: none;
+  letter-spacing: 0.5rem;
 }
 
 .hidden {
