@@ -3,7 +3,7 @@
 <div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
   <div class="image-with-text__grid color-{{ section.settings.color_scheme }}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} grid grid--gapless grid--1-col grid--2-col-tablet">
     <div class="grid__item  {% if section.settings.image_2 != blank %}overlapping__image__grid{% endif %}" style="height: {{ section.settings.image_height }}vh">
-      <div class="color-scheme-border-{{ section.settings.color_scheme }} image-with-text__media media--hover-effect image-with-text__media--{{ section.settings.height }} {% if section.settings.image_2 != blank %}first__image__child{% endif %} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+      <div class="color-scheme-border-{{ section.settings.color_scheme }} image-with-text__media media--hover-effect image-with-text__media--{{ section.settings.height }} {% if section.settings.image_2 != blank %}first__image__child{% endif %} {% if section.settings.layout == 'text_first' %} reverse {% endif %}  {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
       >
         {%- if section.settings.image != blank -%}
           <img srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
@@ -24,7 +24,7 @@
         {%- endif -%}
       </div>
       {%- if section.settings.image_2 != blank -%}
-      <div class="color-scheme-border-{{ section.settings.color_scheme }} overlap_image image-with-text__media media--hover-effect image-with-text__media--{{ section.settings.height }} {% if section.settings.image_2 != blank %}second__image__child{% endif %} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}">
+      <div class="color-scheme-border-{{ section.settings.color_scheme }} overlap_image image-with-text__media media--hover-effect image-with-text__media--{{ section.settings.height }} {% if section.settings.image_2 != blank %}second__image__child{% endif %} {% if section.settings.layout == 'text_first' %} reverse {% endif %}  {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}">
           <img srcset="{%- if section.settings.image_2.width >= 165 -%}{{ section.settings.image_2 | img_url: '165x' }} 165w,{%- endif -%}
             {%- if section.settings.image_2.width >= 360 -%}{{ section.settings.image_2 | img_url: '360x' }} 360w,{%- endif -%}
             {%- if section.settings.image_2.width >= 535 -%}{{ section.settings.image_2 | img_url: '535x' }} 535w,{%- endif -%}

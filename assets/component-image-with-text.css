@@ -165,6 +165,16 @@
   grid-area: 3 / 4 / 11 / 16;
 }
 
+.first__image__child.reverse {
+  grid-area: 1 / 4 / 13 / 16;
+}
+
+.second__image__child.reverse {
+  grid-area: 3 / 1 / 11 / 12;
+}
+
+
+
 @media screen and (min-width: 990px) {
   .image-with-text__media.media--hover-effect > img {
     transition: transform var(--duration-long) ease;

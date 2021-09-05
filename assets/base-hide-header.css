@@ -14,3 +14,8 @@
         padding-top: 0 !important;
     }
 }
+
+main > *:first-child > div {
+    margin-top: -133px;
+    padding-top: 133px;
+}

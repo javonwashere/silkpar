@@ -93,20 +93,11 @@
       }
     {% endstyle %}
 
-    {%- if page.url == null -%}
-      {% style %}
-      @media screen and (min-width: 990px)
-        .grid--4-col-desktop .grid__item {
-          width: calc(33% - 1rem * 3 / 4);
-      }
-      {% endstyle %}
-    {%- endif -%}
-
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
     {%- if page.url != null -%}
-      <div>{{ 'base-hide-header.css' | asset_url | stylesheet_tag }}</div>
+      {{ 'base-hide-header.css' | asset_url | stylesheet_tag }}
     {%- endif -%}
 
     {%- unless settings.type_body_font.system? -%}
