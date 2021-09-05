@@ -22,7 +22,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/image-053.jpg",
         "desktop_text_box_position": "center",
-        "color_scheme": "taupe",
+        "color_scheme": "white",
         "overlap_second_image": true,
         "stack_images_on_mobile": false,
         "adapt_height_first_image": false
@@ -51,7 +51,7 @@
           "settings": {
             "title": "Studio Guidelines",
             "subtitle": "",
-            "text": "<p>A. Arrive on time for your appointment so that the standard of relaxation is met<\/p><p>B. Upon arrival, inform us that you are here, and someone will come and meet you<\/p><p>C. Please be mindful if coming from the gym and then receiving a service. With all of our services the esthetician will be in close proximity to you.<\/p><p>D. If you are local and just want to purchase retail, make sure to book the appointment in advance.<\/p><p>E. No extra guests or children unless being serviced are allowed at your appointment time.<\/p>",
+            "text": "<p>A. Arrive on time for your appointment so that the standard of relaxation is met<\/p><p><\/p><p>B. Upon arrival, inform us that you are here, and someone will come and meet you<\/p><p><\/p><p>C. Please be mindful if coming from the gym and then receiving a service. With all of our services the esthetician will be in close proximity to you.<\/p><p><\/p><p>D. If you are local and just want to purchase retail, make sure to book the appointment in advance.<\/p><p><\/p><p>E. No extra guests or children unless being serviced are allowed at your appointment time.<\/p>",
             "button": "",
             "subtitle_2": "",
             "text_2": "",
