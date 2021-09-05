@@ -2,6 +2,33 @@
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
+{%- if section.settings.accordion_background_color == "none" -%}
+{% style %}
+.accordion:not(.background-none) .accordion-card {
+  border-top: 1px solid black;
+  background-color: rgb(234, 199, 182);
+  height: 100%;
+  border-radius: 0px;
+  background: none;
+}
+
+.plus__sign, .minus__sign {
+  border: none;
+  font-size: 3rem;
+}
+
+.accordion__intro {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.accordion__intro > h3 {
+  font-family: 'Proxima Nova Rg';
+}
+
+{% endstyle %}
+{%- endif -%}
+
 <div class="color-scheme-{{ section.settings.color_scheme }}">
   <div class="accordion accordion__padding background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
     <div class="page-width">
@@ -134,10 +161,20 @@
   "tag": "section",
   "settings": [
     {
-      "type": "text",
-      "id": "title",
-      "default": "accordion",
-      "label": "t:sections.accordion.settings.title.label"
+      "type": "select",
+      "id": "accordion_background_color",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default (Pink)"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
+      ],
+      "default": "Default (Pink)",
+      "label": "Accordion background color"
     },
     {
       "type": "select",
@@ -246,7 +283,6 @@
     {
       "type": "text",
       "id": "button_label",
-      "default": "Button label",
       "label": "t:sections.accordion.settings.button_label.label"
     },
     {
