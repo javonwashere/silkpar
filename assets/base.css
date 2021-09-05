@@ -2179,9 +2179,10 @@ CUSTOM CSS VALUES
 .button {
   border-radius: 25px;
   background-color: rgb(208, 226, 210);
-  color: black;
+  color: #000 !important;  
   text-transform: uppercase;
   font-family: 'Proxima Nova Rg';
+  letter-spacing: 0.2rem;
 }
 
 .color-scheme-taupe {
