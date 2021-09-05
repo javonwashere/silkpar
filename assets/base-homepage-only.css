@@ -1,0 +1,22 @@
+.banner > .banner__media {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.banner > .banner__media-half:first-child {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 0px;
+}
+
+.banner > .banner__media-half:nth-child(2) {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 100px;
+}
+
+.banner__heading.h1 > span {
+    text-shadow: 6px 1px 8px black;
+}
+
+.grid--4-col-desktop .grid__item {
+    width: calc(33.33% - 1rem * 3 / 4);
+}

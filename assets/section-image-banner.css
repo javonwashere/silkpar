@@ -38,21 +38,6 @@
 
 }
 
-.banner > .banner__media {
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-}
-
-.banner > .banner__media-half:first-child {
-  border-top-left-radius: 100px;
-  border-top-right-radius: 0px;
-}
-
-.banner > .banner__media-half:nth-child(2) {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 100px;
-}
-
 .banner__media-half {
   width: 50%;
 }
@@ -147,7 +132,7 @@
 .banner__box > * + .banner__buttons {
   margin: 0 auto;
   margin-top: 2.3rem;
-  transform: translateX(1rem);
+  /* transform: translateX(1rem); */
 }
 
 .banner__box > * + .banner__buttons--multiple {
