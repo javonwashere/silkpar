@@ -17,7 +17,6 @@
 
     document.body.appendChild(cursor);
     
-    console.log(cursor);
     let makeElementFollowCursor = (el, posX = 0, posY = 0) => {
       const onMouseMove = (e) =>{
         let vals = ["slider-component", "ul.grid", "li.grid__item", ".img-animation", "div.card-wrapper"];
@@ -52,7 +51,6 @@
         imgs.forEach(e => e.style.pointerEvents = val);
       }
       slider.addEventListener("mousedown", e => {
-        console.log("yo", e)
         toggleImgClicks(images, "auto");
         slider.style.cursor = "grabbing";
         isDown = true;

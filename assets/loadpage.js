@@ -12,15 +12,12 @@ allButtons.forEach((button) => {
 
 const accordions = document.querySelectorAll('.accordion-card');
 
-console.log('ACCORDIONS ', accordions);
-
 const openAccordion = (accordion, plus, minus) => {
   const content = accordion.querySelector('.accordion__content');
   accordion.classList.add('accordion__active');
   content.style.maxHeight = content.scrollHeight + 'px';
   plus.classList.add('hide');
   minus.classList.remove('hide');
-  console.log("PLUS SIGN", plus)
 };
 
 const closeAccordion = (accordion, plus, minus) => {
@@ -49,3 +46,20 @@ accordions.forEach((accordion) => {
     }
   };
 });
+
+function createFooterOverlap() {
+  let mainDiv = document.querySelector('#MainContent');
+  let finalDiv = mainDiv.lastElementChild.lastElementChild;
+  let finalDivColor = getComputedStyle(finalDiv).backgroundColor;
+
+  if (finalDivColor == 'rgba(0, 0, 0, 0)') {
+    finalDivColor = 'rgb(255, 255, 255)';
+  }
+
+  finalDiv.classList.add('bottom-section');
+  finalDiv.style.borderColor = finalDivColor;
+  finalDiv.style.backgroundColor = finalDivColor;
+}
+
+createFooterOverlap();
+
