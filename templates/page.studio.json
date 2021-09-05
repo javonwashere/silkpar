@@ -27,10 +27,77 @@
         "stack_images_on_mobile": false,
         "adapt_height_first_image": false
       }
+    },
+    "1630882285c2fdba0f": {
+      "type": "accordion",
+      "blocks": {
+        "1630882285991d8cdd-0": {
+          "type": "column",
+          "settings": {
+            "title": "Sanitation Practices",
+            "subtitle": "Column Subtitle",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "9c0d5acd-824d-41fe-b7a0-70df2048d843": {
+          "type": "column",
+          "settings": {
+            "title": "Column Title",
+            "subtitle": "Studio Guidelines",
+            "text": "<p>A. Arrive on time for your appointment so that the standard of relaxation is met<\/p><p>B. Upon arrival, inform us that you are here, and someone will come and meet you<\/p><p>C. Please be mindful if coming from the gym and then receiving a service. With all of our services the esthetician will be in close proximity to you.<\/p><p>D. If you are local and just want to purchase retail, make sure to book the appointment in advance.<\/p><p>E. No extra guests or children unless being serviced are allowed at your appointment time.<\/p>",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "781cae2d-6625-47c9-84c8-bc1b98d02984": {
+          "type": "column",
+          "settings": {
+            "title": "Booking and Cancellation Policies",
+            "subtitle": "Column Subtitle",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
+            "text_3": "",
+            "button_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "1630882285991d8cdd-0",
+        "9c0d5acd-824d-41fe-b7a0-70df2048d843",
+        "781cae2d-6625-47c9-84c8-bc1b98d02984"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "taupe",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
     "main",
-    "1630880568c8ccc380"
+    "1630880568c8ccc380",
+    "1630882285c2fdba0f"
   ]
 }
