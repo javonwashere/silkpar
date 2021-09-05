@@ -1,5 +1,41 @@
 {
   "sections": {
+    "163082453259eff8c2": {
+      "type": "image-with-text",
+      "blocks": {
+        "1630824532d73888bf-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Where Vision Comes to Life"
+          }
+        },
+        "1630824532d73888bf-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At SilkPar Aesthetics we consider the practice of self-care to be extremely important and understand that it plays a significant role in how we perceive our self-image. At our spa, we form partnerships with our clients in order to find unique solutions to assist them in obtaining their desired skin goals.<\/p>"
+          }
+        },
+        "1630824532d73888bf-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "BOOK A SERVICE",
+            "button_link": "https:\/\/google.com"
+          }
+        }
+      },
+      "block_order": [
+        "1630824532d73888bf-0",
+        "1630824532d73888bf-1",
+        "1630824532d73888bf-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image-008.jpg",
+        "image_2": "shopify:\/\/shop_images\/image-016.jpg",
+        "image_height": 100,
+        "color_scheme": "silver",
+        "layout": "text_first"
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -141,6 +177,7 @@
     }
   },
   "order": [
+    "163082453259eff8c2",
     "main",
     "1630310422bbe1515d",
     "1630310519151c5ffc",
