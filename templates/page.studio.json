@@ -14,29 +14,10 @@
           "settings": {
             "heading": "Image banner"
           }
-        },
-        "1630880568dc7295ad-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "1630880568dc7295ad-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
-        "1630880568dc7295ad-0",
-        "1630880568dc7295ad-1",
-        "1630880568dc7295ad-2"
+        "1630880568dc7295ad-0"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/image-053.jpg",
