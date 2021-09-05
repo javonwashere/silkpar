@@ -89,7 +89,7 @@
         "column_alignment": "left",
         "background_style": "primary",
         "color_scheme": "taupe",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
       }
