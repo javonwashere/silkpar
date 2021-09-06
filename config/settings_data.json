@@ -3,6 +3,7 @@
     "social_twitter_link": "https:\/\/twitter.com\/shopify",
     "social_facebook_link": "https:\/\/facebook.com\/shopify",
     "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "favicon": "shopify:\/\/shop_images\/SilkPar_FooterMonogram-10.png",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
