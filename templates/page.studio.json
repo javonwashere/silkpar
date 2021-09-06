@@ -102,13 +102,21 @@
         "16309516607c79bcc9-0": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "book a service",
+            "button_link": ""
+          }
+        },
+        "4a6efc24-7eea-428c-9bb1-ec09de75ba6f": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop products",
             "button_link": ""
           }
         }
       },
       "block_order": [
-        "16309516607c79bcc9-0"
+        "16309516607c79bcc9-0",
+        "4a6efc24-7eea-428c-9bb1-ec09de75ba6f"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/image-014.jpg",
