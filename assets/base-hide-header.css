@@ -13,6 +13,6 @@
     }
 }
 
-main > *:first-child > div {
+main > *:first-child > .banner {
     margin-top: -133px;
 }
