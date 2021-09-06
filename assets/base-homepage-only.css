@@ -12,9 +12,10 @@
   border-top-left-radius: 0px;
   border-top-right-radius: 100px;
 }
-
-.banner__heading.h1 > span {
-    text-shadow: 6px 1px 8px black;
+@media screen and (min-width: 750px) {
+  .banner__heading.h1 > span {
+    text-shadow: 6px 2px 15px black;
+  }
 }
 
 @media screen and (min-width: 990px) {
