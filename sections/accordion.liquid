@@ -26,6 +26,15 @@
   font-family: 'Proxima Nova Rg';
 }
 
+hr {
+  display: none;
+}
+
+li.accordion-list__item.grid__item {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0rem !important;
+}
 {% endstyle %}
 {%- endif -%}
 
@@ -142,6 +151,18 @@
           </div>
         {%- endif -%}
       </slider-component>
+      {%- for block in section.blocks -%}
+        {%- if block.settings.large_footnote != blank or  block.settings.small_footnote != blank -%}
+        <div class="accordion__footnote">
+          {%- if block.settings.large_footnote != blank -%}
+          <h2>{{ block.settings.large_footnote }}</h2>
+          {%-endif-%}
+          {%- if block.settings.small_footnote != blank -%}
+          <div class="rte">{{ block.settings.small_footnote }}</div>
+          {%-endif-%}
+        </div>
+        {%-endif-%}
+      {%- endfor -%}
       <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
         {%- if section.settings.button_label != blank -%}
           <a class="button button--primary"{% if section.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
@@ -349,6 +370,23 @@
           "label": "t:sections.accordion.blocks.column.settings.button_3.label"
         }
       ]
+    },
+    {
+      "type": "text",
+      "name": "Footnote",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "large_footnote",
+          "label": "Large footnote"
+        },
+        {
+          "type": "richtext",
+          "id": "small_footnote",
+          "label": "Small footnote"
+        }
+      ]
     }
   ],
   "presets": [
@@ -356,7 +394,8 @@
       "name": "t:sections.accordion.presets.name",
       "blocks": [
         {
-          "type": "column"
+          "type": "column",
+          "type": "text"
         }
       ]
     }
