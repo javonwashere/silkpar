@@ -200,13 +200,6 @@
             "text_3": "",
             "button_3": ""
           }
-        },
-        "163091406377ac5b56-0": {
-          "type": "text",
-          "settings": {
-            "large_footnote": "<p>If you do not see your question mentioned above please <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a> for assistance, and we will be more than happy to answer any of your questions. Please allow 24-72hrs for a response.<\/p>",
-            "small_footnote": ""
-          }
         }
       },
       "block_order": [
@@ -219,10 +212,11 @@
         "3c2a7b02-428a-473b-824f-657673e923c6",
         "0967d1b7-0f4f-46f1-b435-12176a66130b",
         "28c01a6e-6b0f-4ef7-aeb6-9a19e894254d",
-        "d7985b57-ae20-40ca-ae79-88a99000be84",
-        "163091406377ac5b56-0"
+        "d7985b57-ae20-40ca-ae79-88a99000be84"
       ],
       "settings": {
+        "large_footnote": "<p>If you do not see your question mentioned above please <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a> for assistance, and we will be more than happy to answer any of your questions. Please allow 24-72hrs for a response.<\/p>",
+        "small_footnote": "",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",

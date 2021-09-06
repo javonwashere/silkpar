@@ -321,6 +321,15 @@ li.accordion-list__item.grid__item {
   display: flex;
 }
 
-.accordion__footnote.h2  {
+.accordion__footnote > h2  {
   font-family: 'kessler-displayregular';
+}
+
+.accordion__footnote > h2 > *  {
+  font-family: 'kessler-displayregular';
+}
+
+.accordion__footnote > h2 > * > a:link, .accordion__footnote > h2 > * > a {
+  text-decoration: underline;
+  color: black;
 }
