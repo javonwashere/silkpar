@@ -152,7 +152,8 @@ li.accordion-list__item.grid__item {
         {%- endif -%}
       </slider-component>
         {%- if section.settings.large_footnote != blank or  section.settings.small_footnote != blank -%}
-        <div class="accordion__footnote">
+          <hr style="margin-top: 0; margin-bottom: 2rem;">
+          <div class="accordion__footnote" style="border-top: 1px solid black;">
           {%- if section.settings.large_footnote != blank -%}
           <h2>{{ section.settings.large_footnote }}</h2>
           {%-endif-%}
