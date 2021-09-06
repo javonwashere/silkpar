@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
-{%- if section.settings.accordion_background_color == "none" -%}
+{%- if section.settings.background_style == "alternate" -%}
 {% style %}
 .accordion:not(.background-none) .accordion-card {
   border-top: 1px solid black;
@@ -162,22 +162,6 @@
   "settings": [
     {
       "type": "select",
-      "id": "accordion_background_color",
-      "options": [
-        {
-          "value": "default",
-          "label": "Default (Pink)"
-        },
-        {
-          "value": "none",
-          "label": "None"
-        }
-      ],
-      "default": "Default (Pink)",
-      "label": "Accordion background color"
-    },
-    {
-      "type": "select",
       "id": "image_width",
       "options": [
         {
@@ -251,6 +235,10 @@
         {
           "value": "secondary",
           "label": "t:sections.accordion.settings.background_style.options__3.label"
+        },
+        {
+          "value": "alternate",
+          "label": "Alternate w/ dividers"
         }
       ],
       "default": "primary",

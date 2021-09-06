@@ -41,14 +41,17 @@
       {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
     </div>
   {%- endif -%}
-  <div class="banner__content page-width" style="align-items: {{ section.settings.desktop_text_box_position }};">
+  <div class="banner__content page-width" style="padding-top: 0rem; justify-content: center; align-items: {{ section.settings.desktop_text_box_position }};">
     <div class="banner__box color-{{ section.settings.color_scheme }}">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="banner__heading h1" {{ block.shopify_attributes }}>
+            <h2 class="banner__heading h1" style="text-align: center;" {{ block.shopify_attributes }}>
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
+            <div class="banner__circle">
+              <div class="banner__v__icon">v</div>
+            </div>
         {%- endcase -%}
       {%- endfor -%}
     </div>

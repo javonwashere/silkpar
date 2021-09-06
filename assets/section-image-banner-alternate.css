@@ -1,0 +1,31 @@
+.banner__circle {
+  width: 6rem;
+  height: 6rem;
+  background-color: rgb(208, 226, 210);
+  border: 0.2rem solid black;
+  border-radius: 50%;
+  margin: 3rem auto 0rem auto;
+  display: none;
+  justify-content: center;
+  align-content: center;
+}
+
+.banner__v__icon {
+  align-self: center;
+  color: #000; /* Fallback for older browsers */
+  color: rgba(0, 0, 0, 0);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-right: 0.2rem solid black;
+  border-bottom: 0.2rem solid black;
+  transform: translateY(-0.3rem) rotate(45deg);
+}
+
+
+@media screen and (min-width: 750px) {
+  .banner__circle {
+    display: flex;
+  }
+  /* .banner__circle {
+  } */
+}
