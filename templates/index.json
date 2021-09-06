@@ -27,6 +27,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/image-005.jpg",
+        "text_color": "black",
         "desktop_text_box_position": "flex-end",
         "color_scheme": "grey",
         "overlap_second_image": true,
@@ -141,11 +142,12 @@
         "1627799823dfd95cdd-0": {
           "type": "heading",
           "settings": {
-            "heading": "Subscribe to our emails"
+            "heading": "Subscribe to our email list."
           }
         },
         "1627799823dfd95cdd-1": {
           "type": "paragraph",
+          "disabled": true,
           "settings": {
             "paragraph": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
           }
