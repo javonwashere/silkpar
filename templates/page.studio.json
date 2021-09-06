@@ -12,7 +12,7 @@
         "1630880568dc7295ad-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner"
+            "heading": "Studio Rules and Guidelines"
           }
         }
       },
@@ -84,6 +84,8 @@
         "781cae2d-6625-47c9-84c8-bc1b98d02984"
       ],
       "settings": {
+        "large_footnote": "",
+        "small_footnote": "",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
