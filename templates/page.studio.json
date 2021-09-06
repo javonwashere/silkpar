@@ -85,11 +85,11 @@
       ],
       "settings": {
         "large_footnote": "",
-        "small_footnote": "",
+        "small_footnote": "<p>At SilkPar Aesthetics we respect and value the time of our clients and we ask for the same in return. When arriving late to your appointment it affects the guests that are scheduled right after you. Our booking and cancellation policies are in place to protect each and every guest as well as the business. We thank you for adhering to the policies we put in place, and for choosing us to do business with.<\/p>",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "alternate",
         "color_scheme": "white",
         "button_label": "",
         "button_link": "",
