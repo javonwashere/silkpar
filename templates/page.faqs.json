@@ -2,11 +2,241 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "1630913983809d9fbc": {
+      "type": "image-banner-alternate",
+      "blocks": {
+        "1630913983706058d2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Frequently Asked Questions"
+          }
+        },
+        "1630913983706058d2-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1630913983706058d2-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1630913983706058d2-0",
+        "1630913983706058d2-1",
+        "1630913983706058d2-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image-018.jpg",
+        "text_color": "black",
+        "desktop_text_box_position": "center",
+        "color_scheme": "taupe",
+        "overlap_second_image": true,
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
+      }
+    },
+    "163091406310d7645b": {
+      "type": "accordion",
+      "blocks": {
+        "969697d6-abd5-4a06-9848-412b6437c846": {
+          "type": "column",
+          "settings": {
+            "title": "I'm not sure if I need to book the ParTouch or the ParLux, which one would be best?",
+            "subtitle": "",
+            "text": "",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "9d3ea66f-28ef-40ea-a114-43e4e3544bed": {
+          "type": "column",
+          "settings": {
+            "title": "Is it ok to wear makeup to my facial appointment?",
+            "subtitle": "",
+            "text": "<p>We recommend coming bare face to your appointment. Depending on how much makeup you have on it can take away from your facial service. While we do understand that life can be pretty busy, rest assured that we are able to remove it for you.<\/p>",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "63386c88-bc15-4399-9458-4d5aa85d7a92": {
+          "type": "column",
+          "settings": {
+            "title": "Is there anything I should do to prepare for my facial?",
+            "subtitle": "",
+            "text": "",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "fbb8aad0-5c9a-41c9-b8c0-82e6c182a793": {
+          "type": "column",
+          "settings": {
+            "title": "There are so many supplements to choose from, how do I know which one will be the best for me?",
+            "subtitle": "",
+            "text": "",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "51e51b79-8d7c-45ff-ba13-5157331efe4d": {
+          "type": "column",
+          "settings": {
+            "title": "I am taking medications prescribed by my doctor, can I still take the supplements?",
+            "subtitle": "",
+            "text": "",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "d2c80307-c55d-4b43-a6d0-ec668cb8aa82": {
+          "type": "column",
+          "settings": {
+            "title": "I want to get waxed, how long does my hair have to be?",
+            "subtitle": "",
+            "text": "",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "3c2a7b02-428a-473b-824f-657673e923c6": {
+          "type": "column",
+          "settings": {
+            "title": "Is there anything that I should do in preparation for my wax?",
+            "subtitle": "",
+            "text": "",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "0967d1b7-0f4f-46f1-b435-12176a66130b": {
+          "type": "column",
+          "settings": {
+            "title": "Can I get waxed on my period?",
+            "subtitle": "",
+            "text": "",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "28c01a6e-6b0f-4ef7-aeb6-9a19e894254d": {
+          "type": "column",
+          "settings": {
+            "title": "I haven't received my order yet, what should I do?",
+            "subtitle": "",
+            "text": "",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "d7985b57-ae20-40ca-ae79-88a99000be84": {
+          "type": "column",
+          "settings": {
+            "title": "I'm breaking out after my facial, is that normal?",
+            "subtitle": "",
+            "text": "",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
+            "text_3": "",
+            "button_3": ""
+          }
+        },
+        "163091406377ac5b56-0": {
+          "type": "text",
+          "settings": {
+            "large_footnote": "<p>If you do not see your question mentioned above please <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a> for assistance, and we will be more than happy to answer any of your questions. Please allow 24-72hrs for a response.<\/p>",
+            "small_footnote": ""
+          }
+        }
+      },
+      "block_order": [
+        "969697d6-abd5-4a06-9848-412b6437c846",
+        "9d3ea66f-28ef-40ea-a114-43e4e3544bed",
+        "63386c88-bc15-4399-9458-4d5aa85d7a92",
+        "fbb8aad0-5c9a-41c9-b8c0-82e6c182a793",
+        "51e51b79-8d7c-45ff-ba13-5157331efe4d",
+        "d2c80307-c55d-4b43-a6d0-ec668cb8aa82",
+        "3c2a7b02-428a-473b-824f-657673e923c6",
+        "0967d1b7-0f4f-46f1-b435-12176a66130b",
+        "28c01a6e-6b0f-4ef7-aeb6-9a19e894254d",
+        "d7985b57-ae20-40ca-ae79-88a99000be84",
+        "163091406377ac5b56-0"
+      ],
+      "settings": {
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "alternate",
+        "color_scheme": "taupe",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1630913983809d9fbc",
+    "163091406310d7645b"
   ]
 }
