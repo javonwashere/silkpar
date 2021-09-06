@@ -215,7 +215,7 @@
         "d7985b57-ae20-40ca-ae79-88a99000be84"
       ],
       "settings": {
-        "large_footnote": "<p>If you do not see your question mentioned above please <a href=\"\/pages\/contact\" title=\"Contact\">contact us<\/a> for assistance, and we will be more than happy to answer any of your questions. Please allow 24-72hrs for a response.<\/p>",
+        "large_footnote": "<p>If you do not see your question mentioned above please <a href=\"http:\/\/127.0.0.1:9292\/pages\/contact\" title=\"Contact\">contact us<\/a> for assistance, and we will be more than happy to answer any of your questions. Please allow 24-72hrs for a response.<\/p>",
         "small_footnote": "",
         "image_width": "full",
         "image_ratio": "adapt",
