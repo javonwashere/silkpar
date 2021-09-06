@@ -21,11 +21,20 @@
   transform: translateY(-0.3rem) rotate(45deg);
 }
 
-
 @media screen and (min-width: 750px) {
   .banner__circle {
     display: flex;
   }
   /* .banner__circle {
   } */
+}
+
+.accordion--margin {
+  margin-top: -50px;
+}
+
+@media screen and (min-width: 750px) {
+  .accordion.no-heading:not(.background-secondary) {
+    padding-top: 12rem !important;
+  }
 }

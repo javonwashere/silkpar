@@ -1,6 +1,7 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
-<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}">
+<div style="margin-top: 0" class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}">
   <div class="collection-hero__inner page-width">
     <div class="collection-hero__text-wrapper">
       <h1 class="collection-hero__title">
@@ -8,7 +9,7 @@
         Why Wait When you can <br>
         Have the Skin you Want now
       </h1>
-      <h4 style="text-transform: uppercase; font-family: 'Optician Sans'">{{- collection.title | escape -}}</h4>
+      {% comment %} <h4 style="text-transform: uppercase; font-family: 'Optician Sans'">{{- collection.title | escape -}}</h4> {% endcomment %}
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
       {%- endif -%}

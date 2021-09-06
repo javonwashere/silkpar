@@ -303,13 +303,14 @@ li.accordion-list__item.grid__item {
   display: flex;
 }
 
-.plus__sign, .minus__sign {
+.plus__sign,
+.minus__sign {
   border: 1px solid black;
-  width: 40px; 
+  width: 40px;
   height: 40px;
   border-radius: 50%;
   display: flex; /* or inline-flex */
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
@@ -320,16 +321,23 @@ li.accordion-list__item.grid__item {
 .show {
   display: flex;
 }
+@media screen and (max-width: 749px) {
+  .accordion__footnote {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
 
-.accordion__footnote > h2  {
+.accordion__footnote > h2 {
   font-family: 'kessler-displayregular';
 }
 
-.accordion__footnote > h2 > *  {
+.accordion__footnote > h2 > * {
   font-family: 'kessler-displayregular';
 }
 
-.accordion__footnote > h2 > * > a:link, .accordion__footnote > h2 > * > a {
+.accordion__footnote > h2 > * > a:link,
+.accordion__footnote > h2 > * > a {
   text-decoration: underline;
   color: black;
 }
