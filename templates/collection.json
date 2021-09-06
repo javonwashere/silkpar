@@ -18,10 +18,36 @@
         "enable_filtering": true,
         "enable_sorting": true
       }
+    },
+    "1630951847a5664d4c": {
+      "type": "newsletter",
+      "blocks": {
+        "16309518473334a3c8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our email list"
+          }
+        },
+        "16309518473334a3c8-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16309518473334a3c8-0",
+        "16309518473334a3c8-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image-014.jpg",
+        "color_scheme": "taupe",
+        "full_width": false
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "1630951847a5664d4c"
   ]
 }
