@@ -60,6 +60,12 @@
     line-height: 1.8;
   }
 
+  @media screen and (max-width: 749px) {
+    .button-visibility {
+      display: none;
+    }
+  }
+
   @media screen and (min-width: 750px) {
     .list-menu__item--link {
       padding-bottom: 0.5rem;
@@ -67,6 +73,21 @@
     }
   }
 </style>
+
+
+{%- if section.settings.text_color == "white" -%}
+{% style %}
+@media screen and (min-width: 750px) {
+  .header__icon .icon {
+    color: white;
+  }
+}
+{% endstyle %}
+{%-endif-%}
+
+{%- if section.settings.transparent_header == "true" -%}
+  {{ 'base-hide-header.css' | asset_url | stylesheet_tag }}
+{%-endif-%}
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
@@ -346,7 +367,7 @@
                   </details>
                 </details-disclosure>
               {%- else -%}
-                <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                <a href="{{ link.url }}" style="color: {{ section.settings.text_color }};" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                   <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                 </a>
               {%- endif -%}
@@ -361,7 +382,7 @@
         {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'buttons' -%}
-            <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank and block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
+            <div class="button-visibility banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank and block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.button_label_1 != blank -%}
                 <a{% if block.settings.button_link_1 != blank %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link_1 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_1 | escape }}</a>
               {%- endif -%}
@@ -404,7 +425,7 @@
       </details-modal>
 
       {%- if shop.customer_accounts_enabled -%}
-        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link link--text focus-inset">
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"  class="header__icon header__icon--account link link--text focus-inset">
           {% render 'icon-account' %}
           <span class="visually-hidden">
             {%- liquid
@@ -578,6 +599,38 @@
       "default": 100,
       "unit": "t:sections.header.settings.logo_width.unit",
       "label": "t:sections.header.settings.logo_width.label"
+    },
+    {
+      "type": "select",
+      "id": "transparent_header",
+      "options": [
+        {
+          "value": "true",
+          "label": "Yes"
+        },
+        {
+          "value": "false",
+          "label": "No"
+        }
+      ],
+      "default": "false",
+      "label": "Transparent header"
+    },
+    {
+      "type": "select",
+      "id": "text_color",
+      "options": [
+        {
+          "value": "black",
+          "label": "Black"
+        },
+        {
+          "value": "white",
+          "label": "White"
+        }
+      ],
+      "default": "black",
+      "label": "Text color"
     },
     {
       "type": "select",

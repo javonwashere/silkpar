@@ -96,11 +96,11 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
-    {%- if template.name == "index" -%}
+    {% comment %} {%- if template.name == "index" -%}
       {{ 'base-homepage-only.css' | asset_url | stylesheet_tag }}
     {%- else -%}
       {{ 'base-hide-header.css' | asset_url | stylesheet_tag }}
-    {%- endif -%}
+    {%- endif -%} {% endcomment %}
     
 
     {%- unless settings.type_body_font.system? -%}
