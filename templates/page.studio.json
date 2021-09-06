@@ -21,6 +21,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/image-053.jpg",
+        "text_color": "white",
         "desktop_text_box_position": "center",
         "color_scheme": "white",
         "overlap_second_image": true,
@@ -83,7 +84,6 @@
         "781cae2d-6625-47c9-84c8-bc1b98d02984"
       ],
       "settings": {
-        "title": "",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",

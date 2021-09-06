@@ -40,8 +40,6 @@
         "settings": {
           "logo": "shopify:\/\/shop_images\/silkpar_300px.png",
           "logo_width": 160,
-          "transparent_header": "false",
-          "text_color": "black",
           "logo_position": "middle-left",
           "menu": "main-menu",
           "show_line_separator": false,
