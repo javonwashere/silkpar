@@ -4,6 +4,25 @@
   {{ 'section-image-header.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 
+{%- if section.settings.text_color == "white" -%}
+  {% style %}
+  @media screen and (min-width: 750px) {
+    .header__icon .icon {
+      color: white;
+    }
+    .header__menu-item.header__menu-item.list-menu__item.link.link--text.focus-inset {
+      color: white;
+    }
+    .header__heading-logo {
+      filter: invert(100%);
+    }
+    .header__active-menu-item {
+      color: white;
+    }
+  }
+  {% endstyle %}
+{%-endif-%}
+
 
 {%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
   {%- style -%}
@@ -174,6 +193,22 @@
       "type": "image_picker",
       "id": "image_2",
       "label": "t:sections.image-banner.settings.image_2.label"
+    },
+    {
+      "type": "select",
+      "id": "text_color",
+      "options": [
+        {
+          "value": "black",
+          "label": "Black"
+        },
+        {
+          "value": "white",
+          "label": "White"
+        }
+      ],
+      "default": "black",
+      "label": "Header text color"
     },
     {
       "type": "select",
