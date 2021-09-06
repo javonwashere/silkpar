@@ -17,6 +17,16 @@
     text-shadow: 6px 1px 8px black;
 }
 
-.grid--4-col-desktop .grid__item {
+@media screen and (min-width: 990px) {
+  .grid--4-col-desktop .grid__item {
     width: calc(33.33% - 1rem * 3 / 4);
+  }
+
+  .grid--3-col-desktop .grid__item {
+    width: calc(33.33% - 1rem * 2 / 3);
+  }
+
+  .grid--2-col-desktop .grid__item {
+    width: calc(50% - 1rem / 2);
+  }
 }
