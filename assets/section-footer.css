@@ -587,7 +587,8 @@ footer details[open] summary ~ * {
   .footer-block__details-content .list-menu__item--link {
     display: inline-block;
     font-size: 2rem;
-    line-height: 5rem;
+    line-height: 3rem;
+    padding-bottom: 1rem;
   }
 
   /* .footer-block__details-content > :first-child .list-menu__item--link {

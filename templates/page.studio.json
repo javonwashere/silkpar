@@ -121,7 +121,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/image-014.jpg",
         "image_2": "shopify:\/\/shop_images\/image-003_4381207a-0e2a-4502-b5f9-a6d48b969b23.jpg",
-        "image_height": 50,
+        "image_height": 30,
         "color_scheme": "taupe",
         "layout": "image_first"
       }

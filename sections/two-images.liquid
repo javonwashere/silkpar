@@ -76,11 +76,13 @@
         {
             "type": "image_picker",
             "id": "image",
-            "label": "t:sections.two-image-columns.settings.image.label"
+            "label": "t:sections.two-image-columns.settings.image.label",
+            "default": "shopify:\/\/shop_images\/image-014.jpg"
         }, {
             "type": "image_picker",
             "id": "image_2",
-            "label": "t:sections.two-image-columns.settings.image_2.label"
+            "label": "t:sections.two-image-columns.settings.image_2.label",
+            "default": "shopify:\/\/shop_images\/image-003_4381207a-0e2a-4502-b5f9-a6d48b969b23.jpg"
         }, {
             "type": "range",
             "id": "image_height",
@@ -89,7 +91,7 @@
             "step": 5,
             "unit": "%",
             "label": "t:sections.two-image-columns.settings.image_height.label",
-            "default": 30
+            "default": 35
         }, {
             "type": "select",
             "id": "color_scheme",
@@ -152,6 +154,7 @@
             "name": "t:sections.two-image-columns.presets.name",
             "blocks": [
                 {
+                    "type": "button",
                     "type": "button"
                 }
             ]
