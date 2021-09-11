@@ -73,7 +73,7 @@
   height: 100% !important;
   width: 100% !important;
   border-radius: 10%;
-  border: 1px solid black !important;
+  border: 0.22rem solid black !important;
 }
 
 @media screen and (max-width: 750px) {
