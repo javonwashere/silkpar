@@ -76,6 +76,10 @@
   border: 0.22rem solid black !important;
 }
 
+.contact-grid--details--child .address {
+  line-height: 4rem;
+}
+
 @media screen and (max-width: 750px) {
   .contact-grid--child.right-column > iframe {
     min-height: 400px;
