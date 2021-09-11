@@ -82,6 +82,13 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .contact-wrapper {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
 
 @media screen and (min-width: 750px) {
   .contact-grid {
