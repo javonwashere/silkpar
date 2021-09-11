@@ -6,17 +6,6 @@
       "settings": {
       }
     },
-    "form": {
-      "type": "contact-form",
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "email": "emailaddress@email.com",
-        "address_line_one": "address line one",
-        "address_line_two": "address line two",
-        "city_and_zip": "address line three"
-      }
-    },
     "163095421954c5e529": {
       "type": "image-banner-alternate",
       "blocks": {
@@ -61,6 +50,16 @@
         "adapt_height_first_image": false
       }
     },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Reach out today!",
+        "email": "Silkparaesthetics@gmail.com",
+        "address_line_one": "2801 Frankford Ave",
+        "address_line_two": "Suite 228",
+        "city_and_zip": "Philadelphia, PA 19134"
+      }
+    },
     "1630954382d563e7ed": {
       "type": "two-images",
       "blocks": {
@@ -94,8 +93,8 @@
   },
   "order": [
     "main",
-    "form",
     "163095421954c5e529",
+    "form",
     "1630954382d563e7ed"
   ]
 }
