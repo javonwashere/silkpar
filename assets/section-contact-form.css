@@ -41,3 +41,55 @@
 .grecaptcha-badge {
   visibility: hidden;
 }
+
+.contact-wrapper {
+  background-color: rgb(235, 240, 248);
+  padding-top: 4rem;
+  margin-top: 5rem;
+  padding-bottom: 4rem;
+  margin-bottom: 5rem;
+}
+
+.contact-grid--details--child {
+  margin: 4rem 0;
+}
+
+.contact-grid--details--child > h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+}
+.contact-grid--details--child > h4 {
+  margin-bottom: 1rem;
+  font-family: 'Proxima Nova Rg';
+  font-size: 1rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.contact-grid--child.right-column > iframe {
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 10%;
+  border: 1px solid black !important;
+}
+
+@media screen and (max-width: 750px) {
+  .contact-grid--child.right-column > iframe {
+    min-height: 400px;
+  }
+}
+
+
+@media screen and (min-width: 750px) {
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-grid--child.right-column {
+    padding-left: 5rem;
+  }
+}
