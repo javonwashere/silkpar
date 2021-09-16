@@ -182,6 +182,7 @@ html.no-js .no-js-hidden {
 
 a.header__menu-item.header__menu-item.list-menu__item.link.link--text.focus-inset {
   font-size: 1rem;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 990px) {
