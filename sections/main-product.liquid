@@ -16,6 +16,17 @@
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
+{% style %}
+.card-information__text {
+  font-family: 'Optician Sans';
+  font-size: 2rem;
+}
+
+.product__title {
+  text-transform: capitalize;
+}
+{% endstyle %}
+
 <section class="page-width">
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
@@ -77,6 +88,11 @@
               {{- block.settings.text -}}
             </p>
           {%- when 'title' -%}
+            <span class="card-information__text h6">
+              {%- if product.type != "" -%}
+              {{ product.type | escape }}
+              {%- endif -%}
+            </span>
             <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
