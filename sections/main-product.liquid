@@ -25,11 +25,30 @@
 .product__title {
   text-transform: capitalize;
 }
+
+.product-form__submit > * {
+  padding: 1rem;
+  font-family: 'Proxima Nova Rg';
+  font-size: 1.3rem !important;
+}
+
+.shopify-payment-button__button {
+  padding-top: 1rem;
+  border-radius: 25px;
+  background-color: rgb(208, 226, 210);
+  color: #000 !important;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Rg';
+  letter-spacing: 0.2rem;
+}
+.shopify-payment-button {
+  padding-top: 1rem;
+}
 {% endstyle %}
 
 <section class="page-width">
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div class="grid__item product__media-wrapper">
+    <div class="grid__item product__media-wrapper" style="max-width: 50%">
       <slider-component class="slider-mobile-gutter">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
@@ -75,7 +94,7 @@
         </button>
       {%- endif -%}
     </div>
-    <div class="product__info-wrapper grid__item">
+    <div class="product__info-wrapper grid__item" style="max-width: 50%; padding-left: 10%;">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -96,10 +115,10 @@
             <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
-          {%- when 'price' -%}
+          {% comment %} {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
-            </div>
+            </div> {% endcomment %}
             <div {{ block.shopify_attributes }}>
               {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
                 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
@@ -130,7 +149,7 @@
                 </div>
               </details>
             </div>
-          {%- when 'quantity_selector' -%}
+          {% comment %} {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
@@ -153,7 +172,8 @@
                   {% render 'icon-plus' %}
                 </button>
               </quantity-input>
-            </div>
+
+            </div> {% endcomment %}
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.link_label | default: block.settings.page.title }}</button>
@@ -271,6 +291,91 @@
             </noscript>
           {%- when 'buy_buttons' -%}
             <div {{ block.shopify_attributes }}>
+              <div style="display: flex; justify-content: space-between; padding-top: 4rem; border-top: 1px solid;">
+                <div class="quantity__wrapper">
+                  <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
+                    <quantity-input class="quantity">
+                      <button class="quantity__button no-js-hidden" name="minus" type="button">
+                        <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+                        {% render 'icon-minus' %}
+                      </button>
+                      <input class="quantity__input"
+                          type="number"
+                          name="quantity"
+                          style="height: 5rem"
+                          id="Quantity-{{ section.id }}"
+                          min="1"
+                          value="1"
+                          form="product-form-{{ section.id }}"
+                        >
+                      <button class="quantity__button no-js-hidden" name="plus" type="button">
+                        <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+                        {% render 'icon-plus' %}
+                      </button>
+                    </quantity-input>
+                  </div>
+                </div>
+                <div class="atc__wrapper"     style= "display: flex; align-items: center;">
+                  <product-form class="product-form" style="margin: 0">
+                    {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                      <div class="product-form__buttons">
+                        <button
+                          type="submit"
+                          style="display: flex; height: 5rem;"
+                          name="add"
+                          class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                        {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                        >
+                            {%- if product.selected_or_first_available_variant.available -%}
+                              <div>{{ 'products.product.add_to_cart' | t }}</div><div>|</div> {%- render 'price', product: product, use_variant: true, show_badges: true -%}
+
+                            {%- else -%}
+                              {{ 'products.product.sold_out' | t }}
+                            {%- endif -%}
+                        </button>
+                      </div>
+                    {%- endform -%}
+                  </product-form>
+                </div>
+              </div>
+              <product-form class="product-form" style="margin: 0">
+                {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                  <div class="product-form__buttons">
+                    {%- if block.settings.show_dynamic_checkout -%}
+                      {{ form | payment_button }}
+                    {%- endif -%}
+                  </div>
+                {%- endform -%}
+              </product-form>
+            </div>
+            {% comment %} <div {{ block.shopify_attributes }}>
+
+              <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
+                <label class="form__label" for="Quantity-{{ section.id }}">
+                  {{ 'products.product.quantity.label' | t }}
+                </label>
+                <quantity-input class="quantity">
+                  <button class="quantity__button no-js-hidden" name="minus" type="button">
+                    <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+                    {% render 'icon-minus' %}
+                  </button>
+                  <input class="quantity__input"
+                      type="number"
+                      name="quantity"
+                      id="Quantity-{{ section.id }}"
+                      min="1"
+                      value="1"
+                      form="product-form-{{ section.id }}"
+                    >
+                  <button class="quantity__button no-js-hidden" name="plus" type="button">
+                    <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+                    {% render 'icon-plus' %}
+                  </button>
+                </quantity-input>
+                
+              </div>
               <product-form class="product-form">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
@@ -314,7 +419,7 @@
                   </div>
                 </template>
               </pickup-availability>
-            </div>
+            </div> {% endcomment %}
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
           {%- endcase -%}
