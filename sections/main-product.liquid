@@ -331,7 +331,8 @@
                               <div>{{ 'products.product.add_to_cart' | t }}</div><div>|</div> {%- render 'price', product: product, use_variant: true, show_badges: true -%}
 
                             {%- else -%}
-                              {{ 'products.product.sold_out' | t }}
+                            <div>{{ 'products.product.sold_out' | t }}</div><div>|</div> {%- render 'price', product: product, use_variant: true -%}
+
                             {%- endif -%}
                         </button>
                       </div>
@@ -343,9 +344,11 @@
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                   <div class="product-form__buttons">
+                    {%- if product.selected_or_first_available_variant.available -%}
                     {%- if block.settings.show_dynamic_checkout -%}
                       {{ form | payment_button }}
                     {%- endif -%}
+                  {%- endif -%}
                   </div>
                 {%- endform -%}
               </product-form>
