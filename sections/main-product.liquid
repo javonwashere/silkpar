@@ -44,11 +44,25 @@
 .shopify-payment-button {
   padding-top: 1rem;
 }
+
+@media screen and (max-width: 954px ) {
+  .atc__wrapper, .product-form {
+    width: 100%;
+  }
+}
+
+.quantity__container {
+  display: flex; 
+  justify-content: space-between; 
+  padding-top: 4rem; 
+  border-top: 1px solid;
+  flex-flow: wrap;
+}
 {% endstyle %}
 
 <section class="page-width">
-  <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div class="grid__item product__media-wrapper" style="max-width: 50%">
+  <div style="justify-content: space-between;" class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+    <div class="grid__item product__media-wrapper">
       <slider-component class="slider-mobile-gutter">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
@@ -94,7 +108,7 @@
         </button>
       {%- endif -%}
     </div>
-    <div class="product__info-wrapper grid__item" style="max-width: 50%; padding-left: 10%;">
+    <div class="product__info-wrapper grid__item">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -291,7 +305,7 @@
             </noscript>
           {%- when 'buy_buttons' -%}
             <div {{ block.shopify_attributes }}>
-              <div style="display: flex; justify-content: space-between; padding-top: 4rem; border-top: 1px solid;">
+              <div class="quantity__container">
                 <div class="quantity__wrapper">
                   <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
                     <quantity-input class="quantity">

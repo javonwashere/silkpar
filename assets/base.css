@@ -1127,6 +1127,34 @@ summary::-webkit-details-marker {
   /* min-height: 100%; */
 }
 
+.image-with-text__media {
+  background-color: transparent;
+  min-height: 100%;
+  border-radius: 6rem;
+}
+
+@media screen and (min-width: 200px) {
+  .image-with-text__media.media--hover-effect > img {
+    transition: transform var(--duration-long) ease;
+  }
+
+  .image-with-text__media:hover.media--hover-effect > img {
+    transform: scale(1.03);
+  }
+
+  .card-wrapper:hover
+    .media.media--hover-effect
+    > img:first-child:not(:only-child) {
+    opacity: 0;
+  }
+
+  .image-with-text__media.media--hover-effect > img + img {
+    opacity: 1;
+    transition: transform var(--duration-long) ease;
+    transform: scale(1.03);
+  }
+}
+
 .media--transparent {
   background-color: transparent;
 }
