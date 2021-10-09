@@ -73,6 +73,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "image_ratio": "adapt",
@@ -95,6 +96,7 @@
         "1632454174ef29020f-0"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/image-003_4381207a-0e2a-4502-b5f9-a6d48b969b23.jpg",
         "color_scheme": "taupe",
         "full_width": false
       }
