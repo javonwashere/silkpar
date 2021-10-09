@@ -89,23 +89,10 @@
           "settings": {
             "heading": "Subscribe to our emails"
           }
-        },
-        "1632454174ef29020f-1": {
-          "type": "paragraph",
-          "settings": {
-            "paragraph": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
-          }
-        },
-        "1632454174ef29020f-2": {
-          "type": "email_form",
-          "settings": {
-          }
         }
       },
       "block_order": [
-        "1632454174ef29020f-0",
-        "1632454174ef29020f-1",
-        "1632454174ef29020f-2"
+        "1632454174ef29020f-0"
       ],
       "settings": {
         "color_scheme": "taupe",
