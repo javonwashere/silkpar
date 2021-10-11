@@ -1764,6 +1764,59 @@
         }
       }
     },
+    "return-footer": {
+      "name": "Email signup",
+      "settings": {
+        "image": {
+          "label": "Image"
+        },
+        "color_scheme": {
+          "options__1": {
+            "label": "Taupe"
+          },
+          "options__2": {
+            "label": "Bronze"
+          },
+          "options__3": {
+            "label": "White"
+          },
+          "options__4": {
+            "label": "Silver"
+          },
+          "label": "Color scheme"
+        },
+        "full_width": {
+          "label": "Make section full width"
+        },
+        "paragraph": {
+          "content": "When customers subscribe to emails, customer accounts are created. [Learn more](https:\/\/help.shopify.com\/en\/manual\/customers)"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Heading",
+          "settings": {
+            "heading": {
+              "label": "Heading"
+            }
+          }
+        },
+        "paragraph": {
+          "name": "Subheading",
+          "settings": {
+            "paragraph": {
+              "label": "Description"
+            }
+          }
+        },
+        "email_form": {
+          "name": "Email form"
+        }
+      },
+      "presets": {
+        "name": "Email signup"
+      }
+    },
     "rich-text": {
       "name": "Rich text",
       "settings": {
