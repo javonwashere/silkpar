@@ -444,6 +444,14 @@
       </div>
     </div>
   </div>
+  <script>
+    window.addEventListener("load",() => {
+      let buttons = Array.from(document.querySelectorAll(".jdgm-widget-actions-wrapper"))
+      if(buttons.length > 1){
+        buttons[0].remove();
+      }
+    });
+  </script>
   {%- render 'cart-notification' -%}
 
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal">
