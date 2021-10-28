@@ -75,8 +75,8 @@
         "ef2c6555-6454-4c5c-b938-4f1f811eba80": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "Shop Products",
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
