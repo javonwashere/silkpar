@@ -87,17 +87,17 @@
             "button_5": ""
           }
         },
-        "1630233400908803fa-2": {
+        "e4e81cf9-90e2-4f5b-90c5-7fd24f5f415a": {
           "type": "column",
           "settings": {
-            "title": "Light Wave LED Therapy",
-            "subtitle": "LED Light Therapy Program",
-            "text": "<p>LIGHTWAVE'S patented Red, Infrared & Blue Light therapy can dramatically revitalize your skin without any downtime or discomfort. This innovative aesthetic treatment helps counteract years of sun damage, environmental damage, aging, acne and acne scarring. LIGHTWAVE provides noticeable results, often in a few sessions.<\/p>",
-            "button": "https:\/\/google.com",
-            "subtitle_2": "Topical Light Infusion Program",
-            "text_2": "<p>Get the results you want, and take your skin to the next level. Topical Light Infusion is proprietary technology combining LED light therapy and powerful topicals that dramatically diminishes the fine lines and wrinkles, discoloration and inflammation while improving the overall appearance of the skin. Choose from Wrinkle Repair, Collagen Renewal, Brightening Treatment, Blemish and oil control treatment, Resveratrol Illuminating Complex Booster Mask, Plumping Hydration Boosting Gel Mask, Pro Power C, Ceramide Boosting Mask, and the Retinol Treatment. This treatment will include a deep cleansing of the skin, and exfoliation.<\/p>",
-            "button_2": "https:\/\/google.com",
-            "subtitle_3": "Column",
+            "title": "Peels",
+            "subtitle": "80-200",
+            "text": "<p>At SilkPar we offer a range of different peels and alternatives to help with early signs of aging, discoloration, dullness of the skin, and scarring from acne. After the skin is assessed and properly prepped, the appropriate peel will be picked to help you reach your skin goals.<\/p>",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
             "text_3": "",
             "button_3": "",
             "subtitle_4": "",
@@ -191,16 +191,38 @@
             "text_5": "",
             "button_5": ""
           }
+        },
+        "1630233400908803fa-2": {
+          "type": "column",
+          "settings": {
+            "title": "Light Wave LED Therapy",
+            "subtitle": "LED Light Therapy Program",
+            "text": "<p>LIGHTWAVE'S patented Red, Infrared & Blue Light therapy can dramatically revitalize your skin without any downtime or discomfort. This innovative aesthetic treatment helps counteract years of sun damage, environmental damage, aging, acne and acne scarring. LIGHTWAVE provides noticeable results, often in a few sessions.<\/p>",
+            "button": "https:\/\/google.com",
+            "subtitle_2": "Topical Light Infusion Program",
+            "text_2": "<p>Get the results you want, and take your skin to the next level. Topical Light Infusion is proprietary technology combining LED light therapy and powerful topicals that dramatically diminishes the fine lines and wrinkles, discoloration and inflammation while improving the overall appearance of the skin. Choose from Wrinkle Repair, Collagen Renewal, Brightening Treatment, Blemish and oil control treatment, Resveratrol Illuminating Complex Booster Mask, Plumping Hydration Boosting Gel Mask, Pro Power C, Ceramide Boosting Mask, and the Retinol Treatment. This treatment will include a deep cleansing of the skin, and exfoliation.<\/p>",
+            "button_2": "https:\/\/google.com",
+            "subtitle_3": "Column",
+            "text_3": "",
+            "button_3": "",
+            "subtitle_4": "",
+            "text_4": "",
+            "button_4": "",
+            "subtitle_5": "",
+            "text_5": "",
+            "button_5": ""
+          }
         }
       },
       "block_order": [
         "1630233400908803fa-0",
         "1630233400908803fa-1",
-        "1630233400908803fa-2",
+        "e4e81cf9-90e2-4f5b-90c5-7fd24f5f415a",
         "46dff88d-6758-4bca-b6a5-1129c38ff365",
         "4c660697-aad9-4718-b08f-aa7345a7afd9",
         "1c17aab7-90ff-4a08-ae07-15269e1b3ae9",
-        "bd421f73-0c41-4b06-bb07-2e31439b29cf"
+        "bd421f73-0c41-4b06-bb07-2e31439b29cf",
+        "1630233400908803fa-2"
       ],
       "settings": {
         "large_footnote": "",
