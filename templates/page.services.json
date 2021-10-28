@@ -89,6 +89,7 @@
         },
         "e4e81cf9-90e2-4f5b-90c5-7fd24f5f415a": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Peels",
             "subtitle": "80-200",
@@ -118,27 +119,6 @@
             "subtitle_2": "Topical Light Infusion Program 130",
             "text_2": "<p>Get the results you want, and take your skin to the next level. Topical Light Infusion is proprietary technology combining LED light therapy and powerful topicals that dramatically diminishes the fine lines and wrinkles, discoloration and inflammation while improving the overall appearance of the skin. Choose from Collagen Renewal, Brightening Treatment, Resveratrol Illuminating Complex Booster Mask, Plumping Hydration Boosting Gel Mask, and the Ceramide Boosting Mask. This treatment will include a deep cleansing of the skin, and exfoliation.<\/p>",
             "button_2": "https:\/\/google.com",
-            "subtitle_3": "Column",
-            "text_3": "",
-            "button_3": "",
-            "subtitle_4": "",
-            "text_4": "",
-            "button_4": "",
-            "subtitle_5": "",
-            "text_5": "",
-            "button_5": ""
-          }
-        },
-        "46dff88d-6758-4bca-b6a5-1129c38ff365": {
-          "type": "column",
-          "settings": {
-            "title": "Body Contouring",
-            "subtitle": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button": "",
-            "subtitle_2": "Column",
-            "text_2": "",
-            "button_2": "",
             "subtitle_3": "Column",
             "text_3": "",
             "button_3": "",
@@ -219,7 +199,6 @@
         "1630233400908803fa-1",
         "e4e81cf9-90e2-4f5b-90c5-7fd24f5f415a",
         "1630233400908803fa-2",
-        "46dff88d-6758-4bca-b6a5-1129c38ff365",
         "4c660697-aad9-4718-b08f-aa7345a7afd9",
         "1c17aab7-90ff-4a08-ae07-15269e1b3ae9",
         "8f0b64d2-9cb7-422e-ba3c-fd4487e478a7"
