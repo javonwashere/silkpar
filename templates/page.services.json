@@ -34,6 +34,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/image-017-reverse.jpg",
         "image_2": "shopify:\/\/shop_images\/image-006.jpg",
+        "text_color": "black",
         "desktop_text_box_position": "center",
         "color_scheme": "white",
         "overlap_second_image": true,
@@ -48,14 +49,14 @@
           "type": "column",
           "settings": {
             "title": "Facials",
-            "subtitle": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "subtitle": "Partouch 150",
+            "text": "<p><strong>ParTouch 150<\/strong><\/p><p>This facial is customizable to your skin type\/concerns, delivering outstanding results. It helps to tighten pores, revitalize cells, diminish acne, brighten the skin, and give it a more youthful appearance\/glow. Some of our specialty treatments would include Oxygen, Chemical Peels, Time Master Pro, the Hydrofacial, Microdermabrasion, Facial Infusion, LED, and Cryotherapy.  <\/p>",
             "button": "",
-            "subtitle_2": "Column",
-            "text_2": "",
+            "subtitle_2": "ParLux 220",
+            "text_2": "<p>Say Hello to healthy, vibrant, clear, lifted, luminous glowy skin. This facial is the answer to all your skin worries. It is completely customizable to your skin needs and delivers a glow like no other. Our specialty treatments from ParTouch can be done in this facial plus so much more. This facial was designed to give your skin the works, and take you to the next level. Other specialty treatments that can be used in your facial will include 24K Gold, Microcurrent, Stem Cell Infusion, Chemical Peels, and the Hydraneedle. This facial will also come with the added benefit (if the skin permits) of hot stones. The skin will be cleansed with hot stones, and they will also be used in the massage. <\/p>",
             "button_2": "",
-            "subtitle_3": "Column",
-            "text_3": "",
+            "subtitle_3": "Retail Facial 100",
+            "text_3": "<p>Come shop with us and get a skin care routine that's specifically catered to you. In this facial we will go over your skin concerns, and your daily life\/activities to pick products that would fit best into your lifestyle. This facial was designed “With You In Mind”, and will include our Hydrofacial, and the products used will be ones that you are interested in buying. <\/p><p>*If products purchased totals over the cost of the Facial, then the service is Complimentary.<\/p>",
             "button_3": ""
           }
         },
@@ -160,7 +161,8 @@
         "bd421f73-0c41-4b06-bb07-2e31439b29cf"
       ],
       "settings": {
-        "title": "",
+        "large_footnote": "",
+        "small_footnote": "",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
