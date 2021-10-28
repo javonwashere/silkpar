@@ -14,6 +14,8 @@
 .product__info-wrapper {
   padding-left: 0;
   padding-bottom: 0;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 @media screen and (max-width: 749px) {
@@ -529,7 +531,7 @@ a.product__text {
   padding: 1.2rem;
   position: fixed;
   z-index: 2;
-  top: 2rem;
+  top: 20vh;
   width: 4rem;
 }
 

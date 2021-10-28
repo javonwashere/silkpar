@@ -132,6 +132,35 @@ li.accordion-list__item.grid__item {
                     {%- if block.settings.text_3 != blank -%}
                       <div class="rte">{{ block.settings.text_3 }}</div>
                     {%- endif -%}
+                    {%- if block.settings.button_3 != blank -%}
+                      <div class="banner__buttons" {{ block.shopify_attributes }}>
+                          <a{% if block.settings.button != blank %} href="{{ block.settings.button_3 }}"{% endif %} class="button button--secondary"{% if block.settings.button_2 == blank %} aria-disabled="true"{% endif %}>Book Service</a>
+                      </div>
+                    {%- endif-%}
+                    {%- if block.settings.subtitle_4 != blank -%}
+                      <hr style="margin-top: 2rem; margin-bottom: 2rem;">
+                      <h4>{{ block.settings.subtitle_4 }}</h4>
+                    {%- endif -%}
+                    {%- if block.settings.text_4 != blank -%}
+                      <div class="rte">{{ block.settings.text_4 }}</div>
+                    {%- endif -%}
+                    {%- if block.settings.button_4 != blank -%}
+                      <div class="banner__buttons" {{ block.shopify_attributes }}>
+                          <a{% if block.settings.button != blank %} href="{{ block.settings.button_4 }}"{% endif %} class="button button--secondary"{% if block.settings.button_2 == blank %} aria-disabled="true"{% endif %}>Book Service</a>
+                      </div>
+                    {%- endif-%}
+                    {%- if block.settings.subtitle_5 != blank -%}
+                      <hr style="margin-top: 2rem; margin-bottom: 2rem;">
+                      <h4>{{ block.settings.subtitle_5 }}</h4>
+                    {%- endif -%}
+                    {%- if block.settings.text_5 != blank -%}
+                      <div class="rte">{{ block.settings.text_5 }}</div>
+                    {%- endif -%}
+                    {%- if block.settings.button_5 != blank -%}
+                      <div class="banner__buttons" {{ block.shopify_attributes }}>
+                          <a{% if block.settings.button != blank %} href="{{ block.settings.button_5 }}"{% endif %} class="button button--secondary"{% if block.settings.button_2 == blank %} aria-disabled="true"{% endif %}>Book Service</a>
+                      </div>
+                    {%- endif-%}
                   </div>
                 </div>
               </li>
@@ -377,6 +406,36 @@ li.accordion-list__item.grid__item {
           "type": "url",
           "id": "button_3",
           "label": "t:sections.accordion.blocks.column.settings.button_3.label"
+        },
+        {
+          "type": "text",
+          "id": "subtitle_4",
+          "label": "t:sections.accordion.blocks.column.settings.subtitle_4.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text_4",
+          "label": "t:sections.accordion.blocks.column.settings.text_4.label"
+        },
+        {
+          "type": "url",
+          "id": "button_4",
+          "label": "t:sections.accordion.blocks.column.settings.button_4.label"
+        },
+        {
+          "type": "text",
+          "id": "subtitle_5",
+          "label": "t:sections.accordion.blocks.column.settings.subtitle_5.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text_5",
+          "label": "t:sections.accordion.blocks.column.settings.text_5.label"
+        },
+        {
+          "type": "url",
+          "id": "button_5",
+          "label": "t:sections.accordion.blocks.column.settings.button_5.label"
         }
       ]
     }
