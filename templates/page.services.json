@@ -87,28 +87,6 @@
             "button_5": ""
           }
         },
-        "e4e81cf9-90e2-4f5b-90c5-7fd24f5f415a": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "title": "Peels",
-            "subtitle": "80-200",
-            "text": "<p>At SilkPar we offer a range of different peels and alternatives to help with early signs of aging, discoloration, dullness of the skin, and scarring from acne. After the skin is assessed and properly prepped, the appropriate peel will be picked to help you reach your skin goals.<\/p>",
-            "button": "",
-            "subtitle_2": "",
-            "text_2": "",
-            "button_2": "",
-            "subtitle_3": "",
-            "text_3": "",
-            "button_3": "",
-            "subtitle_4": "",
-            "text_4": "",
-            "button_4": "",
-            "subtitle_5": "",
-            "text_5": "",
-            "button_5": ""
-          }
-        },
         "1630233400908803fa-2": {
           "type": "column",
           "settings": {
@@ -192,16 +170,37 @@
             "text_5": "",
             "button_5": ""
           }
+        },
+        "bfa173b9-6d1a-4031-b4df-7ae2b38c3b34": {
+          "type": "column",
+          "settings": {
+            "title": "Test column",
+            "subtitle": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button": "",
+            "subtitle_2": "",
+            "text_2": "",
+            "button_2": "",
+            "subtitle_3": "",
+            "text_3": "",
+            "button_3": "",
+            "subtitle_4": "",
+            "text_4": "",
+            "button_4": "",
+            "subtitle_5": "",
+            "text_5": "",
+            "button_5": ""
+          }
         }
       },
       "block_order": [
         "1630233400908803fa-0",
         "1630233400908803fa-1",
-        "e4e81cf9-90e2-4f5b-90c5-7fd24f5f415a",
         "1630233400908803fa-2",
         "4c660697-aad9-4718-b08f-aa7345a7afd9",
         "1c17aab7-90ff-4a08-ae07-15269e1b3ae9",
-        "8f0b64d2-9cb7-422e-ba3c-fd4487e478a7"
+        "8f0b64d2-9cb7-422e-ba3c-fd4487e478a7",
+        "bfa173b9-6d1a-4031-b4df-7ae2b38c3b34"
       ],
       "settings": {
         "large_footnote": "",
