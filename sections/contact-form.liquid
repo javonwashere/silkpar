@@ -30,7 +30,7 @@
       {{ section.settings.google_map }}
     </div>
   </div>
-  <div style="display: none;" class="contact page-width page-width--narrow spaced-section">
+  <div style="padding-top: 10vh;" class="contact page-width page-width--narrow spaced-section">
     {%- form 'contact', id: 'ContactForm' -%}
       {%- if form.posted_successfully? -%}
         <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
