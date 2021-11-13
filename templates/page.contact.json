@@ -69,7 +69,7 @@
           "type": "button",
           "settings": {
             "button_label": "Book a service",
-            "button_link": ""
+            "button_link": "https:\/\/www.vagaro.com\/silkparaesthetics"
           }
         },
         "ef2c6555-6454-4c5c-b938-4f1f811eba80": {
@@ -87,7 +87,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/image-014.jpg",
         "image_2": "shopify:\/\/shop_images\/image-003_4381207a-0e2a-4502-b5f9-a6d48b969b23.jpg",
-        "image_height": 30,
+        "image_height": 35,
         "color_scheme": "taupe",
         "layout": "image_first"
       }
