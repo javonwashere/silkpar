@@ -11,6 +11,18 @@
 <noscript>{{ 'component-badge.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
+{% style %}
+
+.title-price-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card-information__text.h5.title-price-bar > div:first-of-type {
+  font-size: 2.4rem;
+}
+{% endstyle %}
+
 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
 <div class="page-width collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
