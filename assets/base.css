@@ -149,8 +149,6 @@ html.no-js .no-js-hidden {
   display: none !important;
 }
 
-
-
 .page-width {
   max-width: 120rem;
   margin: 0 auto;
@@ -190,7 +188,6 @@ a.header__menu-item.header__menu-item.list-menu__item.link.link--text.focus-inse
     max-width: 72.6rem;
     padding: 0;
   }
-
 
   .page-width-desktop {
     max-width: 120rem;
@@ -333,7 +330,6 @@ p {
   font-size: 6rem;
 }
 
-
 .small__text {
   font-family: 'Proxima Nova Rg';
   text-transform: uppercase;
@@ -344,6 +340,7 @@ p {
   font-family: 'kessler-displayregular';
   text-transform: capitalize;
   font-size: 1.6rem;
+  min-height: 5rem;
 }
 
 .card-information__text.h5.title-price-bar > div:nth-child(2) {
@@ -858,6 +855,11 @@ summary::-webkit-details-marker {
 .title-wrapper {
   margin-bottom: 3rem;
 }
+li.grid__item.slider__slide > .title-wrapper-with-link.title-wrapper--self-padded-tablet-down {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+}
 
 .title-wrapper-with-link {
   display: flex;
@@ -866,6 +868,7 @@ summary::-webkit-details-marker {
   gap: 1rem;
   margin: 4rem 0 3rem;
   flex-wrap: wrap;
+
 }
 
 .title--primary {
@@ -1257,7 +1260,7 @@ deferred-media {
 .button-label,
 .shopify-challenge__button,
 .customer button {
-  font-size: 1.0rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
   line-height: 1.2;
 }
@@ -2214,7 +2217,7 @@ CUSTOM CSS VALUES
 .button {
   border-radius: 25px;
   background-color: rgb(208, 226, 210);
-  color: #000 !important;  
+  color: #000 !important;
   text-transform: uppercase;
   font-family: 'Proxima Nova Rg';
   letter-spacing: 0.2rem;
