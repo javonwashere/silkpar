@@ -1,0 +1,36 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+<div class="contact contact-wrapper page-width spaced-section">
+  <div class="contact-grid--header">
+    <h2 class="title">{{ section.settings.heading | escape }}</h2>
+    <hr style="margin: 0;">
+  </div>
+  {{ section.settings.vagaro_embed_link }}
+</div>
+
+{% schema %}
+{
+  "name": "Vagaro Booking Widget",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "heading",
+      "label": "heading"
+    },
+    {
+      "type": "html",
+      "id": "vagaro_embed_link",
+      "info": "Tutorial for Vagaro Widget link: https://support.vagaro.com/hc/en-us/articles/204347860-Add-the-Vagaro-Widget-to-Your-Site",
+      "label": "Vagaro Widget"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.contact-form.presets.name"
+    }
+  ]
+}
+{% endschema %}
