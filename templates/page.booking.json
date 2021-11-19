@@ -68,8 +68,8 @@
         "8feed43a-b8dd-4895-b73b-826f7e038710": {
           "type": "button",
           "settings": {
-            "button_label": "https:\/\/www.vagaro.com\/silkparaesthetics",
-            "button_link": ""
+            "button_label": "SHOP PRODUCTS",
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
