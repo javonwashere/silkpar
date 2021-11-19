@@ -1,21 +1,21 @@
 {
   "sections": {
-    "1637279894656b6181": {
-      "type": "image-banner",
+    "1637280028db082d0e": {
+      "type": "image-banner-alternate",
       "blocks": {
-        "1637279894b0f8f42c-0": {
+        "16372800284a57f86c-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner"
+            "heading": "Book A Service"
           }
         },
-        "1637279894b0f8f42c-1": {
+        "16372800284a57f86c-1": {
           "type": "text",
           "settings": {
             "text": "Give customers details about the banner image(s) or content on the template."
           }
         },
-        "1637279894b0f8f42c-2": {
+        "16372800284a57f86c-2": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Button label",
@@ -28,9 +28,9 @@
         }
       },
       "block_order": [
-        "1637279894b0f8f42c-0",
-        "1637279894b0f8f42c-1",
-        "1637279894b0f8f42c-2"
+        "16372800284a57f86c-0",
+        "16372800284a57f86c-1",
+        "16372800284a57f86c-2"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/image-053.jpg",
@@ -42,17 +42,17 @@
         "adapt_height_first_image": false
       }
     },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "1637279922a853f65c": {
       "type": "vagaro-booking-widget",
       "settings": {
         "heading": "Book A Service",
-        "vagaro_embed_link": ""
+        "vagaro_embed_link": "<div id=\"frameTitle\" class=\"embedded-widget-title\" style=\"font-size: 23px; color: #333;font-family:Arial, Helvetica, sans-serif; line-height:24px; padding: 18px 10px 8px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;\"><\/div>\n<div class=\"vagaro\" style=\"width:250px; padding:0; border:0; margin:0 auto; text-align:center;\">\n<style>.vagaro a {font-size:14px; color:#AAA; text-decoration:none;}<\/style>\n<a href=\"https:\/\/sales.vagaro.com\/\">Powered by Vagaro<\/a> <a href=\"https:\/\/sales.vagaro.com\/salon-software\">Salon Software<\/a>, <a href=\"https:\/\/sales.vagaro.com\/spa-software\">Spa Software<\/a> &amp; <a href=\"https:\/\/sales.vagaro.com\/fitness-software\">Fitness Software<\/a><script type=\"text\/javascript\" src=\"https:\/\/www.vagaro.com\/\/resources\/WidgetEmbeddedLoader\/OZqnDZ8pCJWcT3qnV3Dy6ZuSdBuOc1WJD1wOc1WO61CxdfeJE1wgEJgoapOUcO?v=FTY56yMWVSfJZVetFxHC11ytRYx9cTX0LM23FMMjz4KW#\"><\/script>\n<\/div>"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
       }
     },
     "16372799298c0a01e5": {
@@ -74,12 +74,54 @@
         "color_scheme": "taupe",
         "layout": "image_first"
       }
+    },
+    "1637280475ad4f5ea3": {
+      "type": "image-banner-alternate",
+      "blocks": {
+        "163728047501ad29fa-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "163728047501ad29fa-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "163728047501ad29fa-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "163728047501ad29fa-0",
+        "163728047501ad29fa-1",
+        "163728047501ad29fa-2"
+      ],
+      "settings": {
+        "text_color": "black",
+        "desktop_text_box_position": "center",
+        "color_scheme": "taupe",
+        "overlap_second_image": true,
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
+      }
     }
   },
   "order": [
-    "1637279894656b6181",
-    "main",
+    "1637280028db082d0e",
     "1637279922a853f65c",
-    "16372799298c0a01e5"
+    "main",
+    "16372799298c0a01e5",
+    "1637280475ad4f5ea3"
   ]
 }
