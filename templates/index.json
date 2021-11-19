@@ -136,13 +136,6 @@
         "layout": "image_first"
       }
     },
-    "1637281929a8435c2e": {
-      "type": "vagaro-booking-widget",
-      "settings": {
-        "heading": "Book A Service",
-        "vagaro_embed_link": "<div id=\"frameTitle\" class=\"embedded-widget-title\" style=\"font-size: 23px; color: #333;font-family:Arial, Helvetica, sans-serif; line-height:24px; padding: 18px 10px 8px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;\"><\/div>\n<div class=\"vagaro\" style=\"width:250px; padding:0; border:0; margin:0 auto; text-align:center;\">\n<style>.vagaro a {font-size:14px; color:#AAA; text-decoration:none;}<\/style>\n<a href=\"https:\/\/sales.vagaro.com\/\">Powered by Vagaro<\/a> <a href=\"https:\/\/sales.vagaro.com\/salon-software\">Salon Software<\/a>, <a href=\"https:\/\/sales.vagaro.com\/spa-software\">Spa Software<\/a> &amp; <a href=\"https:\/\/sales.vagaro.com\/fitness-software\">Fitness Software<\/a><script type=\"text\/javascript\" src=\"https:\/\/www.vagaro.com\/\/resources\/WidgetEmbeddedLoader\/OZqnDZ8pCJWcT3qnV3Dy6puSdBuOc1WJD1wOc1WO61CxdfeJE1wgEJgoapOUcO?v=EE3uKleHr4VoJgDohH4Sq69Yvgll1Ae2CtwlGEDxSa8#\"><\/script>\n<\/div>"
-      }
-    },
     "1627799823dfd95cdd": {
       "type": "newsletter",
       "blocks": {
@@ -175,13 +168,6 @@
         "color_scheme": "taupe",
         "full_width": false
       }
-    },
-    "16372848887a2c880c": {
-      "type": "vagaro-booking-widget",
-      "settings": {
-        "heading": "Book A Service",
-        "vagaro_embed_link": "<script type=\"text\/javascript\" src=\"https:\/\/www.vagaro.com\/\/resources\/WidgetEmbeddedLoader\/OZqnDZ8pCJWcT3qnV3Dy79oz34mC2PeFJ4mC30m9dSycXCu7gevEhAJDXwPW?v=EE3uKleHr4VoJgDohH4Sq69Yvgll1Ae2CtwlGEDxSa8#\"><\/script>"
-      }
     }
   },
   "order": [
@@ -189,8 +175,6 @@
     "image_text",
     "featured_products",
     "16277998371758dfce",
-    "1637281929a8435c2e",
-    "1627799823dfd95cdd",
-    "16372848887a2c880c"
+    "1627799823dfd95cdd"
   ]
 }
