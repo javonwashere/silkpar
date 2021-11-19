@@ -61,59 +61,28 @@
         "1637279929ee0bc0e3-0": {
           "type": "button",
           "settings": {
-            "button_label": "https:\/\/www.vagaro.com\/silkparaesthetics",
-            "button_link": ""
+            "button_label": "BOOK A SERVICE",
+            "button_link": "shopify:\/\/pages\/testimonials"
+          }
+        },
+        "473bad1e-3933-451c-9844-d3b9e75541a1": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP PRODUCTS",
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
       "block_order": [
-        "1637279929ee0bc0e3-0"
+        "1637279929ee0bc0e3-0",
+        "473bad1e-3933-451c-9844-d3b9e75541a1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/image-003_4381207a-0e2a-4502-b5f9-a6d48b969b23.jpg",
+        "image_2": "shopify:\/\/shop_images\/image-014.jpg",
         "image_height": 35,
         "color_scheme": "taupe",
         "layout": "image_first"
-      }
-    },
-    "1637280475ad4f5ea3": {
-      "type": "image-banner-alternate",
-      "blocks": {
-        "163728047501ad29fa-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner"
-          }
-        },
-        "163728047501ad29fa-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "163728047501ad29fa-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "163728047501ad29fa-0",
-        "163728047501ad29fa-1",
-        "163728047501ad29fa-2"
-      ],
-      "settings": {
-        "text_color": "black",
-        "desktop_text_box_position": "center",
-        "color_scheme": "taupe",
-        "overlap_second_image": true,
-        "stack_images_on_mobile": true,
-        "adapt_height_first_image": false
       }
     }
   },
@@ -121,7 +90,6 @@
     "1637280028db082d0e",
     "1637279922a853f65c",
     "main",
-    "16372799298c0a01e5",
-    "1637280475ad4f5ea3"
+    "16372799298c0a01e5"
   ]
 }
