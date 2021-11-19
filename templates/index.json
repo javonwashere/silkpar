@@ -175,6 +175,13 @@
         "color_scheme": "taupe",
         "full_width": false
       }
+    },
+    "16372848887a2c880c": {
+      "type": "vagaro-booking-widget",
+      "settings": {
+        "heading": "Book A Service",
+        "vagaro_embed_link": "<script type=\"text\/javascript\" src=\"https:\/\/www.vagaro.com\/\/resources\/WidgetEmbeddedLoader\/OZqnDZ8pCJWcT3qnV3Dy79oz34mC2PeFJ4mC30m9dSycXCu7gevEhAJDXwPW?v=EE3uKleHr4VoJgDohH4Sq69Yvgll1Ae2CtwlGEDxSa8#\"><\/script>"
+      }
     }
   },
   "order": [
@@ -183,6 +190,7 @@
     "featured_products",
     "16277998371758dfce",
     "1637281929a8435c2e",
-    "1627799823dfd95cdd"
+    "1627799823dfd95cdd",
+    "16372848887a2c880c"
   ]
 }

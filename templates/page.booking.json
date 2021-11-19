@@ -42,13 +42,6 @@
         "adapt_height_first_image": false
       }
     },
-    "1637279922a853f65c": {
-      "type": "vagaro-booking-widget",
-      "settings": {
-        "heading": "Book A Service",
-        "vagaro_embed_link": "<script type=\"text\/javascript\" src=\"https:\/\/www.vagaro.com\/\/resources\/WidgetEmbeddedLoader\/OZqnDZ8pCJWcT3qnV3Dy79oz34mC2PeFJ4mC30m9dSycXCu7gevEhAJDXwPW?v=EE3uKleHr4VoJgDohH4Sq69Yvgll1Ae2CtwlGEDxSa8#\"><\/script>"
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -115,13 +108,20 @@
         "stack_images_on_mobile": true,
         "adapt_height_first_image": false
       }
+    },
+    "1637279922a853f65c": {
+      "type": "vagaro-booking-widget",
+      "settings": {
+        "heading": "Book A Service",
+        "vagaro_embed_link": "<script type=\"text\/javascript\" src=\"https:\/\/www.vagaro.com\/\/resources\/WidgetEmbeddedLoader\/OZqnDZ8pCJWcT3qnV3Dy79oz34mC2PeFJ4mC30m9dSycXCu7gevEhAJDXwPW?v=EE3uKleHr4VoJgDohH4Sq69Yvgll1Ae2CtwlGEDxSa8#\"><\/script>"
+      }
     }
   },
   "order": [
     "1637280028db082d0e",
-    "1637279922a853f65c",
     "main",
     "16372799298c0a01e5",
-    "1637280475ad4f5ea3"
+    "1637280475ad4f5ea3",
+    "1637279922a853f65c"
   ]
 }
