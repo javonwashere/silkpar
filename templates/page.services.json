@@ -207,7 +207,7 @@
           "type": "button",
           "settings": {
             "button_label": "book a service",
-            "button_link": "https:\/\/www.vagaro.com\/silkparaesthetics"
+            "button_link": "shopify:\/\/pages\/booking"
           }
         },
         "66125c83-6309-413b-8ec5-90f81c6a534e": {
