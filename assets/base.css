@@ -343,7 +343,7 @@ p {
 }
 
 .card-information__text.h5.title-price-bar{
-  min-height: 5rem;
+  min-height: 10rem;
 }
 
 .card-information__text.h5.title-price-bar > div:nth-child(2) {
