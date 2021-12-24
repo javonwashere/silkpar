@@ -4,6 +4,7 @@
     "social_facebook_link": "https:\/\/facebook.com\/shopify",
     "social_instagram_link": "http:\/\/instagram.com\/shopify",
     "favicon": "shopify:\/\/shop_images\/SilkPar_FooterMonogram-10.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/SilkPar_Logotype_Black-01_d6cb808e-f87d-4ea2-b12a-c50cddb817c0.png",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
