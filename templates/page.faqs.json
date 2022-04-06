@@ -53,6 +53,7 @@
       "blocks": {
         "969697d6-abd5-4a06-9848-412b6437c846": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "I'm not sure if I need to book the ParTouch or the ParLux, which one would be best?",
             "subtitle": "",
@@ -74,6 +75,7 @@
         },
         "9d3ea66f-28ef-40ea-a114-43e4e3544bed": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Is it ok to wear makeup to my facial appointment?",
             "subtitle": "",
@@ -95,6 +97,7 @@
         },
         "63386c88-bc15-4399-9458-4d5aa85d7a92": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Is there anything I should do to prepare for my facial?",
             "subtitle": "",
@@ -116,6 +119,7 @@
         },
         "d7985b57-ae20-40ca-ae79-88a99000be84": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "I'm breaking out after my facial, is that normal?",
             "subtitle": "",
@@ -179,6 +183,7 @@
         },
         "d2c80307-c55d-4b43-a6d0-ec668cb8aa82": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "I want to get waxed, how long does my hair have to be?",
             "subtitle": "",
@@ -200,6 +205,7 @@
         },
         "3c2a7b02-428a-473b-824f-657673e923c6": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Is there anything that I should do in preparation for my wax?",
             "subtitle": "",
@@ -221,6 +227,7 @@
         },
         "0967d1b7-0f4f-46f1-b435-12176a66130b": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Can I get waxed on my period?",
             "subtitle": "",

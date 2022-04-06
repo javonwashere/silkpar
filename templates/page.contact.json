@@ -56,9 +56,9 @@
         "heading": "Reach out today!",
         "email": "customerservice@silkparaesthetics.com",
         "phone_number": "215-971-3678",
-        "address_line_one": "2801 Frankford Ave",
-        "address_line_two": "Suite 228",
-        "city_and_zip": "Philadelphia, PA 19134",
+        "address_line_one": "",
+        "address_line_two": "",
+        "city_and_zip": "",
         "google_map": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3056.883207358358!2d-75.12192748415903!3d39.988715279417306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c826008cd8b3%3A0x66b668e9b4d880da!2s2801%20Frankford%20Ave%20%23228%2C%20Philadelphia%2C%20PA%2019134!5e0!3m2!1sen!2sus!4v1635462466849!5m2!1sen!2sus\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"><\/iframe>"
       }
     },
