@@ -200,7 +200,6 @@
         },
         "3c2a7b02-428a-473b-824f-657673e923c6": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "title": "Is there anything that I should do in preparation for my wax?",
             "subtitle": "",
@@ -222,7 +221,6 @@
         },
         "0967d1b7-0f4f-46f1-b435-12176a66130b": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "title": "Can I get waxed on my period?",
             "subtitle": "",
