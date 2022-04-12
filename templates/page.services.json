@@ -68,6 +68,7 @@
         },
         "1630233400908803fa-1": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Facials Enhancements",
             "subtitle": "Microcurrent 80",
