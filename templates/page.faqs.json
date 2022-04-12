@@ -53,11 +53,10 @@
       "blocks": {
         "969697d6-abd5-4a06-9848-412b6437c846": {
           "type": "column",
-          "disabled": true,
           "settings": {
-            "title": "I'm not sure if I need to book the ParTouch or the ParLux, which one would be best?",
+            "title": "Which facial would be best for me to book?",
             "subtitle": "",
-            "text": "<p>Both of these facials will be customized specifically for you. The difference between the facials is that the ParLux has more of a range of different treatments\/modalities that can be done to treat your skin as well as enhance your results, and it allots more time to spend on nourishing your skin.<\/p>",
+            "text": "<p>All of our facials are customized specifically for you. We recommend if its your first time, to get started with the \"Back To The Basics\" Facial. This will allow us to get to know you and your skin and what treatment plan you will need to get you results. The difference between the facials is that the ParTouch has a range of different treatments\/modalities that can be done to treat your skin as well as enhance your results, and it allots more time to spend on nourishing your skin.<\/p>",
             "button": "",
             "subtitle_2": "",
             "text_2": "",
