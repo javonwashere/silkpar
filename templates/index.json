@@ -1,5 +1,50 @@
 {
   "sections": {
+    "165048595281fda876": {
+      "type": "video-background",
+      "blocks": {
+        "1650485952ef3435bb-0": {
+          "type": "video",
+          "settings": {
+            "video_link": "",
+            "video_image": "shopify:\/\/shop_images\/1CFC062D-1966-476C-8A6C-771AD9C92F68.jpg",
+            "overlay_opacity": 0,
+            "title": "",
+            "text": "",
+            "color_text": "#ffffff",
+            "button_label": "",
+            "button_link": "",
+            "color_btn_bg": "#ffffff",
+            "color_btn_text": "#ffffff",
+            "color_scheme": "taupe"
+          }
+        },
+        "11cb0905-e629-433e-9216-6366ebdf3122": {
+          "type": "heading",
+          "settings": {
+            "heading": "ReImagine Skincare with Silkpar Aesthetics"
+          }
+        },
+        "2e6f982e-eb00-4423-b675-e6efa08f94e0": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Book a service",
+            "button_link_1": "shopify:\/\/pages\/booking",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1650485952ef3435bb-0",
+        "11cb0905-e629-433e-9216-6366ebdf3122",
+        "2e6f982e-eb00-4423-b675-e6efa08f94e0"
+      ],
+      "settings": {
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -171,6 +216,7 @@
     }
   },
   "order": [
+    "165048595281fda876",
     "image_banner",
     "image_text",
     "featured_products",
