@@ -1,0 +1,565 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+{%-if section.settings.overlap_second_image and section.settings.image_2 != blank -%}
+  {{ 'section-image-header.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{%- if section.settings.text_color == "white" -%}
+  {% style %}
+  @media screen and (min-width: 750px) {
+    .header__icon .icon {
+      color: white;
+    }
+    .header__menu-item.header__menu-item.list-menu__item.link.link--text.focus-inset {
+      color: white;
+    }
+    .header__heading-logo {
+      filter: invert(100%);
+    }
+    .header__active-menu-item {
+      color: white;
+    }
+  }
+  {% endstyle %}
+{%-endif-%}
+
+
+{%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
+  {%- style -%}
+    #Banner-{{ section.id }}::before, #Banner-{{ section.id }} .banner__media::before {
+      padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+      content: '';
+      display: block;
+    }
+  {%- endstyle -%}
+{%- endif -%}
+{%- if section.blocks.size > 0 -%}
+	{%- for block in section.blocks -%}
+		{%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+		{% if block.type == 'video' %}
+			<div class="videoBox" style="{%- if block.settings.video_link == blank -%}background-image: url('{{ block.settings.video_image  | img_url: 'master' }}');{%- endif -%}">
+
+				{%- if block.settings.video_link != blank -%}
+					<div class="fullscreen-video-wrap">
+						<video class="video-js" loop autoplay preload="none" muted playsinline
+						poster="https:{{ block.settings.video_image | img_url: 'master' }}">
+							<source src="{{ block.settings.video_link }}" type="video/mp4">
+						</video>
+					</div>
+				{% endif %}
+
+				<div class="overlay" style="opacity: 0.{{ block.settings.overlay_opacity }}"></div>
+				<div class="videoBoxInfo">
+					<!-- {% if block.settings.title != blank %}
+						<h1 class="videoBoxInfoTitle" style="color: {{ block.settings.color_text }}">
+							{{ block.settings.title | escape }}
+						</h1>
+					{% endif %}
+
+					{%- style -%}
+						.videoBackground .imageBoxInfoDescription p {
+							color: {{ block.settings.color_text }}!important;
+						}
+					{%- endstyle -%}
+
+					{% if block.settings.text != blank %}
+						<div class="imageBoxInfoDescription" id="{{ block.id }}" style="color: {{ block.settings.color_text }}">
+							{{ block.settings.text }}
+						</div>
+					{% endif %} -->
+
+					{% if block.settings.button_link != blank and block.settings.button_label != blank %}
+						<a href="{{ block.settings.button_link }}" class="videoBoxInfoBtn" style="color: {{ block.settings.color_btn_text }}; background: {{ block.settings.color_btn_bg }}">
+							{{ block.settings.button_label | escape }}
+						</a>
+					{% endif %}
+				</div>
+				<div class="banner__content page-width" style="align-items: {{ section.settings.desktop_text_box_position }};">
+					<div class="banner__box color-{{ section.settings.color_scheme }}">
+						{%- for block in section.blocks -%}
+							{%- case block.type -%}
+								{%- when 'heading' -%}
+									<h2 class="banner__heading h1" {{ block.shopify_attributes }}>
+										<span>{{ block.settings.heading | escape }}</span>
+									</h2>
+								{%- when 'text' -%}
+									<div class="banner__text" {{ block.shopify_attributes }}>
+										<span>{{ block.settings.text | escape }}</span>
+									</div>
+								{%- when 'buttons' -%}
+									<div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank and block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
+										{%- if block.settings.button_label_1 != blank -%}
+											<a{% if block.settings.button_link_1 != blank %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link_1 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_1 | escape }}</a>
+										{%- endif -%}
+										{%- if block.settings.button_label_2 != blank -%}
+											<a{% if block.settings.button_link_2 != blank %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link_2 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_2 | escape }}</a>
+										{%- endif -%}
+									</div>
+							{%- endcase -%}
+						{%- endfor -%}
+					</div>
+				</div>
+			</div>
+		{% endif %}
+	{%- endfor -%}
+
+{% else %}
+	 <div class="placeholderNoblocks">
+      	This section doesn’t currently include any content. Add content to this section using the sidebar.
+    </div>
+{%- endif -%}
+
+<style>
+	.main-content .videoBackground {
+		margin-top: -55px;
+	}
+	.videoBackground {
+		height: 100%;
+		position: relative;
+	}
+	.videoBackground .fullscreen-video-wrap {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	.videoBackground .fullscreen-video-wrap .video-js {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-height: 100%;
+		min-width: 100%;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.videoBackground .fullscreen-video-wrap video {
+		min-height: 100%;
+		min-width: 100%;
+		object-fit: cover;
+	}
+	.videoBackground .videoBox {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex-direction: column;
+		padding: 100px 20px 80px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		min-height: 500px;
+      	max-height: 800px;
+        height: calc(100vh - 165px);
+		position: relative;
+	}
+	.videoBackground .imageBox {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex-direction: column;
+		padding: 100px 20px 80px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		min-height: calc(100vh - 165px);
+		height: auto;
+	}
+	.videoBackground .videoBoxInfo, .videoBackground .imageBoxInfo {
+		z-index: 2;
+		text-align: center;
+	}
+	.videoBackground .overlay {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: #000;
+		z-index: 1;
+	}
+	.videoBackground .videoBoxInfoBtn, .videoBackground .imageBoxInfoBtn {
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		display: inline-block;
+		width: auto;
+		text-decoration: none;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+		border: 1px solid transparent;
+		border-radius: 2px;
+		padding: 8px 15px;
+		font-style: normal;
+		font-weight: 800;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		white-space: normal;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+	.videoBackground .videoBoxInfoTitle, .videoBackground .imageBoxInfoTitle {
+		color: #FFF;
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.videoBackground .videoBoxInfoDescription, .videoBackground .imageBoxInfoDescription {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	.videoBackground .videoBoxInfoDescription p, .videoBackground .imageBoxInfoDescription p {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.videoBackground .placeholderNoblocks {
+		text-align: center;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+    @media screen and (max-width: 767px) {
+		.main-content .videoBackground {
+			margin-top: -35px;
+		}
+		.videoBackground .fullscreen-video-wrap {
+			z-index: 3;
+		}
+		.videoBackground .videoBox {
+          	min-height: 500px;
+          	height: 100%;
+          	position: relative;
+			padding: 0;
+      	}
+		.videoBackground .fullscreen-video-wrap {
+			position: relative;
+			min-height: 300px;
+		}
+		.videoBackground .videoBoxInfo {
+			padding: 40px 20px;
+    		background: #000;
+			width: 100%;
+		}
+    }
+</style>
+
+{% schema %}
+{
+"name": {
+		"en": "Video Background"
+	},
+	"class": "videoBackground",
+	"max_blocks": 3,
+	"blocks": [
+		{
+			"type": "heading",
+			"name": "t:sections.image-banner.blocks.heading.name",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "text",
+					"id": "heading",
+					"default": "Image banner",
+					"label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+				}
+			]
+		},
+		{
+			"type": "text",
+			"name": "t:sections.image-banner.blocks.text.name",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "text",
+					"id": "text",
+					"default": "Give customers details about the banner image(s) or content on the template.",
+					"label": "t:sections.image-banner.blocks.text.settings.text.label"
+				}
+			]
+		},
+		{
+			"type": "buttons",
+			"name": "t:sections.image-banner.blocks.buttons.name",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "text",
+					"id": "button_label_1",
+					"default": "Button label",
+					"label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+					"info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+				},
+				{
+					"type": "url",
+					"id": "button_link_1",
+					"label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+				},
+				{
+					"type": "checkbox",
+					"id": "button_style_secondary_1",
+					"default": false,
+					"label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+				},
+				{
+					"type": "text",
+					"id": "button_label_2",
+					"default": "Button label",
+					"label": "t:sections.image-banner.blocks.buttons.settings.button_label_2.label",
+					"info": "t:sections.image-banner.blocks.buttons.settings.button_label_2.info"
+				},
+				{
+					"type": "url",
+					"id": "button_link_2",
+					"label": "t:sections.image-banner.blocks.buttons.settings.button_link_2.label"
+				},
+				{
+					"type": "checkbox",
+					"id": "button_style_secondary_2",
+					"default": false,
+					"label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
+				}
+			]
+		},
+		{
+		"type": "video",
+		"name": "Video",
+		"settings": [
+			{
+				"type": "url",
+				"id": "video_link",
+				"label": {
+				"en": "Video link"
+				}
+			},
+			{
+				"type": "image_picker",
+				"id": "video_image",
+				"label": {
+				"en": "Cover image"
+				}
+			},
+			{
+				"type": "range",
+				"id": "overlay_opacity",
+				"label": {
+					"en": "Overlay opacity"
+				},
+				"min": 0,
+				"max": 99,
+				"step": 1,
+				"unit": {
+					"en": "%"
+				},
+				"default": 0
+			},
+			{
+				"type": "header",
+				"content": {
+					"en": "Text"
+				}
+			},
+			{
+				"type": "text",
+				"id": "title",
+				"label": {
+					"en": "Heading"
+				},
+				"default": "Video slide"
+			},
+			{
+				"type": "richtext",
+				"id": "text",
+				"label": {
+					"en": "Description"
+				},
+				"default": {
+					"en": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+				}
+			},
+			{
+				"type": "color",
+				"id": "color_text",
+				"label": {
+					"en": "Text color"
+				},
+				"default": "#ffffff"
+			},
+			{
+				"type": "text",
+				"id": "button_label",
+				"label": {
+					"en": "Button label"
+				}
+			},
+			{
+				"type": "url",
+				"id": "button_link",
+				"label": {
+					"en": "Button link"
+				}
+			},
+			{
+				"type": "color",
+				"id": "color_btn_bg",
+				"label": {
+					"en": "Background button color"
+				},
+				"default": "#ffffff"
+			},
+			{
+				"type": "color",
+				"id": "color_btn_text",
+				"label": {
+					"en": "Button text color"
+				},
+				"default": "#ffffff"
+			},
+			{
+				"type": "select",
+				"id": "color_scheme",
+				"options": [
+					{
+						"value": "taupe",
+						"label": "t:sections.image-with-text.settings.color_scheme.options__1.label"
+					},
+					{
+						"value": "bronze",
+						"label": "t:sections.image-with-text.settings.color_scheme.options__2.label"
+					},
+					{
+						"value": "white",
+						"label": "t:sections.image-with-text.settings.color_scheme.options__3.label"
+					},
+					{
+						"value": "silver",
+						"label": "t:sections.image-with-text.settings.color_scheme.options__4.label"
+					}
+				],
+				"default": "taupe",
+				"label": "t:sections.image-with-text.settings.color_scheme.label"
+			}
+		]
+		},
+		{
+		"type": "image",
+		"name": "Image",
+		"settings": [
+			{
+				"type": "color",
+				"id": "color_bg",
+				"label": {
+					"en": "Background color (optional)"
+				},
+				"default": "#16165b"
+			},
+			{
+				"type": "image_picker",
+				"id": "image_bg",
+				"label": {
+					"en": "or use an image (required)"
+				}
+			},
+			{
+				"type": "range",
+				"id": "overlay_opacity",
+				"label": {
+					"en": "Overlay opacity"
+				},
+				"min": 0,
+				"max": 99,
+				"step": 1,
+				"unit": {
+					"en": "%"
+				},
+				"default": 0
+			},
+			{
+				"type": "header",
+				"content": {
+					"en": "Text"
+				}
+			},
+			{
+				"type": "text",
+				"id": "title",
+				"default": "Image slide",
+				"label": {
+					"en": "Heading"
+				}
+			},
+			{
+				"type": "richtext",
+				"id": "text",
+				"label": {
+					"en": "Description"
+				},
+				"default": {
+					"en": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+				}
+			},
+			{
+				"type": "color",
+				"id": "color_text",
+				"label": {
+					"en": "Text color"
+				},
+				"default": "#ffffff"
+			},
+			{
+				"type": "text",
+				"id": "button_label",
+				"label": {
+					"en": "Button label"
+				}
+			},
+			{
+				"type": "url",
+				"id": "button_link",
+				"label": {
+					"en": "Button link"
+				}
+			},
+			{
+				"type": "color",
+				"id": "color_btn_bg",
+				"label": {
+					"en": "Background button color"
+				},
+				"default": "#ffffff"
+			},
+			{
+				"type": "color",
+				"id": "color_btn_text",
+				"label": {
+					"en": "Button text color"
+				},
+				"default": "#ffffff"
+			}
+		]
+		}
+	],
+	"presets": [
+		{
+			"name": {
+				"en": "Video Background"
+			},
+			"category": {
+				"en": "Main"
+			},
+			"blocks": [
+				{
+					"type": "video"
+				}
+			]
+		}
+	]
+}
+{% endschema %}
