@@ -2,7 +2,6 @@
   "sections": {
     "165048595281fda876": {
       "type": "video-background",
-      "disabled": true,
       "blocks": {
         "1650485952ef3435bb-0": {
           "type": "video",
@@ -11,7 +10,7 @@
             "video_image": "shopify:\/\/shop_images\/1CFC062D-1966-476C-8A6C-771AD9C92F68.jpg",
             "overlay_opacity": 0,
             "title": "",
-            "text": "<p><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0584\/3727\/1758\/files\/1D50ACF9-CEA2-40FB-95ED-8D19979296D7.mov?v=1650565359\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0584\/3727\/1758\/files\/1D50ACF9-CEA2-40FB-95ED-8D19979296D7.mov?v=1650565359\">https:\/\/cdn.shopify.com\/s\/files\/1\/0584\/3727\/1758\/files\/1D50ACF9-CEA2-40FB-95ED-8D19979296D7.mov?v=1650565359<\/a><\/p>",
+            "text": "",
             "color_text": "#ffffff",
             "button_label": "",
             "button_link": "",
