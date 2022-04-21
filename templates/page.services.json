@@ -37,7 +37,7 @@
         "text_color": "black",
         "desktop_text_box_position": "center",
         "color_scheme": "white",
-        "overlap_second_image": true,
+        "overlap_second_image": false,
         "stack_images_on_mobile": true,
         "adapt_height_first_image": false
       }
