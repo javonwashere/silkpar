@@ -44,6 +44,7 @@
     },
     "1630233400908803fa": {
       "type": "accordion",
+      "disabled": true,
       "blocks": {
         "1630233400908803fa-0": {
           "type": "column",
