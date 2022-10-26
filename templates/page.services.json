@@ -198,7 +198,7 @@
     "163727964547b8b1a5": {
       "type": "vagaro-booking-widget",
       "settings": {
-        "heading": "Book A Service",
+        "heading": "Coming Soon!",
         "vagaro_embed_link": "<div class=\"vagaro\" style=\"width:250px; padding:0; border:0; margin:0 auto; text-align:center; font-size:14px; color:#AAA;\">\n<style>.vagaro a {font-size:14px; color:#AAA; text-decoration:none;}<\/style>\n<a href=\"https:\/\/sales.vagaro.com\/\">Powered by Vagaro<\/a> <a href=\"https:\/\/sales.vagaro.com\/salon-software\">Salon Software<\/a>, <a href=\"https:\/\/sales.vagaro.com\/spa-software\">Spa Software<\/a> &amp; <a href=\"https:\/\/sales.vagaro.com\/fitness-software\">Fitness Software<\/a><script type=\"text\/javascript\" src=\"https:\/\/www.vagaro.com\/\/resources\/WidgetWindowLoader\/OZqnDZ8pCJWcT3qmV35y6RuQlXoSlXYO61Ctdg4tjxMG9pUxapkUcXCu7gevEhAJDXwPapcUd1eP61kO69o?v=yfYOsf9mhzMDGlvbFt7ZDVmjPyOrnhV0oFWeo1MPCFzm#\"><\/script>\n<\/div>"
       }
     },
