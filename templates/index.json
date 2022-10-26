@@ -97,6 +97,7 @@
         },
         "text": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>SilkPar Aesthetics is located in the Kensington area of Philadelphia. We offer a private intimate suite that is located in a newly renovated school. At SilkPar, we are all about helping our clients celebrate where they are while helping them towards their goals.<\/p>"
           }
